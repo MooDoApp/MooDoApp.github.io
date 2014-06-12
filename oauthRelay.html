@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>postMessage Relay</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script type="text/javascript">
+    function getQueryByName(name)
+    {
+        var regex = /([^&=]+)=([^&]*)/g;
+        var m;
+        while (m = regex.exec(location.search.substring(1)))
+        {
+            if (decodeURIComponent(m[1]) === name)
+            {
+                return decodeURIComponent(m[2]);
+            }
+        }
+
+        return undefined;
+    }
+
+    function generateQueryString(data)
+    {
+        var queryString = '';
+
+        if (typeof data == 'object')
+        {
+            var queryArr = [ ]
+            for (key in data)
+            {
+                queryArr[queryArr.length] = encodeURIComponent(key) + '=' + encodeURIComponent(data[key]);
+            }
+
+            queryString = queryArr.join('&').replace(/%20/g, '+');
+        }
+        else
+        {
+            self.Assert(typeof data == 'string', 'Only Objects or Strings are currently supported');
+
+            queryString = data;
+        }
+
+        return queryString;
+    };
+
+    function XHR(params)
+    {
+        var url = params.url;
+        var type = params.type;
+        var cb = params.cb;
+        var data = params.data;
+        var headers = params.headers;
+
+        var username = params.username;
+        var password = params.password;
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function ()
+        {
+            if (xhr.readyState !== 4)
+            {
+                return;
+            }
+
+            cb(xhr);
+        };
+
+        if (username && password)
+        {
+            xhr.open(type.toUpperCase(), url, /*async*/true, username, password);
+        }
+        else
+        {
+            xhr.open(type.toUpperCase(), url, /*async*/true);
+        }
+
+
+        if (headers)
+        {
+            for (var key in headers)
+            {
+                xhr.setRequestHeader(key, headers[key]);
+            }
+        }
+
+        if (data)
+        {
+            xhr.setRequestHeader('Accept', '*/*');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+
+            var queryString = generateQueryString(data);
+            xhr.send(queryString);
+        }
+        else
+        {
+            //xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+
+            xhr.send();
+        }
+    };
+
+    function runFinish(data)
+    {
+        window.opener.postMessage(data, '*');
+
+        window.close();
+    }
+
+    function runPostMessageRelay()
+    {
+        var remoteApp = getQueryByName('remoteApp');
+        //var state = getQueryByName('state');
+
+        var code = getQueryByName('code');
+
+        switch (remoteApp)
+        {
+            case 'toodledo':
+                XHR({
+                    type: 'POST',
+                    url: window.location.protocol + '//' + window.location.host + '/oauth/toodledoOAuth',
+                    data: { code: code },
+                    cb: function (xhr)
+                    {
+                        var data = JSON.parse(xhr.response);
+
+                        debugger;
+
+                        runFinish(data);
+                    }
+                });
+
+                break;
+            default:
+                runFinish(window.location.search);
+
+                break;
+        }
+    }
+</script>
+
+</head>
+<body onload='runPostMessageRelay()'>
+    
+</body>
+</html>

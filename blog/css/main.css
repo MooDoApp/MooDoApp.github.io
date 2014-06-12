@@ -1,0 +1,485 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Merriweather", Helvetica, Arial, sans-serif;
+  font-size: small;
+  line-height: 26px;
+  font-size: 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+h1 {
+  margin-bottom: 0.2em;
+  font-size: 150%;
+}
+h1:not(:first-child) {
+  margin-top: 1.5em;
+}
+h2 {
+  margin-bottom: 0.2em;
+  font-size: 125%;
+}
+h2:not(:first-child) {
+  margin-top: 1em;
+}
+h3 {
+  margin-bottom: 0.2em;
+  font-size: 110%;
+  font-weight: normal;
+}
+h3:not(:first-child) {
+  margin-top: 1em;
+}
+p + p,
+ul + p {
+  margin-top: 1em;
+}
+a {
+  color: #069;
+  text-decoration: none;
+}
+a:hover {
+  color: #0099dd;
+}
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+.posts > li,
+.indexPost {
+  margin-bottom: 4em;
+  position: relative;
+}
+.posts > li:not(:last-child):after,
+.indexPost:not(:last-child):after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 1px;
+  background: #eee;
+  left: 50%;
+  margin-top: 1em;
+  margin-left: -25%;
+}
+.posts .postContent {
+  display: none;
+}
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+.container {
+  max-width: 800px;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: left;
+}
+.headerContent {
+  padding-top: 20px;
+  margin: 0 auto;
+  line-height: 35px;
+  text-align: center;
+}
+.header {
+  margin-bottom: 50px;
+}
+.headerCategories {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.headerCategories > span {
+  margin: 0 20px;
+  font-size: 17px;
+}
+.headerCategories > span span {
+  margin-left: 3px;
+  font-weight: 100;
+  color: #ddd;
+}
+.profile > div {
+  background: url('/img/profile.jpg');
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+}
+.headerContent {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Merriweather";
+}
+.headerContent span {
+  vertical-align: middle;
+}
+.headerContent .headerLeft {
+  float: left;
+}
+.headerContent .headerRight {
+  float: right;
+}
+.location {
+  color: #999;
+  position: relative;
+  cursor: default !important;
+}
+.location > span {
+  margin-right: 8px;
+  font-size: 13pt;
+  position: relative;
+  top: -1px;
+}
+.header a {
+  text-decoration: none;
+}
+#headerFooter {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.headerFooterInner {
+  max-width: 480px;
+  height: 150px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.headerFooterInner > div {
+  padding: 0 40px;
+  float: left;
+  text-align: center;
+  width: 240px;
+  box-sizing: border-box;
+}
+.headerFooterInner > div:first-child {
+  text-align: right;
+}
+.headerFooterInner > div:last-child {
+  text-align: left;
+}
+.headerFooterInner:after {
+  clear: both;
+}
+.navbarHeader {
+  font-weight: 100;
+  font-size: 16pt;
+  color: #999;
+  margin-bottom: 10px;
+}
+.headerFooterLeft {
+  float: left;
+}
+.headerFooterRight {
+  float: right;
+}
+#headerFooter > div > div span {
+  margin-left: 5px;
+  font-weight: 100;
+  color: #bbb;
+}
+.title {
+  font-size: 150%;
+  font-family: "Roboto Sans";
+}
+.title a {
+  color: black;
+  font-weight: bold;
+}
+.title a:hover {
+  color: #0099dd;
+}
+.title img {
+  height: 65px;
+}
+.social-links {
+  height: 30px;
+}
+.social-links li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 2px;
+  font-size: 14pt;
+}
+.social-links li div {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #999;
+}
+.hb {
+  cursor: pointer;
+}
+.hb,
+.social-links div {
+  cursor: pointer;
+}
+.headerButtons {
+  float: right;
+}
+.headerButtons a {
+  float: left;
+  margin-left: 40px;
+  text-align: right;
+}
+.header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+.header a.extra:hover {
+  color: #000;
+}
+#home {
+  clear: both;
+}
+.meta {
+  color: #aaa;
+}
+.footer {
+  max-width: 800px;
+  margin: 0 auto;
+  clear: both;
+  color: #666;
+  border-top: 1px solid #eeeeee;
+  margin-top: 2em;
+  padding: 0.5em 0;
+  overflow: hidden;
+  text-align: center;
+}
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+.footer .contact a {
+  color: #8085C1;
+}
+.footer .rss {
+  margin-top: 1.1em;
+  margin-right: -0.2em;
+  float: right;
+}
+.footer .rss img {
+  border: 0;
+}
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+.post {
+  background: white;
+}
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+.post,
+.page {
+  margin-bottom: 5em;
+}
+.post ul {
+  list-style-type: disc;
+}
+.post ul,
+.post ol {
+  margin-left: 1.35em;
+}
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+.post pre code {
+  border: none;
+}
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+.post pre.terminal code {
+  background-color: #333;
+}
+.postHeader {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+.postHeader a {
+  color: black;
+}
+.postHeader a:hover {
+  color: #0099dd;
+}
+.postTitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 160%;
+  font-weight: 100;
+}
+.postMetadata {
+  margin-top: 2px;
+  font-size: 90%;
+}
+.postMetadata {
+  color: #999;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+}
+.postCategories > span:not(:first-child) {
+  padding: 0 10px;
+}
+.postHeader .postDate {
+  padding: 10px 0;
+  height: 20px;
+}
+#topBar {
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  max-width: 960px;
+  margin: 0 auto 15px auto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
+#barRight {
+  margin-right: 10px;
+  float: right;
+  text-align: center;
+}
+#barRight > * {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 10px;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #777;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.link:hover {
+  color: #0099dd;
+}
+.link.selected {
+  border-bottom: 2px solid #0099dd;
+}
+.postContent,
+.postExcerpt {
+  padding: 12px 0;
+  font-family: 'Merriweather', sans-serif;
+}
+#social {
+  padding-top: 15px;
+  height: 25px;
+}
+#social > * {
+  display: inline !important;
+  padding-right: 20px;
+}
+#shareFB {
+  position: relative;
+  top: -9px;
+}
+.readMore {
+  cursor: pointer;
+}
+.postFooter {
+  height: 30px;
+  margin-top: 15px;
+}
+.indexPost + .indexPost {
+  margin-top: 55px;
+}
+#smallAbout {
+  display: none;
+}
+.flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex {
+  -webkit-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.worklink {
+  margin-bottom: 30px;
+}
+.workLinks img {
+  margin: 0 10 0 0;
+  width: 225px;
+  height: 150px;
+}
+.workInfo {
+  margin-left: 20px;
+}
+.workHeader {
+  float: left;
+  font-size: 16pt;
+  color: #666;
+}
+.workType {
+  float: right;
+  font-size: 11pt;
+  color: #666;
+}
+.workSubtitle {
+  clear: both;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+.workDesc {
+  margin-top: 10px;
+  line-height: 20px;
+}
+.flatlist {
+  list-style-type: none;
+}
+.gray {
+  color: #666;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ipdate {
+  width: 115px;
+  float: left;
+  font-weight: bold;
+}
+.iptitle {
+  font-weight: bold;
+}
