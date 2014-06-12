@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>##BR_URL##/about/</loc>
+  <loc>http://www.moo.do/about/</loc>
   <lastmod>2014-06-12T04:48:32+00:00</lastmod>
 </url>
 <url>
-  <loc>##BR_URL##/tour/</loc>
+  <loc>http://www.moo.do/tour/</loc>
   <lastmod>2014-06-12T04:49:24+00:00</lastmod>
 </url>
 <url>
-  <loc>##BR_URL##/blog/</loc>
+  <loc>http://www.moo.do/blog/</loc>
   <lastmod>2014-06-12T04:47:55+00:00</lastmod>
 </url>
 <url>
-  <loc>##BR_URL##/privacy/</loc>
+  <loc>http://www.moo.do/privacy/</loc>
   <lastmod>2014-06-12T04:49:41+00:00</lastmod>
 </url>
 <url>
-  <loc>##BR_URL##/us/</loc>
+  <loc>http://www.moo.do/us/</loc>
   <lastmod>2014-06-12T04:49:07+00:00</lastmod>
 </url>
 <url>
-  <loc>##BR_URL##/</loc>
+  <loc>http://www.moo.do/</loc>
   <lastmod>2014-06-10T22:42:38+00:00</lastmod>
 </url>
 <url>
-  <loc>##BR_URL##/blog/post/PublicBeta/</loc>
+  <loc>http://www.moo.do/blog/post/PublicBeta/</loc>
   <lastmod>2014-06-12T04:47:55+00:00</lastmod>
 </url>
 <url>
-  <loc>##BR_URL##/blog/updates/</loc>
+  <loc>http://www.moo.do/blog/updates/</loc>
   <lastmod>2014-06-12T04:47:55+00:00</lastmod>
 </url>
 </urlset>
