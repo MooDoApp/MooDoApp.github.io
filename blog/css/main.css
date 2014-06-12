@@ -101,7 +101,6 @@ a:hover {
   text-align: left;
 }
 .headerContent {
-  padding-top: 20px;
   margin: 0 auto;
   line-height: 35px;
   text-align: center;
@@ -359,8 +358,8 @@ a:hover {
 }
 #topBar {
   position: relative;
-  height: 20px;
-  line-height: 20px;
+  height: 60px;
+  line-height: 60px;
   max-width: 960px;
   margin: 0 auto 15px auto;
   font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
