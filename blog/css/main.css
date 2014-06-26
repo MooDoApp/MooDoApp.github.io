@@ -3,6 +3,12 @@
 /* Common
 /*
 /*****************************************************************************/
+.mobile .noMobile {
+  display: none !important;
+}
+body:not(.mobile) .mobileOnly {
+  display: none !important;
+}
 /* Global Reset */
 * {
   margin: 0;
@@ -13,12 +19,27 @@ body {
   height: 100%;
 }
 body {
-  font-family: "Merriweather", Helvetica, Arial, sans-serif;
-  font-size: small;
-  line-height: 26px;
-  font-size: 15px;
+  font-family: 'Merriweather', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.7em;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 481px) {
+  body {
+    font-size: 15px;
+  }
+}
+iframe[seamless] {
+  background-color: transparent;
+  border: 0px none transparent;
+  padding: 0px;
+  overflow: hidden;
 }
 h1,
 h2,
@@ -29,15 +50,15 @@ h6 {
   font-size: 100%;
 }
 h1 {
-  margin-bottom: 0.2em;
-  font-size: 150%;
+  margin-bottom: 0.5em;
+  font-size: 130%;
 }
 h1:not(:first-child) {
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 h2 {
   margin-bottom: 0.2em;
-  font-size: 125%;
+  font-size: 120%;
 }
 h2:not(:first-child) {
   margin-top: 1em;
@@ -53,6 +74,63 @@ h3:not(:first-child) {
 p + p,
 ul + p {
   margin-top: 1em;
+}
+.postContent,
+.postExcerpt {
+  padding: 12px 0;
+}
+@media screen and (max-width: 480px) {
+  .postContent > *:not(.demo),
+  .postExcerpt > *:not(.demo),
+  .postHeader,
+  #social {
+    padding: 0 10px;
+  }
+  .postContent > .demo img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .postContent ul,
+  .postContent table {
+    margin: 10px 10px 0 10px;
+    padding: 0 0 0 10px !important;
+  }
+  .postContent li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .postContent td {
+    padding: 2px 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  .container {
+    padding: 0 10px;
+  }
+  .postContent ul,
+  .postContent table {
+    margin: 10px 0 0 15px;
+  }
+  .postContent li,
+  .postContent td:first-child {
+    padding-left: 15px;
+  }
+  .postContent li {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+}
+.postContent ul,
+.postContent table {
+  list-style-type: none;
+  border-left: 1px solid #e3e3e3;
+}
+.postContent tr {
+  vertical-align: top;
+}
+.postContent li:before {
+  color: #e6e6e6;
+  padding-right: 10px;
 }
 a {
   color: #069;
@@ -86,9 +164,6 @@ a:hover {
   margin-top: 1em;
   margin-left: -25%;
 }
-.posts .postContent {
-  display: none;
-}
 /*****************************************************************************/
 /*
 /* Site
@@ -96,7 +171,6 @@ a:hover {
 /*****************************************************************************/
 .container {
   max-width: 800px;
-  padding: 0 10px;
   margin: 0 auto;
   text-align: left;
 }
@@ -131,7 +205,6 @@ a:hover {
 .headerContent {
   max-width: 800px;
   margin: 0 auto;
-  font-family: "Merriweather";
 }
 .headerContent span {
   vertical-align: middle;
@@ -237,6 +310,10 @@ a:hover {
 .social-links div {
   cursor: pointer;
 }
+.hb:hover,
+.social-links div:hover {
+  color: #0099dd;
+}
 .headerButtons {
   float: right;
 }
@@ -337,12 +414,12 @@ a:hover {
 }
 .postTitle {
   font-family: 'Roboto Slab', serif;
-  font-size: 160%;
-  font-weight: 100;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-size: 150%;
 }
 .postMetadata {
-  margin-top: 2px;
-  font-size: 90%;
+  font-size: 80%;
 }
 .postMetadata {
   color: #999;
@@ -358,11 +435,26 @@ a:hover {
 }
 #topBar {
   position: relative;
-  height: 60px;
-  line-height: 60px;
+  height: 40px;
+  line-height: 40px;
   max-width: 960px;
   margin: 0 auto 15px auto;
   font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
+@media screen and (max-width: 480px) {
+  #topBar {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 481px) {
+  #topBar {
+    height: 60px;
+    line-height: 60px;
+  }
+  #barRight > * {
+    margin: 0 10px;
+  }
 }
 #barRight {
   margin-right: 10px;
@@ -372,7 +464,6 @@ a:hover {
 #barRight > * {
   display: inline-block;
   padding: 0 10px;
-  margin: 0 10px;
   line-height: 28px;
   font-size: 14px;
   font-weight: bold;
@@ -391,11 +482,6 @@ a:hover {
 }
 .link.selected {
   border-bottom: 2px solid #0099dd;
-}
-.postContent,
-.postExcerpt {
-  padding: 12px 0;
-  font-family: 'Merriweather', sans-serif;
 }
 #social {
   padding-top: 15px;
@@ -480,5 +566,42 @@ a:hover {
   font-weight: bold;
 }
 .iptitle {
+  font-weight: bold;
+}
+.tag {
+  color: #0099dd;
+  font-weight: bold;
+}
+.date {
+  color: #aa3300;
+  font-weight: bold;
+}
+.contact {
+  color: #22aa66;
+  font-weight: bold;
+}
+.demo {
+  border: 0;
+}
+.p0 {
+  color: #f30;
+}
+.p1 {
+  color: #fa0;
+}
+.p2 {
+  color: #fd3;
+}
+.pFlag {
+  background: #ffb;
+  padding: 5px;
+}
+.search {
+  padding: 3px 5px;
+  margin: 0 3px;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+.b {
   font-weight: bold;
 }
