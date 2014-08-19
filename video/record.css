@@ -179,6 +179,7 @@ body {
   font-size: 36px;
   color: #0099dd;
   line-height: 1;
+  text-decoration: none;
 }
 #tdBorderLeft,
 #tdBorderRight {
