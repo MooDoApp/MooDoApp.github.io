@@ -107,7 +107,7 @@ body {
             // position: absolute;
             // left: 0;
             // right: 0;
-            height: 200px;
+            height: 100%;
             background: @colorBlue;
             color: white;
             text-align: left;
@@ -186,14 +186,16 @@ body {
 
 // Calculations for mobile
 @demoWidthMobile: 600px; // Width of desktop demo - mobile will be scaled down inside
-@demoHeightMobile: @demoHeight;
+@phoneBezelHeight: @demoWidthMobile * 0.095; // Height of bezel above screen
+@phoneBezelWidth: @demoWidthMobile * 0.02;
+
 @frameWidthMobile: @demoWidthMobile * 0.3; // Width of mobile demo
+@demoHeightMobile: @demoWidthMobile * 0.3 * 2.35;
 @frameHeightMobile: @demoHeightMobile - @phoneBezelHeight * 2;
 @phoneWidth: @frameWidthMobile + @phoneBezelWidth * 2;
 @demoSideWidth: @phoneWidth / 2;
 @phoneOffset: (@demoWidthMobile - @phoneWidth) / 2;
-@phoneBezelHeight: @demoWidthMobile * 0.08; // Height of bezel above screen
-@phoneBezelWidth: @demoWidthMobile * 0.02;
+
 
 @transTime: 1200ms;
 
@@ -244,12 +246,12 @@ body {
     }
     #tdBorderLeft {
         border-right: 0;
-        border-radius: 20px 0 0 20px;
+        border-radius: 25px 0 0 25px;
     }
     #tdBorderRight {
         border-left: 0;
         .translate(@phoneWidth / 2);
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 25px 25px 0;
     }
     #topDemoFrame, #callingFrame, #whiteFrame {
         position: absolute;

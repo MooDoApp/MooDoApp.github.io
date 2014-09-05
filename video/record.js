@@ -48,7 +48,7 @@ function receiveFrameMessage(e)
             }, 300);
             break;
         case 'video_zoom':
-            setTransform('topDemoPhone', 'translate(-300px, 0px) scale(2.4)', 1000);
+            setTransform('topDemoPhone', 'translate(-200px, -160px) scale(1.4)', 1000);
             break;
         case 'video_conclusion':
             el('callingFrame').style.opacity = 0;

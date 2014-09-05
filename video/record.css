@@ -139,7 +139,7 @@ body {
   opacity: 0;
 }
 #video #callingFrame #callingTop {
-  height: 200px;
+  height: 100%;
   background: #0099dd;
   color: white;
   text-align: left;
@@ -217,7 +217,7 @@ body {
   left: 856px;
   top: 420px;
   width: 204px;
-  height: 469.286px;
+  height: 423px;
   transform: translate(0, 740px) scale(2.4);
 }
 .topDemoWrapper #tdBorderLeft,
@@ -227,7 +227,7 @@ body {
 }
 .topDemoWrapper #tdBorderLeft {
   border-right: 0;
-  border-radius: 20px 0 0 20px;
+  border-radius: 25px 0 0 25px;
 }
 .topDemoWrapper #tdBorderRight {
   border-left: 0;
@@ -235,7 +235,7 @@ body {
   -webkit-transform: translate(102px, 0);
   -o-transform: translate(102px, 0);
   transform: translate(102px, 0);
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 25px 25px 0;
 }
 .topDemoWrapper #topDemoFrame,
 .topDemoWrapper #callingFrame,
@@ -243,8 +243,8 @@ body {
   position: absolute;
   left: 12px;
   width: 180px;
-  height: 373.286px;
-  top: 48px;
+  height: 309px;
+  top: 57px;
   padding: 0;
 }
 .topDemoWrapper #demoTopMobile {
