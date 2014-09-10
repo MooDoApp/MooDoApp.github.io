@@ -357,6 +357,11 @@ iframe[seamless] {
   padding-left: 15px;
   padding-right: 15px;
 }
+.unpadded {
+  max-width: 920px;
+  margin-left: -65px;
+  margin-right: -65px;
+}
 a,
 .smallLink {
   color: #0099dd;
@@ -410,12 +415,6 @@ body {
     font-size: 15px;
   }
 }
-iframe[seamless] {
-  background-color: transparent;
-  border: 0px none transparent;
-  padding: 0px;
-  overflow: hidden;
-}
 h1,
 h2,
 h3,
@@ -462,12 +461,13 @@ ul + p {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 920px) {
   .postContent > *:not(.demo),
   .postExcerpt > *:not(.demo),
   .postHeader,
   #social {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .postContent > .demo img {
     margin-left: 10px;
@@ -485,8 +485,11 @@ ul + p {
   .postContent td {
     padding: 2px 0;
   }
+  .postHeader:before {
+    width: 6px !important;
+  }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 921px) {
   .postContent ul,
   .postContent table {
     margin: 10px 0 0 15px;
@@ -786,7 +789,7 @@ a:hover {
   position: absolute;
   left: 0;
   width: 9px;
-  height: 60px;
+  height: 100%;
   background: #0099dd;
 }
 .postTitle {

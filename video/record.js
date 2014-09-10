@@ -52,14 +52,13 @@ function receiveFrameMessage(e)
             break;
         case 'video_conclusion':
             el('callingFrame').style.opacity = 0;
-            setTransform('topDemoPhone', 'translate(-380px, 40px) scale(8)', 1800);
-
-            el('videoFrame').style.opacity = 0;
+            setTransform('topDemoPhone', 'translate(-340px, 40px) scale(8)', 1800);
 
             setTimeout(function()
             {
                 el('topDemoPhone').style.visibility = 'hidden';
 
+                el('videoFrame').style.opacity = 0;
                 el('videoButtons').style.opacity = 1;
                 el('videoButtons').style.display = 'block';
             }, 1200);

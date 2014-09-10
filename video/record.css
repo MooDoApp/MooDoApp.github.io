@@ -55,9 +55,6 @@ iframe[seamless] {
 body {
   overflow: hidden;
   margin: 0;
-  -webkit-transform: scale(1.5, 1.5);
-  -moz-transform: scale(1.5, 1.5);
-  transform: scale(1.5, 1.5);
   -moz-transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   -o-transform-origin: 0 0;
@@ -214,7 +211,7 @@ body {
 }
 .topDemoWrapper {
   position: absolute;
-  left: 856px;
+  left: 816px;
   top: 420px;
   width: 204px;
   height: 423px;
