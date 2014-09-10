@@ -59,6 +59,10 @@ body {
   -webkit-transform-origin: 0 0;
   -o-transform-origin: 0 0;
   transform-origin: 0 0;
+  -moz-transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+  -o-transform: translate(5px, 5px);
+  transform: translate(5px, 5px);
 }
 * {
   -moz-box-sizing: border-box;
