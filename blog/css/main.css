@@ -51,7 +51,9 @@
   box-sizing: border-box;
 }
 body {
+  -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
@@ -64,6 +66,9 @@ body {
   height: 100%;
   -ms-user-select: none !important;
   background: #f6f6f6;
+}
+#videoFrame {
+  width: 100%;
 }
 .mobile .noMobile {
   display: none !important;
@@ -241,6 +246,19 @@ html:not(.mobile) .mobileOnly {
 #topBar #topLinks:last-child {
   padding-right: 15px;
 }
+.section {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .section {
+    margin-bottom: 80px;
+  }
+}
 @media screen and (max-width: 920px) {
   #topBarBG {
     opacity: 0.96 !important;
@@ -341,9 +359,6 @@ iframe[seamless] {
 #sectionTop {
   position: relative;
 }
-.section {
-  margin-bottom: 60px;
-}
 .flex1 {
   -webkit-flex: 1;
   -webkit-box-flex: 1;
@@ -371,11 +386,6 @@ a:hover,
 .smallLink:hover {
   color: #2bbeff;
 }
-@media screen and (max-width: 920px) {
-  body {
-    font-size: 16px;
-  }
-}
 /*****************************************************************************/
 /*
 /* Common
@@ -402,17 +412,16 @@ body {
 }
 .post,
 .postContent {
-  font-size: 17px;
   color: #444;
 }
 @media screen and (max-width: 480px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 481px) {
   body {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 h1,
@@ -424,8 +433,9 @@ h6 {
   font-size: 100%;
 }
 h1 {
-  margin-bottom: 0.5em;
-  font-size: 130%;
+  margin-bottom: 0.75em;
+  font-size: 150%;
+  line-height: 1;
 }
 h1:not(:first-child) {
   margin-top: 2em;
@@ -569,97 +579,6 @@ a:hover {
 .header {
   margin-bottom: 60px;
 }
-.headerCategories {
-  text-align: center;
-  margin-bottom: 80px;
-}
-.headerCategories > span {
-  margin: 0 20px;
-  font-size: 17px;
-}
-.headerCategories > span span {
-  margin-left: 3px;
-  font-weight: 100;
-  color: #ddd;
-}
-.profile > div {
-  background: url('/img/profile.jpg');
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 10px auto;
-  border-radius: 50%;
-}
-.headerContent {
-  max-width: 920px;
-  margin: 0 auto;
-}
-.headerContent span {
-  vertical-align: middle;
-}
-.headerContent .headerLeft {
-  float: left;
-}
-.headerContent .headerRight {
-  float: right;
-}
-.location {
-  color: #999;
-  position: relative;
-  cursor: default !important;
-}
-.location > span {
-  margin-right: 8px;
-  font-size: 13pt;
-  position: relative;
-  top: -1px;
-}
-.header a {
-  text-decoration: none;
-}
-#headerFooter {
-  max-width: 920px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-.headerFooterInner {
-  max-width: 480px;
-  height: 150px;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-.headerFooterInner > div {
-  padding: 0 40px;
-  float: left;
-  text-align: center;
-  width: 240px;
-  box-sizing: border-box;
-}
-.headerFooterInner > div:first-child {
-  text-align: right;
-}
-.headerFooterInner > div:last-child {
-  text-align: left;
-}
-.headerFooterInner:after {
-  clear: both;
-}
-.navbarHeader {
-  font-weight: 100;
-  font-size: 16pt;
-  color: #999;
-  margin-bottom: 10px;
-}
-.headerFooterLeft {
-  float: left;
-}
-.headerFooterRight {
-  float: right;
-}
-#headerFooter > div > div span {
-  margin-left: 5px;
-  font-weight: 100;
-  color: #bbb;
-}
 .title {
   font-size: 150%;
 }
@@ -672,22 +591,6 @@ a:hover {
 }
 .title img {
   height: 90px;
-}
-.social-links {
-  height: 30px;
-}
-.social-links li {
-  display: inline-block;
-  list-style: none;
-  margin: 0 2px;
-  font-size: 14pt;
-}
-.social-links li div {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  color: #999;
 }
 .hb {
   cursor: pointer;
@@ -804,9 +707,7 @@ a:hover {
   color: #2bbeff;
 }
 .postMetadata {
-  font-size: 90%;
-}
-.postMetadata {
+  font-size: 85%;
   color: #999;
 }
 .postCategories > span:not(:first-child) {
@@ -828,7 +729,7 @@ a:hover {
 }
 #shareFB {
   position: relative;
-  top: -9px;
+  top: -6px;
 }
 #shareTwitter {
   width: 80px !important;

@@ -99,7 +99,6 @@ body {
 }
 #video #videoButtons {
   opacity: 0;
-  display: none;
   position: absolute;
   text-align: center;
   width: 100%;

@@ -48,7 +48,7 @@ function receiveFrameMessage(e)
             }, 300);
             break;
         case 'video_zoom':
-            setTransform('topDemoPhone', 'translate(-200px, -160px) scale(1.4)', 1000);
+            setTransform('topDemoPhone', 'translate(-200px, -180px) scale(1.8)', 1000);
             break;
         case 'video_conclusion':
             el('callingFrame').style.opacity = 0;
@@ -60,7 +60,7 @@ function receiveFrameMessage(e)
 
                 el('videoFrame').style.opacity = 0;
                 el('videoButtons').style.opacity = 1;
-                el('videoButtons').style.display = 'block';
+                // el('videoButtons').style.display = 'block';
             }, 1200);
             break;
     }
