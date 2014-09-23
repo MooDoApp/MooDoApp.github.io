@@ -66,6 +66,7 @@ body {
   height: 100%;
   -ms-user-select: none !important;
   background: #f6f6f6;
+  color: #444;
 }
 #videoFrame {
   width: 100%;
@@ -99,7 +100,7 @@ html:not(.mobile) .mobileOnly {
   cursor: pointer;
   text-decoration: none;
   line-height: 24px;
-  color: #555;
+  color: #444;
   font-size: 14px;
 }
 .link .icon-facebook,
@@ -169,7 +170,6 @@ html:not(.mobile) .mobileOnly {
 .subtext {
   text-align: left;
   line-height: 1.5em;
-  color: #555;
 }
 .subtext b {
   color: black;
@@ -352,9 +352,6 @@ iframe[seamless] {
 }
 .p {
   cursor: pointer;
-}
-.g {
-  color: #555;
 }
 #sectionTop {
   position: relative;
