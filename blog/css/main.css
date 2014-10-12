@@ -737,6 +737,7 @@ a:hover {
 .postMetadata {
   font-size: 85%;
   color: #999;
+  margin-top: 2px;
 }
 .postCategories > span:not(:first-child) {
   padding: 0 10px;
