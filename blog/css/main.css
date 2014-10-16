@@ -64,6 +64,12 @@
 .shadow {
   box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 4px;
 }
+.loadanim {
+  -webkit-animation: spinnerRotate 500ms infinite linear;
+  -moz-animation: spinnerRotate 500ms infinite linear;
+  -o-animation: spinnerRotate 500ms infinite linear;
+  animation: spinnerRotate 500ms infinite linear;
+}
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -439,6 +445,12 @@ body {
     font-size: 17px;
   }
 }
+.postImg {
+  margin: 0 auto;
+  display: block;
+  width: 600px;
+  max-width: 100%;
+}
 h1,
 h2,
 h3,
@@ -485,6 +497,9 @@ ul + p {
 .postExcerpt {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+#disqus_thread {
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 920px) {
   .postContent > *:not(.demo),
@@ -693,7 +708,7 @@ a:hover {
 }
 .post,
 .page {
-  margin-bottom: 5em;
+  margin-bottom: 1em;
 }
 .post code {
   border: 1px solid #ddd;
@@ -748,9 +763,7 @@ a:hover {
 }
 #social {
   padding-top: 15px;
-  margin-bottom: 100px;
-  padding-left: 55px;
-  height: 25px;
+  margin-bottom: 30px;
 }
 #social > * {
   display: inline !important;
