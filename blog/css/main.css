@@ -156,10 +156,10 @@ html:not(.mobile) .mobileOnly {
   text-align: right;
 }
 .title {
-  font-size: 54px;
+  font-size: 44px;
   font-weight: 200;
   line-height: 1;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   text-align: left;
 }
 .title:before {
@@ -167,7 +167,7 @@ html:not(.mobile) .mobileOnly {
   position: absolute;
   left: 0;
   width: 9px;
-  height: 60px;
+  height: 50px;
   background: #0099dd;
 }
 .mobile .title {
@@ -197,6 +197,13 @@ html:not(.mobile) .mobileOnly {
 }
 .subtext b {
   color: black;
+}
+.subtext a b {
+  color: #0088cc;
+  text-decoration: none;
+}
+.subtext a b:hover {
+  color: #2bbeff;
 }
 .pwp {
   width: 920px;
@@ -442,7 +449,7 @@ body {
 }
 @media screen and (min-width: 481px) {
   body {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 .postImg {
