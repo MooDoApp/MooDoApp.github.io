@@ -76,7 +76,6 @@
 }
 html,
 body {
-  overflow-x: hidden;
   max-width: 100%;
 }
 body {
@@ -221,6 +220,8 @@ html:not(.mobile) .mobileOnly {
   max-width: 100%;
   margin: 0 auto;
   opacity: 0;
+  height: 200px;
+  overflow: hidden;
 }
 #topBar #topBarBG {
   position: absolute;
@@ -229,8 +230,7 @@ html:not(.mobile) .mobileOnly {
   left: 50%;
   margin-left: -459px;
   top: 0;
-  z-index: 1;
-  background: white;
+  z-index: 10;
   opacity: 0;
   width: 918px;
   border-bottom: 1px solid #ddd;
@@ -238,10 +238,13 @@ html:not(.mobile) .mobileOnly {
 }
 #topBar #topBarInner {
   position: relative;
-  z-index: 2;
+  background: rgba(255, 255, 255, 0.96);
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 #topBar #logoWrapper {
   position: absolute;
+  z-index: 22;
   display: block;
   text-decoration: none;
   text-align: left;
@@ -268,6 +271,8 @@ html:not(.mobile) .mobileOnly {
   color: #222;
 }
 #topBar #topLinks {
+  position: relative;
+  z-index: 20;
   line-height: 60px;
   text-align: right;
 }
@@ -287,62 +292,58 @@ html:not(.mobile) .mobileOnly {
     margin-bottom: 80px;
   }
 }
-@media screen and (max-width: 920px) {
-  #topBarBG {
-    opacity: 0.96 !important;
-  }
-  #logoSubtitle {
-    display: none;
-  }
-  #logoWrapper {
-    left: 10px;
-    padding-top: 5px;
-    -moz-transform: translate3d(0, 0, 0) scale(0.5, 0.5) !important;
-    -webkit-transform: translate3d(0, 0, 0) scale(0.5, 0.5) !important;
-    -o-transform: translate3d(0, 0, 0) scale(0.5, 0.5) !important;
-    transform: translate3d(0, 0, 0) scale(0.5, 0.5) !important;
-  }
-  #mobileTitle {
-    font-size: 32px;
-    font-weight: 200;
-    line-height: 1;
-    margin-bottom: 40px;
-  }
-  #topBarSpacer {
-    height: 100px;
-  }
-  .title {
-    padding-bottom: 40px;
-    font-size: 36px;
-  }
+.mobile #topBarBG {
+  opacity: 0.96 !important;
 }
-@media screen and (min-width: 921px) {
-  #topBarSpacer {
-    height: 160px;
-  }
-  #mobileTop {
-    display: none;
-  }
-  #logoWrapper {
-    left: -webkit-calc(50% - 140px);
-    left: calc(50% - 140px);
-  }
-  .title {
-    font-size: 40px;
-    padding-bottom: 60px;
-  }
-  .pinned #logoWrapper {
-    -moz-transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
-    -webkit-transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
-    -o-transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
-    transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
-  }
-  .pinned #topBarBG {
-    opacity: 0.96 !important;
-  }
-  .pinned #logoSubtitle {
-    opacity: 0;
-  }
+.mobile #logoSubtitle {
+  display: none;
+}
+.mobile #logoWrapper {
+  left: 10px;
+  padding-top: 5px;
+  -moz-transform: translate3d(0, 0, 0) scale(0.5, 0.5) !important;
+  -webkit-transform: translate3d(0, 0, 0) scale(0.5, 0.5) !important;
+  -o-transform: translate3d(0, 0, 0) scale(0.5, 0.5) !important;
+  transform: translate3d(0, 0, 0) scale(0.5, 0.5) !important;
+}
+.mobile #mobileTitle {
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+.mobile #topBarSpacer {
+  height: 100px;
+}
+.mobile .title {
+  padding-bottom: 40px;
+  font-size: 36px;
+}
+html:not(.mobile) #topBarSpacer {
+  height: 160px;
+}
+html:not(.mobile) #mobileTop {
+  display: none;
+}
+html:not(.mobile) #logoWrapper {
+  left: -webkit-calc(50% - 140px);
+  left: calc(50% - 140px);
+}
+html:not(.mobile) .title {
+  font-size: 40px;
+  padding-bottom: 60px;
+}
+html:not(.mobile) #topBar.pinned #logoWrapper {
+  -moz-transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
+  -webkit-transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
+  -o-transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
+  transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
+}
+html:not(.mobile) #topBar.pinned #topBarBG {
+  opacity: 0.96 !important;
+}
+html:not(.mobile) #topBar.pinned #logoSubtitle {
+  opacity: 0;
 }
 .footerSpacer {
   height: 60px;
