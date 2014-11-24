@@ -222,6 +222,7 @@ html:not(.mobile) .mobileOnly {
   opacity: 0;
   height: 200px;
   overflow: hidden;
+  pointer-events: none;
 }
 #topBar #topBarBG {
   position: absolute;
@@ -241,6 +242,7 @@ html:not(.mobile) .mobileOnly {
   background: rgba(255, 255, 255, 0.96);
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
+  pointer-events: auto;
 }
 #topBar #logoWrapper {
   position: absolute;
