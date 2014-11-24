@@ -334,10 +334,10 @@ html:not(.mobile) .title {
   padding-bottom: 60px;
 }
 html:not(.mobile) #topBar.pinned #logoWrapper {
-  -moz-transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
-  -webkit-transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
-  -o-transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
-  transform: translate3d(-300px, 0, 0) scale(0.6, 0.6) !important;
+  -moz-transform: translate3d(-100%, 0, 0) scale(0.6, 0.6) !important;
+  -webkit-transform: translate3d(-100%, 0, 0) scale(0.6, 0.6) !important;
+  -o-transform: translate3d(-100%, 0, 0) scale(0.6, 0.6) !important;
+  transform: translate3d(-100%, 0, 0) scale(0.6, 0.6) !important;
 }
 html:not(.mobile) #topBar.pinned #topBarBG {
   opacity: 0.96 !important;
@@ -823,6 +823,9 @@ a:hover {
 }
 .gray {
   color: #666;
+}
+.complete {
+  color: #d6d6d6 !important;
 }
 .ml10 {
   margin-left: 10px;

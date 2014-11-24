@@ -8,7 +8,75 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Fri, 31 Oct 2014 00:00:00 -0700</pubDate>
+    <pubDate>Wed, 19 Nov 2014 00:00:00 -0800</pubDate>
+    <item>
+      <title>Repeated Dates Update 11/21</title>
+      <link>http://www.moo.do/blog/update-repeat-dates</link>
+      <description><![CDATA[We&#39;ve added support for repeated dates!
+
+You can add a repeating date to an item by starting the date entry with @every. We&#39;re quite excited to add this feature as it makes our Agenda significantly more powerful. We hope you find this useful - let us know if you have any suggestions or if we&#39;re missing any types of dates you need.
+]]></description>
+      <pubDate>Wed, 19 Nov 2014 00:00:00 -0800</pubDate>
+      <guid>http://www.moo.do/blog/update-repeat-dates</guid>
+      <content:encoded><![CDATA[<p>We&#39;ve added support for repeated dates!</p>
+
+<p>You can add a repeating date to an item by starting the date entry with <b class="date">@every</b>. We&#39;re quite excited to add this feature as it makes our Agenda significantly more powerful. We hope you find this useful - let us know if you have any suggestions or if we&#39;re missing any types of dates you need.</p>
+
+<h2>Using Repeated Dates</h2>
+
+<p>Define a basic repeating date using a day of the week or a measure of time.</p>
+
+<ul>
+<li><b class="date">@every friday</b></li>
+<li><b class="date">@every day 3:00pm</b></li>
+<li><b class="date">@every 3 days</b></li>
+</ul>
+
+<p>By default the start of the repeat date is the current time. Use <b class="tag">from</b> to set a different start date.</p>
+
+<ul>
+<li><b class="date">@every friday from last wednesday</b></li>
+<li><b class="date">@every tuesday from 11/22</b></li>
+</ul>
+
+<p>By default there is no end date specified. Use <b class="tag">until</b> to set an end date.</p>
+
+<ul>
+<li><b class="date">@every friday until december</b></li>
+</ul>
+
+<p>Create more complex repeating dates that refer to a specific day of the month.</p>
+
+<ul>
+<li><b class="date">@every 14th</b></li>
+<li><b class="date">@every last day</b></li>
+<li><b class="date">@every dec 10th</b></li>
+</ul>
+
+<p>Specify dates that skip weeks or only refer to specific weeks in a month. </p>
+
+<ul>
+<li><b class="date">@every other friday</b></li>
+<li><b class="date">@every 3rd friday</b></li>
+</ul>
+
+<p><br>
+<br>
+Each time you complete the item with the repeated date it will create a new item with the date of the completed instance.</p>
+
+<ul>
+<li><span class="complete">Stay organized <b>@11/19</b></span></li>
+<li>Stay organized <b class="date">@every day from 11/20</b></li>
+</ul>
+
+<h2>Other Date Fixes</h2>
+
+<ul>
+<li>Dates like <b class="date">@next friday 3pm</b> are parsed correctly.</li>
+</ul>
+]]></content:encoded>
+      <dc:date>2014-11-19T00:00:00-08:00</dc:date>
+    </item>
     <item>
       <title>Development Update 10/31</title>
       <link>http://www.moo.do/blog/update-10-31</link>
@@ -657,6 +725,6 @@ We hope that Moo.do will help you organize your life and keep you on track. If y
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00-07:00</dc:date>
     </item>
-    <dc:date>2014-10-31T00:00:00-07:00</dc:date>
+    <dc:date>2014-11-19T00:00:00-08:00</dc:date>
   </channel>
 </rss>
