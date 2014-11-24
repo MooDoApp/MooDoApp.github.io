@@ -12,13 +12,17 @@
     <item>
       <title>Repeated Dates Update 11/21</title>
       <link>http://www.moo.do/blog/update-repeat-dates</link>
-      <description><![CDATA[We&#39;ve added support for repeated dates!
+      <description><![CDATA[Note: Moo.do is currently on Hacker News - come join the discussion!
+
+We&#39;ve added support for repeated dates!
 
 You can add a repeating date to an item by starting the date entry with @every. We&#39;re quite excited to add this feature as it makes our Agenda significantly more powerful. We hope you find this useful - let us know if you have any suggestions or if we&#39;re missing any types of dates you need.
 ]]></description>
       <pubDate>Wed, 19 Nov 2014 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/update-repeat-dates</guid>
-      <content:encoded><![CDATA[<p>We&#39;ve added support for repeated dates!</p>
+      <content:encoded><![CDATA[<p><i>Note: Moo.do is currently on Hacker News - <a href="https://news.ycombinator.com/show">come join the discussion</a>!</i></p>
+
+<p>We&#39;ve added support for repeated dates!</p>
 
 <p>You can add a repeating date to an item by starting the date entry with <b class="date">@every</b>. We&#39;re quite excited to add this feature as it makes our Agenda significantly more powerful. We hope you find this useful - let us know if you have any suggestions or if we&#39;re missing any types of dates you need.</p>
 
