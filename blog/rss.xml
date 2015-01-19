@@ -8,7 +8,69 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Sun, 04 Jan 2015 00:00:00 -0800</pubDate>
+    <pubDate>Sat, 17 Jan 2015 00:00:00 -0800</pubDate>
+    <item>
+      <title>Desktop Design Update 1/17</title>
+      <link>http://www.moo.do/blog/update-01-17</link>
+      <description><![CDATA[
+.postImg {
+    border: 1px solid #ddd;
+}
+.second {
+    margin-top: 2em;
+}
+.caption {
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 80%;
+}
+
+
+We released an update with improvements to the design of our web and Chrome apps to reduce distraction so you can focus on your content.
+]]></description>
+      <pubDate>Sat, 17 Jan 2015 00:00:00 -0800</pubDate>
+      <guid>http://www.moo.do/blog/update-01-17</guid>
+      <content:encoded><![CDATA[<style>
+.postImg {
+    border: 1px solid #ddd;
+}
+.second {
+    margin-top: 2em;
+}
+.caption {
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 80%;
+}
+</style>
+
+<p>We released an update with improvements to the design of our web and Chrome apps to reduce distraction so you can focus on your content.</p>
+
+<p>Take a look at these before and after screenshots:</p>
+
+<p>
+    <img class="postImg" src="/blog/img/update-1-18-1.png"></img>
+    <div class="caption">Before</div>
+</p>
+
+<p class="second">
+    <img class="postImg" src="/blog/img/update-1-18-2.png"></img>
+    <div class="caption">After</div>
+</p>
+
+<h2>Design</h2>
+
+<ul>
+<li>The options and documents previously available in the sidebar are now accessible from the documents menu in the top left and the options gear in the top right.</li>
+<li>The search bar at the top of panes has been toned down and integrated into the pane to help show the connection between search and your content.</li>
+<li>Adding panes is now accessible through the + icon in the top right. This is the first step towards adding additional types of panes in the future.</li>
+<li>Reduced visual distraction from the top-bar by removing the background color.</li>
+</ul>
+]]></content:encoded>
+      <dc:date>2015-01-17T00:00:00-08:00</dc:date>
+    </item>
     <item>
       <title>Development Update 1/4</title>
       <link>http://www.moo.do/blog/update-01-04</link>
@@ -482,13 +544,11 @@ window.__demos =
     }
     .demobg {
         position: relative;
-        background: #f6f6f6;
-        box-shadow: rgba(0,0,0,0.2) 1px 1px 6px;
         margin: 30px auto;
         max-width: 100%;
     }
     body:not(.mobile) .demobg {
-        height: 350px;
+        height: 380px;
         padding: 10px;
     }
     .mobile .demobg {
@@ -496,7 +556,7 @@ window.__demos =
     }
     body:not(.mobile) .threePanes:not(.demoimg) {
         margin: 30px 20px;
-        height: 380px;
+        height: 460px;
     }
     .mobile .unpadded {
         margin: 0 !important;
@@ -505,7 +565,7 @@ window.__demos =
         width: 350px;
     }
     .twoPane:not(.demoimg) {
-        width: 720px;
+        width: 760px;
     }
     .demoimg {
         width: 100%;
@@ -690,8 +750,6 @@ window.__demos =
     }
     .demobg {
         position: relative;
-        background: #f6f6f6;
-        box-shadow: rgba(0,0,0,0.2) 1px 1px 6px;
         margin: 30px auto;
         max-width: 100%;
     }
@@ -716,17 +774,20 @@ window.__demos =
         width: 720px;
     }
     body:not(.mobile) #wrapOrg:not(.demoimg) {
-        height: 510px;
+        height: 570px;
     }
     body:not(.mobile) #wrapPanes1:not(.demoimg) {
         height: 720px;
         padding: 10px 0;
     }
     body:not(.mobile) #wrapPanes2:not(.demoimg) {
-        height: 440px;
+        height: 490px;
+    }
+    body:not(.mobile) #wrapAgenda:not(.demoimg) {
+        height: 360px;
     }
     body:not(.mobile) #wrapDiscussion:not(.demoimg) {
-        width: 660px;
+        width: 680px;
     }
     .demoimg {
         width: 100%;
@@ -774,6 +835,6 @@ We hope that Moo.do will help you organize your life and keep you on track. If y
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00-07:00</dc:date>
     </item>
-    <dc:date>2015-01-04T00:00:00-08:00</dc:date>
+    <dc:date>2015-01-17T00:00:00-08:00</dc:date>
   </channel>
 </rss>
