@@ -1,7 +1,8 @@
 <html>
-
 <head>
-<script type="text/javascript" src="record.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700' rel='stylesheet' type='text/css'>
+<script data-main="record.js" src="/js/lib/require.js"></script>
 
 <link rel="stylesheet" href="record.css" type="text/css">
 <link rel="stylesheet" href="fonticons.css" type="text/css">
@@ -11,33 +12,28 @@
 
 <body>
 
-<div id="video" class="pw">
-    <iframe id="videoFrame" class="center demo" seamless="seamless" scrolling="no" src="/app/#demo=true&amp;touch=false&amp;data=demo.0&amp;panes=1:2&amp;dmode=0x59&amp;script=video"></iframe>
-    <div id="topDemoPhone" class="topDemoWrapper ios">
-        <div id="tdBorderLeft"></div>
-        <div id="tdBorderRight"></div>
-        <div id="whiteFrame"></div>
-        <div id="callingFrame">
-            <div id="callingWrapper">
-                <div id="callingTop">
-                    <div id="callingTitle">Calling...</div>
-                    <div id="callingName">Jane Johnson</div>
-                    <div id="callingType">Mobile</div>
+<div>
+    <div id="intro">
+        <div id="introElements">
+            <div id="i1Title" class="a introTitle"></div>
+            <div id="i1Title2" class="a introTitle"></div>
+            <div class="a">
+                <div id="i1Cards">
+                    <div id="i1CardsBG"></div>
+                    <div id="i1CardsEls">
+                        <div><span id="i1C0" class="introCard"><i class="icon-list-ul"></i>Projects</span></div>
+                        <div><span id="i1C1" class="introCard"><i class="icon-check"></i>Tasks</span></div>
+                        <div><span id="i1C2" class="introCard"><img src="/img/plugin-gmail.png"/>Emails</span></div>
+                        <div><span id="i1C3" class="introCard"><img src="/img/plugin-gdrive.png"/>Files</span></div>
+                        <div><span id="i1C4" class="introCard"><img src="/img/plugin-gcal.png"/>Calendar</span></div>
+                        <div><span id="i1C5" class="introCard"><i class="icon-group"></i>People</span></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="topDemoFrame">
-            <iframe id="demoTopMobile" class="demo" seamless="seamless" scrolling="no" src="/app/#demo=true&amp;data=demo.0&amp;script=videoPhone&amp;dmode=0xe9&amp;phone=true&amp;touch=true"></iframe>
+        <div id="demoIntroWrapper" class="a demoWrapper">
+            <div id="demoIntro"></div>
         </div>
-    </div>
-    <div id="videoButtons">
-        <a id="tryItNow">Get <b>Moo.do</b> for free</a>
-        <div id="platforms">
-            <i class="platform icon-desktop"></i>
-            <i class="platform icon-tablet"></i>
-            <i class="platform icon-mobile"></i>
-        </div>
-        <a id="videoURL">http://moo.do</a>
     </div>
 </div>
 

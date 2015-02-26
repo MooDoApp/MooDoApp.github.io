@@ -1,5 +1,8 @@
 @import (reference) "../css/colors";
 @import (reference) "../css/elements";
+@import (reference) '../landing/css/landingcommon';
+@import "../landing/css/landing";
+@import "../landing/css/about";
 
 iframe[seamless]{
     background-color: transparent;
@@ -8,14 +11,18 @@ iframe[seamless]{
     overflow: hidden;
 }
 
+html {
+    opacity: 1;
+}
+
 body {
     overflow: hidden;
 
     margin: 0;
 
     // .scale(1.5, 1.5);
-    .transformOrigin(0, 0);
-    .translate(5px, 5px);
+    .transform-origin(0, 0);
+    .translate(0, 5px);
 }
 
 * {
@@ -35,6 +42,16 @@ body {
     -ms-user-select: none !important;
 }
 
+#intro {
+    width: 1024px !important;
+    height: 576px !important;
+    overflow: visible !important;
+    margin-top: 40px;
+
+    .scale(1.25);
+    .transform-origin(0,0);
+}
+
 #video {
     position: absolute;
     overflow: hidden;
@@ -44,7 +61,6 @@ body {
     top: 0px;
     left: 0px;
 
-    opacity: 0;
 
     #videoFrame {
         position: absolute;
@@ -267,6 +283,6 @@ body {
         width: 1% / @scalePhone * 100;
         height: 1% / @scalePhone * 100;
         .scale(@scalePhone, @scalePhone);
-        .transformOrigin(0, 0);
+        .transform-origin(0, 0);
     }
 }
