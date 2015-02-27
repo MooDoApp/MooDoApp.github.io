@@ -45,10 +45,19 @@ window.__demos =
 [
     {
         id: 'demoInboxZero',
-        src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0x2b9',
+        src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
         img: '/img/ss/pressInboxZero.png'
     }
 ];
+function onMessageInboxZero(e)
+{
+    if(e.data === 'done')
+    {
+        document.getElementById('demoInboxZero').classList.remove('noInteractive');
+    }
+}
+
+window.addEventListener('message', onMessageInboxZero, false);
 
 
 
@@ -63,7 +72,7 @@ window.__demos =
     max-width: 100%;
 }
 html:not(.mobile) #post_announceEmail .demobg {
-    height: 460px;
+    height: 560px;
 }
 
 #post_announceEmail .demobg:not(.demoimg) {
@@ -86,7 +95,7 @@ html:not(.mobile) #post_announceEmail .demobg {
 <p>Emails work just like everything else in Moo.do: you can prioritize, schedule, tag, complete, and star your emails. Scheduled and prioritized emails show up in your agenda so you know what emails to deal with next. You can organize emails into your projects and put them right on your to-do lists. Search filters emails the same way as tasks, so it fits right into your workflow.</p>
 
 <div class="twoPane demobg">
-    <div id="demoInboxZero"></div>
+    <div id="demoInboxZero" class="noInteractive"></div>
 </div>
 
 <h2>Google Drive</h2>
@@ -110,10 +119,19 @@ window.__demos =
 [
     {
         id: 'demoInboxZero',
-        src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0x2b9',
+        src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
         img: '/img/ss/pressInboxZero.png'
     }
 ];
+function onMessageInboxZero(e)
+{
+    if(e.data === 'done')
+    {
+        document.getElementById('demoInboxZero').classList.remove('noInteractive');
+    }
+}
+
+window.addEventListener('message', onMessageInboxZero, false);
 </script>
 
 <style>
@@ -128,7 +146,7 @@ window.__demos =
     max-width: 100%;
 }
 html:not(.mobile) #post_announceEmail .demobg {
-    height: 460px;
+    height: 560px;
 }
 
 #post_announceEmail .demobg:not(.demoimg) {

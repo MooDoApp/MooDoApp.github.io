@@ -808,6 +808,13 @@ a:hover,
 .block {
   display: block;
 }
+.noInteractive {
+  pointer-events: none;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
 /*****************************************************************************/
 /*
 /* Common

@@ -10,15 +10,19 @@
 </url>
 <url>
   <loc>http://www.moo.do/blog/</loc>
-  <lastmod>2014-08-25T16:55:32+00:00</lastmod>
+  <lastmod>2015-02-27T16:55:32+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.moo.do/press/</loc>
-  <lastmod>2014-08-25T16:55:32+00:00</lastmod>
+  <lastmod>2015-02-27T16:55:32+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.moo.do/privacy/</loc>
-  <lastmod>2014-09-12T14:49:41+00:00</lastmod>
+  <lastmod>2015-02-27T14:49:41+00:00</lastmod>
+</url>
+<url>
+<loc>http://www.moo.do/pricing/</loc>
+  <lastmod>2015-02-27T14:49:41+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.moo.do/app/</loc>
@@ -63,6 +67,10 @@
 <url>
   <loc>http://www.moo.do/blog/update-01-04/</loc>
   <lastmod>2015-01-04T00:22:00+00:00</lastmod>
+</url>
+<url>
+  <loc>http://www.moo.do/blog/announcing-email/</loc>
+  <lastmod>2015-02-27T00:22:00+00:00</lastmod>
 </url>
 <url>
   <loc>http://www.moo.do/blog/updates/</loc>
