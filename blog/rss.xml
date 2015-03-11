@@ -8,7 +8,54 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Wed, 25 Feb 2015 00:00:00 +0700</pubDate>
+    <pubDate>Thu, 12 Mar 2015 00:00:00 +0700</pubDate>
+    <item>
+      <title>Moo.do & Mailbird</title>
+      <link>http://www.moo.do/blog/mailbird-launch</link>
+      <description><![CDATA[We just launched a deep integration with Mailbird 2.0, which is (in our humble opinions) the best email app for Windows. With Mailbird and Moo.do, email becomes a real to-do list that you can organize, prioritize, and schedule right alongside all your other projects and tasks.
+
+
+
+Moo.do is built into Mailbird 2.0 as a dedicated sidebar, so you can drag your emails from Mailbird right into your Moo.do lists. It&#39;s also an app inside Mailbird for a full-screen view of your Moo.do workflow. You can easily open emails from your task list: click an email in Moo.do and Mailbird opens it for you.
+
+Organizing email and tasks together has completely transformed the way we use email. We don&#39;t have to manually write down emails that need follow up. We don&#39;t miss important emails because we can prioritize and schedule them alongside our other tasks and appointments.
+
+We&#39;re super excited about this integration with Mailbird and we hope it makes you less frustrated and more productive!
+
+Get Mailbird 2.0 at http://www.getmailbird.com.
+
+
+#post_mailbird img {
+    position: relative;
+    margin: 30px auto;
+    max-width: 100%;
+}
+
+]]></description>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0700</pubDate>
+      <guid>http://www.moo.do/blog/mailbird-launch</guid>
+      <content:encoded><![CDATA[<p>We just launched a deep integration with <a href="http://www.getmailbird.com">Mailbird 2.0</a>, which is (in our humble opinions) the best email app for Windows. With Mailbird and Moo.do, email becomes a real to-do list that you can organize, prioritize, and schedule right alongside all your other projects and tasks.</p>
+
+<p><a href="http://www.getmailbird.com"><img src="/img/mailbird.png" /></a></p>
+
+<p>Moo.do is built into <a href="http://www.getmailbird.com">Mailbird 2.0</a> as a dedicated sidebar, so you can drag your emails from Mailbird right into your Moo.do lists. It&#39;s also an app inside Mailbird for a full-screen view of your Moo.do workflow. You can easily open emails from your task list: click an email in Moo.do and Mailbird opens it for you.</p>
+
+<p>Organizing email and tasks together has completely transformed the way we use email. We don&#39;t have to manually write down emails that need follow up. We don&#39;t miss important emails because we can prioritize and schedule them alongside our other tasks and appointments.</p>
+
+<p>We&#39;re super excited about this integration with Mailbird and we hope it makes you less frustrated and more productive!</p>
+
+<p>Get Mailbird 2.0 at <a href="http://www.getmailbird.com">http://www.getmailbird.com</a>.</p>
+
+<style>
+#post_mailbird img {
+    position: relative;
+    margin: 30px auto;
+    max-width: 100%;
+}
+</style>
+]]></content:encoded>
+      <dc:date>2015-03-12T00:00:00+07:00</dc:date>
+    </item>
     <item>
       <title>Announcing Gmail and Drive Integration</title>
       <link>http://www.moo.do/blog/announcing-email</link>
@@ -1111,6 +1158,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00+07:00</dc:date>
     </item>
-    <dc:date>2015-02-25T00:00:00+07:00</dc:date>
+    <dc:date>2015-03-12T00:00:00+07:00</dc:date>
   </channel>
 </rss>
