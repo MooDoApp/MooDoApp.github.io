@@ -380,50 +380,70 @@ html:not(.mobile) .mobileOnly {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   background: white;
 }
-html:not(.windows) #sectionMailbird {
-  display: none;
-}
 #pricingCards {
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 720px;
 }
 #pricingCards > div {
-  min-width: 280px;
+  min-width: 320px;
   display: inline-block;
   vertical-align: bottom;
   width: calc(50% - 20px);
   margin: 20px auto 0 auto;
 }
 #pricingCards .pricingCard {
+  position: relative;
   margin: 0 auto;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   background: white;
-  width: 280px;
+  width: 320px;
   padding: 16px 24px;
+  height: 550px;
 }
 #pricingCards hr {
   background: #eee;
 }
 #pricingCards .cardHeader {
-  padding-bottom: 16px;
+  height: 90px;
   margin-bottom: 16px;
 }
 #pricingCards .cardTitle {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
 }
 #pricingCards .premium .cardTitle {
   color: #0099dd;
 }
+#pricingCards .premium .linkLogin {
+  background: #aaa;
+}
 #pricingCards .cardPrice {
+  text-align: center;
   font-weight: bold;
+}
+#pricingCards .cardPrice.strike {
+  color: #ccc;
+}
+#pricingCards .cardPriceNumber {
+  font-size: 24px;
+}
+#pricingCards .cardPriceNumber:before {
+  content: '$';
+  position: relative;
+  font-size: 12px;
+  margin-right: 4px;
+  top: 4px;
+  vertical-align: top;
+}
+#pricingCards .cardPriceSpecial {
+  font-size: 15px;
 }
 #pricingCards .cardContent {
   text-align: left;
-  line-height: 1.8;
+  line-height: 2;
 }
 #pricingCards .cardServices {
-  margin-top: 16px;
+  margin-top: 8px;
   line-height: 40px;
 }
 #pricingCards .icon-group {
@@ -441,11 +461,24 @@ html:not(.windows) #sectionMailbird {
   vertical-align: middle;
   text-align: center;
 }
+#pricingCards .pricingButton {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
 #pricingCards .linkLogin {
   display: inline-block;
   text-align: center;
   margin: 20px auto 0 auto;
   font-size: 16px;
+}
+.pricingText {
+  margin: 32px auto 0 auto;
+}
+.justified {
+  max-width: 820px;
+  text-align: justify;
 }
 .footerSpacer {
   height: 60px;
@@ -768,6 +801,28 @@ a:hover,
   border-left: 1px solid #e3e3e3;
   text-align: left;
 }
+.hrText {
+  text-align: center;
+  position: relative;
+  color: #aaa;
+  margin: 8px 0;
+}
+.hrText > span {
+  position: relative;
+  padding: 0 15px;
+  background: white;
+  z-index: 100;
+}
+.hrText:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #eee;
+  z-index: 0;
+}
 .colorHigh {
   color: #f30;
 }
@@ -814,6 +869,9 @@ a:hover,
   -moz-user-select: none !important;
   -ms-user-select: none !important;
   user-select: none !important;
+}
+.strike {
+  text-decoration: line-through;
 }
 /*****************************************************************************/
 /*
@@ -1163,7 +1221,7 @@ html:not(.mobile) .content {
 }
 .postFooter {
   height: 30px;
-  margin-top: 15px;
+  margin-top: 40px;
 }
 .indexPost + .indexPost {
   margin-top: 55px;
