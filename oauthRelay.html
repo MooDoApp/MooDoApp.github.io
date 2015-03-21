@@ -112,31 +112,46 @@
     function runPostMessageRelay()
     {
         var remoteApp = getQueryByName('remoteApp');
-        //var state = getQueryByName('state');
 
+        var state = getQueryByName('state');
         var code = getQueryByName('code');
 
-        switch (remoteApp)
+        var responseData;
+        if (state && code)
         {
-            case 'toodledo':
-                XHR({
-                    type: 'POST',
-                    url: window.location.protocol + '//' + window.location.host + '/oauth/toodledoOAuth',
-                    data: { code: code },
-                    cb: function (xhr)
-                    {
-                        var data = JSON.parse(xhr.response);
-
-                        runFinish(data);
-                    }
-                });
-
-                break;
-            default:
-                runFinish(window.location.search);
-
-                break;
+            responseData = { code: code, state: state };
         }
+        else
+        {
+            responseData = { error: true };
+        }
+
+        runFinish(responseData);
+
+        // switch (remoteApp)
+        // {
+        //     case 'toodledo':
+        //         XHR({
+        //             type: 'POST',
+        //             url: window.location.protocol + '//' + window.location.host + '/oauth/toodledoOAuth',
+        //             data: { code: code },
+        //             cb: function (xhr)
+        //             {
+        //                 var data = JSON.parse(xhr.response);
+
+        //                 runFinish(data);
+        //             }
+        //         });
+
+        //         break;
+        //     case 'wunderlist':
+
+        //         break;
+        //     default:
+        //         runFinish(window.location.search);
+
+        //         break;
+        // }
     }
 </script>
 
