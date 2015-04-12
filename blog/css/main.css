@@ -398,7 +398,7 @@ html:not(.mobile) .mobileOnly {
   background: white;
   width: 320px;
   padding: 16px 24px;
-  height: 550px;
+  height: 610px;
 }
 #pricingCards hr {
   background: #eee;
@@ -460,6 +460,10 @@ html:not(.mobile) .mobileOnly {
   margin-right: 16px;
   vertical-align: middle;
   text-align: center;
+}
+#pricingCards .pricingPlugin {
+  margin: 8px 0;
+  line-height: 40px;
 }
 #pricingCards .pricingButton {
   position: absolute;
@@ -805,7 +809,7 @@ a:hover,
   text-align: center;
   position: relative;
   color: #aaa;
-  margin: 8px 0;
+  margin: 8px 0 ;
 }
 .hrText > span {
   position: relative;
@@ -896,7 +900,8 @@ body {
 body {
   overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 26px;
   word-wrap: break-word;
 }
 .post,
@@ -1076,10 +1081,6 @@ html:not(.mobile) .content {
 .hb,
 .social-links div {
   cursor: pointer;
-}
-.hb:hover,
-.social-links div:hover {
-  color: #0099dd;
 }
 .headerButtons {
   float: right;

@@ -14,6 +14,22 @@
 
 
 " /><meta property="og:image" content="http://www.moo.do/img/logo_square.png" /><meta itemprop="image" content="http://www.moo.do/img/logo_square.png" /><meta name="twitter:image:src" content="http://www.moo.do/img/logo_square.png" /><meta property="article:publisher" content="http://www.facebook.com/MooDoApp" /><meta property="article:author" content="http://www.facebook.com/jayzus" /><meta name="twitter:creator" content="@jmeistrich" /><link rel="image_src" type="image/png" href="http://www.moo.do/favicon.ico"><link rel="icon" href="http://www.moo.do/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/blog/css/syntax.css"><link rel="stylesheet" href="/blog/css/fonticons.css"><link rel="stylesheet" href="/blog/css/main.css"><link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'><script src="/js/blog-min.js"></script><script>
+            window.__addDemo = function(demo)
+            {
+                if(!window.__demos)
+                {
+                    window.__demos = [];
+                }
+                window.__demos.push(demo);
+            }
+            window.__addDemos = function(arr)
+            {
+                for(var i = 0; i < arr.length; i ++)
+                {
+                    __addDemo(arr[i]);
+                }
+            }
+        </script><script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -30,7 +46,7 @@
         </span><span class="postDate">September 08, 2014</span><span class="postCategories"> in
         
             <span><a href="/blog/ideas/">ideas</a></span></span></div></div><div class="postContent padded"><p>Many friends of <strong>Moo.do</strong> like to organize their projects on a Scrum (or Kanban) board for Agile Development. This continues our series of <a href="/blog/ideas">examples of how people and teams are using <strong>Moo.do</strong></a> with a description of how <strong>Moo.do</strong> can be used as a Scrum board. While we appreciate the physicality of plastering notes on a wall, we think powerful software is much more effective and less messy.</p><p><img alt="Post-it Madness" src="/blog/img/postits.jpg" id="postit-img" class="postImg"></img></p><h1>Organization</h1><p>First let&#39;s set up the sections of the board in outline form. We use <b>Todo</b>, <b>In Progress</b>, <b>Testing</b>, and <b>Complete</b> to describe the phases of each task. You could also subdivide your sections, like <b>Bugs</b> and <b>Features</b> for a software project.</p><div class="onePane demobg"><div id="demoOrganization"></div></div><p>This outline format is a great way to read through everything, but it gets hard to read when there&#39;s a lot of items in each list. So let&#39;s spread them out by adding more panes, with one focused on each list.</p><div class="unpadded"><div class="threePanes demobg"><div id="demoThreePanes"></div></div></div><div class="caption noMobile">This is a fully interactive instance of <b>Moo.do</b>. Try dragging items between panes by grabbing the space to the left of an item.</div><p>It&#39;s easy to visualize how much work is left in each phase and drag and drop items between panes as we make progress. Now that the basics are set up, let&#39;s look at what else <strong>Moo.do</strong> can do!</p><h1>Assign tasks</h1><p>Our team assigns tasks using a <b class="tag">#tag</b> for each person. I use <strong>Moo.do</strong>&#39;s search to view only my tasks or see what others on my team are working on.</p><div class="twoPane demobg"><div id="demoAssign"></div></div><h1>See what&#39;s important</h1><p>&quot;What Do I Do Next Paralysis&quot; can be a big problem when faced with a lot of tasks. Being able to quickly prioritize using <strong>Moo.do</strong>&#39;s starring and three priority levels makes it easy to always know what&#39;s next and what needs further discussion. During our meetings, we open an Agenda pane and talk through starred items and check up on high priority tasks. We can even focus and search the Agenda.</p><div class="twoPane demobg"><div id="demoAgenda"></div></div><h1>My to-do list</h1><p>I use <strong>Moo.do</strong>&#39;s&#39; powerful search to focus on just what I need.</p><table class="searchList"><tr><td><b class="p0">!!!</b> -//</td><td>Important and incomplete items</td></tr><tr><td><b class="tag">#Grant</b> //</td><td>What Grant has finished</td></tr><tr><td><b class="tag">#iPhone</b></td><td>What needs to be fixed for iPhone</td></tr><tr><td><b class="tag">#Feedback</b> -#</td><td>Unassigned feedback</td></tr></table><p>It&#39;s great to have an overview of what everyone is doing, but it&#39;s very distracting (and scary!) to stare at it all day long. I check the overall list in the morning or evening and spend the day focused on my own tasks by searching for only tasks assigned to me, or even only my highest priority tasks.</p><div class="twoPane demobg"><div id="demoPersonal"></div></div><h1>Show a dashboard on a TV</h1><p>Many people like to have a scrum board on a wall in a central location that everyone can see. <strong>Moo.do</strong> is synchronized in real time as you type, so with <strong>Moo.do</strong> on a TV in the office, you&#39;ll see tasks getting moved around and completed as people work on them. You could have one pane showing what&#39;s happening in the &quot;In Progress&quot; section, one showing an agenda of the highest priority tasks, and one tracking finished tasks in the &quot;Complete&quot; section.</p><p><br></p><p>If you would like to see tips for how to organize your project or content, or have an interesting organization method that you use, send us an email at <a href="mailto:contact@moo.do">contact@moo.do</a>. We&#39;d love to hear about what you do now or how you stay organized with <strong>Moo.do</strong>. Check back soon for more case studies.</p><script>
-window.__demos =
+window.__addDemos(
 [
     {
         id: 'demoOrganization',
@@ -58,7 +74,7 @@ window.__demos =
         src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,' + encodeURIComponent('#Android') + ':1,' + encodeURIComponent('#J ! -//') + '&script=none&dmode=0x2bd',
         img: '/img/ss/blog/scrum/demoPersonal.png'
     }
-];
+]);
 </script><style>
     #post_scrum .caption {
         margin-top: -20px;

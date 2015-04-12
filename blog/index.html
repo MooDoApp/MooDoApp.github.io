@@ -1,4 +1,20 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Moo.do Blog - Index</title><meta name="application-name" content="Moo.do"/><meta name="msapplication-TileColor" content="#0099dd"/><meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" /><meta name="keywords" content="todo, to do, organization, personal organization, offline, contacts, MooDo, Moo Do, Moo.do, html5" /><meta name="robots" content="index, follow" /><meta name="twitter:card" content="summary" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="website" /><meta property="og:site_name" content="Moo.do Blog" /><meta name="twitter:site" content="@MooDoApp" /><meta property="og:url" content="http://www.moo.do/blog/index.html/" /><link rel="canonical" href="http://www.moo.do/blog/index.html" /><link href="http://www.moo.do/blog/rss.xml" rel="alternate" type="application/rss+xml" title="Moo.do - Organize your way" /><meta name="twitter:domain" content="Moo.do" /><meta property="og:title" content="Moo.do Blog - Index" /><meta itemprop="name" content="Moo.do Blog - Index" /><meta name="twitter:title" content="Moo.do Blog - Index" /><meta itemprop="go:headline" content="Moo.do Blog - Index" /><meta name="description" content="Get the latest updates on the Moo.do app and technical tips from its developers!" /><meta property="og:description" content="Get the latest updates on the Moo.do app and technical tips from its developers!" /><meta itemprop="description" content="Get the latest updates on the Moo.do app and technical tips from its developers!" /><meta name="twitter:description" content="Get the latest updates on the Moo.do app and technical tips from its developers!" /><meta property="go:description" content="Get the latest updates on the Moo.do app and technical tips from its developers!" /><meta property="og:image" content="http://www.moo.do/img/logo_square.png" /><meta itemprop="image" content="http://www.moo.do/img/logo_square.png" /><meta name="twitter:image:src" content="http://www.moo.do/img/logo_square.png" /><meta property="article:publisher" content="http://www.facebook.com/MooDoApp" /><meta name="twitter:creator" content="@WattersGrant" /><meta name="twitter:creator" content="@jmeistrich" /><link rel="image_src" type="image/png" href="http://www.moo.do/favicon.ico"><link rel="icon" href="http://www.moo.do/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="/blog/css/syntax.css"><link rel="stylesheet" href="/blog/css/fonticons.css"><link rel="stylesheet" href="/blog/css/main.css"><link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'><script src="/js/blog-min.js"></script><script>
+            window.__addDemo = function(demo)
+            {
+                if(!window.__demos)
+                {
+                    window.__demos = [];
+                }
+                window.__demos.push(demo);
+            }
+            window.__addDemos = function(arr)
+            {
+                for(var i = 0; i < arr.length; i ++)
+                {
+                    __addDemo(arr[i]);
+                }
+            }
+        </script><script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -44,14 +60,13 @@
         </span><span class="postDate">February 25, 2015</span><span class="postCategories"> in
         
             <span><a href="/blog/updates/">updates</a></span></span></div></div><div class="postExcerpt padded"><p>We are very happy to announce the next big step for Moo.do, and the reason we created Moo.do in the first place. You will soon be able to <strong>organize your email</strong> in Moo.do.</p><h2>Email</h2><p>We are making Moo.do a full email application for Gmail and also integrating it into other email apps, starting with <a href="http://www.getmailbird.com">Mailbird</a>, a fantastic email app for Windows.</p><p>Emails work just like everything else in Moo.do: you can prioritize, schedule, tag, complete, and star your emails. Scheduled and prioritized emails show up in your agenda so you know what emails to deal with next. You can organize emails into your projects and put them right on your to-do lists. Search filters emails the same way as tasks, so it fits right into your workflow.</p><div class="twoPane demobg"><div id="demoInboxZero" class="noInteractive"></div></div><h2>Google Drive</h2><p>In addition to email, you can organize your Google Drive files and documents in your lists. If you drag a file from your computer into a Moo.do list, it will upload to Drive for you. Or if it&#39;s already in Drive, Moo.do will find it and link to it.</p><h2>Mailbird</h2><p>Moo.do is built into <a href="http://www.getmailbird.com">Mailbird 2.0</a> as a dedicated sidebar, so you can drag your emails from Mailbird right into your Moo.do lists. See more about Mailbird at <a href="http://getmailbird.com">http://getmailbird.com</a>.</p><h2>Try it now</h2><p>We&#39;ve updated our <a href="http://www.moo.do/">landing page</a> with live demos of how email and file organization work, so please try it out and let us know what you think!</p><script>
-window.__demos =
-[
-    {
-        id: 'demoInboxZero',
-        src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
-        img: '/img/ss/pressInboxZero.png'
-    }
-];
+window.__addDemo(
+{
+    id: 'demoInboxZero',
+    src: '/app/#demo=true&touch=false&data=intro.inbox.0&script=inboxZero&panes=PaneGmail:1&dmode=0xb9',
+    img: '/img/ss/pressInboxZero.png'
+}
+);
 function onMessageInboxZero(e)
 {
     if(e.data === 'done')
