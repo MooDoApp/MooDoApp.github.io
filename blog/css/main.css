@@ -956,17 +956,31 @@ ul + p {
 #disqus_thread {
   margin-bottom: 60px;
 }
+.postContent ul,
+.postExcerpt ul,
+.postContent table,
+.postExcerpt table {
+  position: relative;
+  margin: 10px 0 0 6px;
+  padding: 0 0 0 20px !important;
+}
+.postContent li:before,
+.postExcerpt li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  vertical-align: top;
+  background: #e3e3e3;
+  margin-right: 10px;
+  margin-top: 12px;
+}
 @media screen and (max-width: 920px) {
   .postContent > .demo img {
     margin-left: 10px;
     margin-right: 10px;
-  }
-  .postContent ul,
-  .postExcerpt ul,
-  .postContent table,
-  .postExcerpt table {
-    margin: 10px 10px 0 10px;
-    padding: 0 0 0 10px !important;
   }
   .postContent li,
   .postExcerpt li {
@@ -982,18 +996,6 @@ ul + p {
   }
 }
 @media screen and (min-width: 921px) {
-  .postContent ul,
-  .postExcerpt ul,
-  .postContent table,
-  .postExcerpt table {
-    margin: 10px 0 0 15px;
-  }
-  .postContent li,
-  .postExcerpt li,
-  .postContent td:first-child,
-  .postExcerpt td:first-child {
-    padding-left: 15px;
-  }
   .postContent li,
   .postExcerpt li {
     padding-top: 0.3em;
@@ -1010,11 +1012,6 @@ ul + p {
 .postContent tr,
 .postExcerpt tr {
   vertical-align: top;
-}
-.postContent li:before,
-.postExcerpt li:before {
-  color: #e6e6e6;
-  padding-right: 10px;
 }
 a {
   text-decoration: none;
