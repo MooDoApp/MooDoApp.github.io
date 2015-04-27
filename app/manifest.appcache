@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 1429511327748
+# 1430093640761
 
 CACHE:
 /js/main-min.js
@@ -12,6 +12,10 @@ CACHE:
 /img/logoForWhite440.png
 /img/logoForBlue600.png
 
+/img/plugin-gdocs.png
+/img/plugin-gsheets.png
+/img/plugin-gslides.png
+/img/plugin-image.png
 
 NETWORK:
 *
