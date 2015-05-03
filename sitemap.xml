@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://www.moo.do/</loc>
+  <loc>https://www.moo.do/</loc>
   <lastmod>2014-08-25T16:55:32+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/us/</loc>
+  <loc>https://www.moo.do/us/</loc>
   <lastmod>2014-08-25T16:55:32+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/</loc>
+  <loc>https://www.moo.do/blog/</loc>
   <lastmod>2015-02-27T16:55:32+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/press/</loc>
+  <loc>https://www.moo.do/press/</loc>
   <lastmod>2015-02-27T16:55:32+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/privacy/</loc>
+  <loc>https://www.moo.do/privacy/</loc>
   <lastmod>2015-02-27T14:49:41+00:00</lastmod>
 </url>
 <url>
-<loc>http://www.moo.do/pricing/</loc>
+<loc>https://www.moo.do/pricing/</loc>
   <lastmod>2015-02-27T14:49:41+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/app/</loc>
+  <loc>https://www.moo.do/app/</loc>
   <lastmod>2014-06-10T22:42:38+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/public-beta/</loc>
+  <loc>https://www.moo.do/blog/public-beta/</loc>
   <lastmod>2014-06-12T04:47:55+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/project-management/</loc>
+  <loc>https://www.moo.do/blog/project-management/</loc>
   <lastmod>2014-06-27T03:55:27+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/scrum/</loc>
+  <loc>https://www.moo.do/blog/scrum/</loc>
   <lastmod>2014-09-06T10:56:11+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/launch/</loc>
+  <loc>https://www.moo.do/blog/launch/</loc>
   <lastmod>2014-09-09T07:34:56+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/update-10-10/</loc>
+  <loc>https://www.moo.do/blog/update-10-10/</loc>
   <lastmod>2014-10-10T14:27:36+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/update-mobile-design/</loc>
+  <loc>https://www.moo.do/blog/update-mobile-design/</loc>
   <lastmod>2014-10-14T19:22:18+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/update-10-23/</loc>
+  <loc>https://www.moo.do/blog/update-10-23/</loc>
   <lastmod>2014-10-23T19:22:00+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/update-10-31/</loc>
+  <loc>https://www.moo.do/blog/update-10-31/</loc>
   <lastmod>2014-10-31T19:22:00+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/update-repeat-dates/</loc>
+  <loc>https://www.moo.do/blog/update-repeat-dates/</loc>
   <lastmod>2014-11-21T19:22:00+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/update-01-04/</loc>
+  <loc>https://www.moo.do/blog/update-01-04/</loc>
   <lastmod>2015-01-04T00:22:00+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/announcing-email/</loc>
+  <loc>https://www.moo.do/blog/announcing-email/</loc>
   <lastmod>2015-02-27T00:22:00+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/updates/</loc>
+  <loc>https://www.moo.do/blog/updates/</loc>
   <lastmod>2014-06-12T04:47:55+00:00</lastmod>
 </url>
 <url>
-  <loc>http://www.moo.do/blog/ideas/</loc>
+  <loc>https://www.moo.do/blog/ideas/</loc>
   <lastmod>2014-06-27T03:55:27+00:00</lastmod>
 </url>
 </urlset>
