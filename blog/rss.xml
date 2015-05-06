@@ -33,7 +33,7 @@ International dates like DD/MM/YYYY or YYYY/MM/DD
 Gmail
 
 ]]></description>
-      <pubDate>Thu, 16 Apr 2015 00:00:00 +0700</pubDate>
+      <pubDate>Thu, 16 Apr 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/update-04-16</guid>
       <content:encoded><![CDATA[<p>We&#39;ve been quiet recently while working on big new features for Moo.do, so we just wanted to update everyone on some recent changes and the roadmap for the next few months.</p>
 
@@ -50,7 +50,7 @@ Gmail
 <ul>
 <li>Google Drive integration (Premium)</li>
 <li>Performance upgrade on desktop and mobile</li>
-<li>Notes (Premium)</li>
+<li>Notes</li>
 <li>Notification settings</li>
 <li>International dates like DD/MM/YYYY or YYYY/MM/DD</li>
 <li>Gmail</li>
