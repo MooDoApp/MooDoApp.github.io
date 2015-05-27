@@ -104,9 +104,12 @@
 
     function runFinish(data)
     {
-        window.opener.postMessage(data, '*');
+        if (window.opener)
+        {
+            window.opener.postMessage(data, '*');
 
-        window.close();
+            window.close();
+        }
     }
 
     function runPostMessageRelay()
