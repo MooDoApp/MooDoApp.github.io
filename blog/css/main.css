@@ -398,24 +398,25 @@ html:not(.mobile) .mobileOnly {
   background: white;
   width: 320px;
   padding: 16px 24px;
-  height: 610px;
+  height: 640px;
 }
 #pricingCards hr {
   background: #eee;
 }
 #pricingCards .cardHeader {
-  height: 90px;
+  height: 110px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
   margin-bottom: 16px;
+  color: #777;
 }
 #pricingCards .cardTitle {
+  color: #444;
   font-size: 28px;
   font-weight: bold;
 }
 #pricingCards .premium .cardTitle {
   color: #0099dd;
-}
-#pricingCards .premium .linkLogin {
-  background: #aaa;
 }
 #pricingCards .cardPrice {
   text-align: center;
