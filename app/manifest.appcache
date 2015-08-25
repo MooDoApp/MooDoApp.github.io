@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 1435434481095
+# 1440538450452
 
 CACHE:
 /js/main-min.js
@@ -16,6 +16,11 @@ CACHE:
 /img/plugin-gsheets.png
 /img/plugin-gslides.png
 /img/plugin-image.png
+
+/img/plugin-gcal.png
+/img/plugin-mailbird.png
+/img/plugin-gdrive.png
+/img/plugin-gmail.png
 
 NETWORK:
 *
