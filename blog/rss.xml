@@ -48,9 +48,9 @@ Gmail integration
 <p>We&#39;re serious when we say this is a <strong>huge</strong> upgrade. Check it out:</p>
 
 <p>
-    <img class="postImg postImgPerf" src="/blog/img/update-perf.png" />
-    <img class="postImg postImgPerf" src="/blog/img/update-perf2.png" />
-    <img class="postImg postImgPerf" src="/blog/img/update-perf3.png" />
+    <img class="postImg postImgPerf" src="/blog/img/update-performance1.png" />
+    <img class="postImg postImgPerf" src="/blog/img/update-performance2.png" />
+    <img class="postImg postImgPerf" src="/blog/img/update-performance3.png" />
 </p>
 
 <p>This update was an unexpected delay in our roadmap. As we got into the development of the Gmail plugin and began loading our inboxes into Moo.do, we realized we could not provide a good email experience until we fixed the performance problems. Moo.do was fast with a few hundred items, but as documents grew over time, Moo.do was unable to keep up. It was especially noticeable with the mobile apps, which were basically unusable with large documents. Adding large email inboxes into the mix made it clear that we had to focus on performance before we could continue.</p>
