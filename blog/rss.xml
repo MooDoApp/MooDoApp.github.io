@@ -8,7 +8,22 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Mon, 14 Sep 2015 00:00:00 -0700</pubDate>
+    <pubDate>Sat, 03 Oct 2015 00:00:00 -0700</pubDate>
+    <item>
+      <title>Revision History</title>
+      <link>http://www.moo.do/blog/revision-history</link>
+      <description><![CDATA[The most important feature of a productivity app is that it never lose your data, which is why we designed Moo.do so that losing data is not even possible. Moo.do keeps a full revision history of all changes so that if anything goes wrong, everything can always be recovered. We just released a new tool for browsing your revision history to get back anything you may have lost. If you ever need to get something back, you can either revert to a previous version or copy and paste what you need back into Moo.do.
+
+You can find Revision History in the options menu below Export Data. If you have any trouble with this tool, please let us know. Nobody has ever lost data in Moo.do and we plan to keep it that way.
+]]></description>
+      <pubDate>Sat, 03 Oct 2015 00:00:00 -0700</pubDate>
+      <guid>http://www.moo.do/blog/revision-history</guid>
+      <content:encoded><![CDATA[<p>The most important feature of a productivity app is that it <strong>never</strong> lose your data, which is why we designed Moo.do so that losing data is not even possible. Moo.do keeps a full revision history of all changes so that if anything goes wrong, everything can always be recovered. We just released a new tool for browsing your revision history to get back anything you may have lost. If you ever need to get something back, you can either revert to a previous version or copy and paste what you need back into Moo.do.</p>
+
+<p>You can find Revision History in the options menu below Export Data. If you have any trouble with this tool, please let us know. Nobody has ever lost data in Moo.do and we plan to keep it that way.</p>
+]]></content:encoded>
+      <dc:date>2015-10-03T00:00:00-07:00</dc:date>
+    </item>
     <item>
       <title>Performance Upgrade</title>
       <link>http://www.moo.do/blog/performance</link>
@@ -1444,6 +1459,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00-07:00</dc:date>
     </item>
-    <dc:date>2015-09-14T00:00:00-07:00</dc:date>
+    <dc:date>2015-10-03T00:00:00-07:00</dc:date>
   </channel>
 </rss>
