@@ -1206,7 +1206,7 @@ html:not(.mobile) .content {
 }
 #social > * {
   display: inline !important;
-  padding-right: 20px;
+  margin-right: 10px;
 }
 #shareFB {
   position: relative;

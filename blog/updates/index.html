@@ -21,38 +21,59 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-37740918-2',{'cookieDomain':'auto','siteSpeedSampleRate': 1});
     ga('require','displayfeatures');ga('send','pageview');
-</script></head><body><div class="container"><div id="topBar"><div id="topBarOuter"><div id="topBarInner" class="center"><div id="topBarBG"></div><div id="logoWrapper"><a href="/" id="logoLink"><img class="logo" src="/img/logoForWhite600.png"/></a></div><div id="topLinks" class=""><a id="linkHome" class="link h" href="/">Home</a><a id="linkPricing" class="link h" href="/pricing/">Pricing</a><a id="linkBlog" class="link h selected" href="/blog/">Blog</a><a id="linkPress" class="link h" href="/press/">Press</a><span class="link linkLogin hb noMobile" title="Login/Signup" onclick="requestAuthorization('topbar')">Sign up / Login</span></div></div></div></div><div class="content"><div class="page"><div id="home"><ul class="posts"><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/revision-history/">Revision History</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
+</script></head><body><div class="container"><div id="topBar"><div id="topBarOuter"><div id="topBarInner" class="center"><div id="topBarBG"></div><div id="logoWrapper"><a href="/" id="logoLink"><img class="logo" src="/img/logoForWhite600.png"/></a></div><div id="topLinks" class=""><a id="linkHome" class="link h" href="/">Home</a><a id="linkPricing" class="link h" href="/pricing/">Pricing</a><a id="linkBlog" class="link h selected" href="/blog/">Blog</a><a id="linkPress" class="link h" href="/press/">Press</a><span class="link linkLogin hb noMobile" title="Login/Signup" onclick="requestAuthorization('topbar')">Sign up / Login</span></div></div></div></div><div class="content"><div class="page"><div id="home"><ul class="posts"><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/editable-agenda/">Editable Agenda</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
             Jay Meistrich
             </a>
-            
+
             and
-            
-        
+
+
             <a href="mailto:grant@moo.do">
             Grant Watters
             </a>
-            
-        
+
+
         on
-        
+
+        </span><span class="postDate">October 19, 2015</span><span class="postCategories"> in
+
+            <span><a href="/blog/updates/">updates</a></span></span></div></div><div class="postExcerpt padded"><p>We wanted the Agenda to be editable from the beginning, but it hasn&#39;t been possible to make it a good experience until the changes we made in our <a href="/blog/performance">performance update</a>. With that done, we are happy to announce that items in the Agenda pane are now editable!</p><p>To make editing in the Agenda pane feel good, items need to move gracefully as their dates and priorities change instead of jumping around or disappearing completely if a date is invalid. We achieve this by:</p><ul><li>Delaying moving an Agenda item until a different item is selected</li><li>Animating the item into its new position to make it clear what is changing.</li></ul><p><img class="postImg postImgAgenda" src="/blog/img/update-editable-agenda1.gif" /></p><p>Another benefit of being able to animate items as their positions change is that it makes it clearer what is happening during search. Also it looks really cool :).</p><p><img class="postImg postImgAgenda" src="/blog/img/update-editable-agenda2.gif" /></p><p>This is important for the Google Calendar plugin to work well because it will allow you to change your Google Calendar event names or dates/times right in the Agenda. We&#39;re doing final testing of the Google Calendar plugin now, so you&#39;ll see it soon!</p><h1>In Development</h1><ul><li>Google Calendar sync</li><li>Improved Search UI</li><li>Gmail integration</li></ul><style>
+.postImgAgenda {
+    width: 400px;
+    margin: 60px auto;
+}
+</style><div class="postFooter"><div class="readMore"><a href="/blog/editable-agenda/">Continue Reading...</a></div></div></div></li><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/revision-history/">Revision History</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
+            Jay Meistrich
+            </a>
+
+            and
+
+
+            <a href="mailto:grant@moo.do">
+            Grant Watters
+            </a>
+
+
+        on
+
         </span><span class="postDate">October 03, 2015</span><span class="postCategories"> in
-        
+
             <span><a href="/blog/updates/">updates</a></span></span></div></div><div class="postExcerpt padded"><p>The most important feature of a productivity app is that it <strong>never</strong> lose your data, which is why we designed Moo.do so that losing data is not even possible. Moo.do keeps a full revision history of all changes so that if anything goes wrong, everything can always be recovered. We just released a new tool for browsing your revision history to get back anything you may have lost. If you ever need to get something back, you can either revert to a previous version or copy and paste what you need back into Moo.do.</p><p>You can find Revision History in the options menu below Export Data. If you have any trouble with this tool, please let us know. Nobody has ever lost data in Moo.do and we plan to keep it that way.</p><div class="postFooter"><div class="readMore"><a href="/blog/revision-history/">Continue Reading...</a></div></div></div></li><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/performance/">Performance Upgrade</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
             Jay Meistrich
             </a>
-            
+
             and
-            
-        
+
+
             <a href="mailto:grant@moo.do">
             Grant Watters
             </a>
-            
-        
+
+
         on
-        
+
         </span><span class="postDate">September 14, 2015</span><span class="postCategories"> in
-        
+
             <span><a href="/blog/updates/">updates</a></span></span></div></div><div class="postExcerpt padded"><p>We just launched a <strong>huge</strong> performance upgrade for Moo.do which dramatically reduces load time and makes interaction feel much snappier. This update improves Moo.do everywhere: on the web, Chrome, iOS, and Android.</p><p>We&#39;re serious when we say this is a <strong>huge</strong> upgrade. Check it out:</p><p><img class="postImg postImgPerf" src="/blog/img/update-performance1.png" /><img class="postImg postImgPerf" src="/blog/img/update-performance2.png" /><img class="postImg postImgPerf" src="/blog/img/update-performance3.png" /></p><p>This update was an unexpected delay in our roadmap. As we got into the development of the Gmail plugin and began loading our inboxes into Moo.do, we realized we could not provide a good email experience until we fixed the performance problems. Moo.do was fast with a few hundred items, but as documents grew over time, Moo.do was unable to keep up. It was especially noticeable with the mobile apps, which were basically unusable with large documents. Adding large email inboxes into the mix made it clear that we had to focus on performance before we could continue.</p><p>Now, Moo.do is snappy even with tens of thousands of items. And now that this big change is done, we&#39;re back to building the features you&#39;ve been waiting for. We have a new and much stronger foundation which is better designed for our future plans, so development will move much faster now.</p><p>We did some cool things technically to make Moo.do this fast, which we will detail in a future post. So we&#39;ll end this one with the usual list of things we&#39;re working on next.</p><h1>In Development</h1><ul><li>Google Calendar sync</li><li>Gmail integration</li></ul><style>
 .postImgPerf {
     width: 682px;
@@ -60,37 +81,37 @@
 </style><div class="postFooter"><div class="readMore"><a href="/blog/performance/">Continue Reading...</a></div></div></div></li><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/updated-roadmap/">Recent Roadmap Changes</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
             Jay Meistrich
             </a>
-            
+
             and
-            
-        
+
+
             <a href="mailto:grant@moo.do">
             Grant Watters
             </a>
-            
-        
+
+
         on
-        
+
         </span><span class="postDate">June 27, 2015</span><span class="postCategories"> in
-        
+
             <span><a href="/blog/updates/">updates</a></span></span></div></div><div class="postExcerpt padded"><p>We&#39;ve spent the past month working on improving Moo.do&#39;s performance, based on your feedback and to get ready for the Gmail and Google Calendar integrations. We found a way to dramatically improve Moo.do&#39;s speed and load time, but the changes required ended up being larger than expected. The delay is totally worth it though, as Moo.do will soon be able to handle tens of thousands of items with ease and feel much snappier overall. This update will improve our apps on all platforms: web, Chrome, iOS, and Android.</p><p>After this performance upgrade, we plan to spend some time working on some of the most requested features before starting the next big project that is the Gmail plugin.</p><p>We want to be totally transparent about what we&#39;re working on, and we know we haven&#39;t been as good about that as we should be. So we&#39;re going to post updates on our blog more often about what we&#39;re doing and what is coming. To get that started, this is an overview of how we expect to spend the next few months:</p><h2>Upcoming roadmap</h2><ul><li>Finish the performance upgrade (maybe about two weeks)</li><li>Important and highly requested features:
 
 <ul><li>Google Calendar sync</li><li>Improved search UI</li><li>Improved Agenda: Making it directly editable, showing context of what list an item is in, showing the children of an item</li><li>Notes</li></ul></li><li>Start on Gmail plugin</li></ul><div class="postFooter"><div class="readMore"><a href="/blog/updated-roadmap/">Continue Reading...</a></div></div></div></li><li class="post"  id="post_launchPremium" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/premium/">Google Drive and Premium</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
             Jay Meistrich
             </a>
-            
+
             and
-            
-        
+
+
             <a href="mailto:grant@moo.do">
             Grant Watters
             </a>
-            
-        
+
+
         on
-        
+
         </span><span class="postDate">May 06, 2015</span><span class="postCategories"> in
-        
+
             <span><a href="/blog/updates/">updates</a></span></span></div></div><div class="postExcerpt padded"><p>For the past six months since our public launch, we&#39;ve focused on improving the free version of Moo.do, including what we believe are basic features that every productivity app needs to have for free: real-time collaboration, offline support, availability on every device, and no limits on usage. We really appreciate your feedback and support that has helped us shape Moo.do into a great tool for managing projects, tasks, and to-do lists. Now it’s time to make Moo.do into much more than just a to-do list app.</p><p>Moo.do was started with the goal of organizing everything in one place. The first step of that was to be great at organizing one thing, so Moo.do has thus far been an app for organizing lists of text. We&#39;ve spent the past few months building a plugin system that enables integration of all of the services you depend on into one organization system.</p><h2>Google Drive Integration</h2><p>Today we&#39;re launching Moo.do&#39;s first plugin: Google Drive. You can view the entire contents of your Drive within Moo.do in the new Drive Pane, drag files or folders onto your lists, search and focus the Drive Panes on individual folders, and drag files from your computer right into your Moo.do lists. Drive files work just like any other text in Moo.do: you can prioritize, schedule, tag, complete, and star them.</p><p>Try this live demo to see how the new Drive Pane works:</p><div class="twoPane demobg"><div id="demoPremium"></div></div><h2>Premium</h2><p>Together with the Drive plugin, we&#39;re launching our Premium plan. All of the features currently available in Moo.do will remain free, but premium users will have access to the new Drive plugin as well as <a href="https://www.moo.do/pricing/">many more Premium features</a> in the future. To celebrate the Premium launch, we have special Early Adopter pricing of $4.95 / month, a 30% discount from the regular price. If you sign up now, you get Early Adopter pricing for life! You can sign up for Premium and get discounts for inviting your friends from the settings menu in the desktop version of Moo.do.</p><h2>Discounts for inviting friends</h2><p>You get 20% off of your Premium plan for every friend you invite that signs up. You can stack that discount as many times as you want, so if 20 of your friends sign up for Moo.do, you&#39;ll get 4 months for free! The friends you invite also get their first month of Moo.do Premium for free, so everyone wins :).</p><h2>Help us grow</h2><p>We really appreciate your support in becoming a Premium user and inviting your friends, which helps us get our new features and integrations into your hands as quickly as possible. Thank you!</p><script>
 window.__addDemo(
 {
@@ -120,23 +141,7 @@ html:not(.mobile) #post_launchPremium .demobg {
     width: 100%;
     display: block;
 }
-</style><div class="postFooter"><div class="readMore"><a href="/blog/premium/">Continue Reading...</a></div></div></div></li><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/update-04-16/">Development Update 4/16</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
-            Jay Meistrich
-            </a>
-            
-            and
-            
-        
-            <a href="mailto:grant@moo.do">
-            Grant Watters
-            </a>
-            
-        
-        on
-        
-        </span><span class="postDate">April 16, 2015</span><span class="postCategories"> in
-        
-            <span><a href="/blog/updates/">updates</a></span></span></div></div><div class="postExcerpt padded"><p>We&#39;ve been quiet recently while working on big new features for Moo.do, so we just wanted to update everyone on some recent changes and the roadmap for the next few months.</p><h2>Collapsing</h2><ul><li>Collapsing is now per pane so that panes can be better used to focus on different areas of your lists.</li><li>Collapsed state will now be saved when you switch documents.</li><li>Search automatically expands collapsed items. Collapsing items while searched will not change their state outside of search.</li></ul><h2>Upcoming roadmap</h2><ul><li>Google Drive integration (Premium)</li><li>Performance upgrade on desktop and mobile</li><li>Notes</li><li>Notification settings</li><li>International dates like DD/MM/YYYY or YYYY/MM/DD</li><li>Gmail</li></ul><div class="postFooter"><div class="readMore"><a href="/blog/update-04-16/">Continue Reading...</a></div></div></div></li></ul><div class="pagination padded"><span>1</span><a href="/blog/updates/2">2</a><a href="/blog/updates/3">3</a><a href="/blog/updates/4">4</a><a href="/blog/updates/2">Next &raquo;</a></div></div></div></div><div id="footer"><div id="footerOuter"><div class="center"><a class="link h" href="/">Home</a><a class="link h" href="/pricing/">Pricing</a><a class="link h selected" href="/blog/">Blog</a><a class="link h" href="/us/">About Us</a><a class="link h" href="/press/">Press</a><a class="link h" href="/privacy/">Privacy</a><span class="socialIcons"><a class="link h" target="_blank" onclick="sendToSocialMedia('Facebook', 'bot')" href="https://www.facebook.com/MooDoApp"><i class="icon-facebook"></i></a><a class="link h" target="_blank" onclick="sendToSocialMedia('Twitter', 'bot')" href="https://www.twitter.com/MooDoApp"><i class="icon-twitter"></i></a><a class="link" target="_blank" onclick="sendToSocialMedia('Google', 'bot')" ref="publisher" href="https://www.google.com/+MooDoApp"><i class="icon-google-plus"></i></a><a class="link" target="_blank" onclick="sendToSocialMedia('Email', 'bot')"><i class="icon-envelope"></i></a></span></div></div></div></div><script type="text/javascript">
+</style><div class="postFooter"><div class="readMore"><a href="/blog/premium/">Continue Reading...</a></div></div></div></li></ul><div class="pagination padded"><span>1</span><a href="/blog/updates/2">2</a><a href="/blog/updates/3">3</a><a href="/blog/updates/4">4</a><a href="/blog/updates/2">Next &raquo;</a></div></div></div></div><div id="footer"><div id="footerOuter"><div class="center"><a class="link h" href="/">Home</a><a class="link h" href="/pricing/">Pricing</a><a class="link h selected" href="/blog/">Blog</a><a class="link h" href="/us/">About Us</a><a class="link h" href="/press/">Press</a><a class="link h" href="/privacy/">Privacy</a><span class="socialIcons"><a class="link h" target="_blank" onclick="sendToSocialMedia('Facebook', 'bot')" href="https://www.facebook.com/MooDoApp"><i class="icon-facebook"></i></a><a class="link h" target="_blank" onclick="sendToSocialMedia('Twitter', 'bot')" href="https://www.twitter.com/MooDoApp"><i class="icon-twitter"></i></a><a class="link" target="_blank" onclick="sendToSocialMedia('Google', 'bot')" ref="publisher" href="https://www.google.com/+MooDoApp"><i class="icon-google-plus"></i></a><a class="link" target="_blank" onclick="sendToSocialMedia('Email', 'bot')"><i class="icon-envelope"></i></a></span></div></div></div></div><script type="text/javascript">
           (function() {
             var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
             po.src = 'https://apis.google.com/js/platform.js';
