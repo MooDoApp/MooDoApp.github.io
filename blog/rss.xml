@@ -8,7 +8,64 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Sun, 18 Oct 2015 00:00:00 +0800</pubDate>
+    <pubDate>Mon, 26 Oct 2015 00:00:00 +0800</pubDate>
+    <item>
+      <title>Search</title>
+      <link>http://www.moo.do/blog/search</link>
+      <description><![CDATA[Search is one of Moo.do&#39;s most powerful features so we&#39;ve upgraded it to be more intuitive and to support advanced search functions for our upcoming plugins.
+
+With the new search you can easily set a minimum priority and show or hide completed and starred items. You can toggle these filters with the same hotkeys that you use on your lists.
+
+
+
+Searching for dates is more powerful and easier to use. Searching for a @date will match all items that fall on that date rather than just matching the text. For example, a search for @tomorrow will show items on @10/27 or @tuesday.
+
+
+
+In Development
+
+
+Google Calendar sync
+Gmail integration
+
+
+
+.postImgSearch {
+    width: 400px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+}
+
+]]></description>
+      <pubDate>Mon, 26 Oct 2015 00:00:00 +0800</pubDate>
+      <guid>http://www.moo.do/blog/search</guid>
+      <content:encoded><![CDATA[<p>Search is one of Moo.do&#39;s most powerful features so we&#39;ve upgraded it to be more intuitive and to support advanced search functions for our upcoming plugins.</p>
+
+<p>With the new search you can easily set a minimum priority and show or hide completed and starred items. You can toggle these filters with the same hotkeys that you use on your lists.</p>
+
+<p><img class="postImg postImgSearch" src="/blog/img/update-search1.gif" /></p>
+
+<p>Searching for dates is more powerful and easier to use. Searching for a <span class="date">@date</span> will match all items that fall on that date rather than just matching the text. For example, a search for <span class="date">@tomorrow</span> will show items on <span class="date">@10/27</span> or <span class="date">@tuesday</span>.</p>
+
+<p><img class="postImg postImgSearch" src="/blog/img/update-search2.png" /></p>
+
+<h1>In Development</h1>
+
+<ul>
+<li>Google Calendar sync</li>
+<li>Gmail integration</li>
+</ul>
+
+<style>
+.postImgSearch {
+    width: 400px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+}
+</style>
+]]></content:encoded>
+      <dc:date>2015-10-26T00:00:00+08:00</dc:date>
+    </item>
     <item>
       <title>Editable Agenda</title>
       <link>http://www.moo.do/blog/editable-agenda</link>
@@ -40,11 +97,12 @@ Gmail integration
 
 .postImgAgenda {
     width: 400px;
-    margin: 60px auto;
+    margin: 40px auto;
+    border: 1px solid #ddd;
 }
 
 ]]></description>
-      <pubDate>Sun, 18 Oct 2015 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0800</pubDate>
       <guid>http://www.moo.do/blog/editable-agenda</guid>
       <content:encoded><![CDATA[<p>We wanted the Agenda to be editable from the beginning, but it hasn&#39;t been possible to make it a good experience until the changes we made in our <a href="/blog/performance">performance update</a>. With that done, we are happy to announce that items in the Agenda pane are now editable!</p>
 
@@ -74,11 +132,12 @@ Gmail integration
 <style>
 .postImgAgenda {
     width: 400px;
-    margin: 60px auto;
+    margin: 40px auto;
+    border: 1px solid #ddd;
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-10-18T00:00:00+08:00</dc:date>
+      <dc:date>2015-10-19T00:00:00+08:00</dc:date>
     </item>
     <item>
       <title>Revision History</title>
@@ -1530,6 +1589,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2015-10-18T00:00:00+08:00</dc:date>
+    <dc:date>2015-10-26T00:00:00+08:00</dc:date>
   </channel>
 </rss>
