@@ -8,7 +8,46 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Thu, 03 Dec 2015 00:00:00 -0800</pubDate>
+    <pubDate>Fri, 11 Mar 2016 00:00:00 -0800</pubDate>
+    <item>
+      <title>Moo.do for Gmail Coming Soon</title>
+      <link>http://www.moo.do/blog/gmail-preview</link>
+      <description><![CDATA[The Gmail plugin for Moo.do is nearing public beta! Moo.do will soon be a full desktop email client. You’ll be able to use Moo.do to read, write, organize, and schedule your emails right next to your events, tasks, and files.
+
+We have gotten a lot of great feedback from our private beta testers which has helped shape Moo.do into what we think is a great tool for working with email. We’re super excited about this and are working to get the Gmail plugin ready for you as quickly as possible. Here&#39;s a quick preview of how email looks inside Moo.do.
+
+
+
+More updates on the Gmail plugin coming soon!
+
+
+.postImgGmailPreview {
+    width: 100%;
+    box-shadow: 0 0 1px rgba(0,0,0,0.15);
+    margin: 40px auto;
+}
+
+]]></description>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 -0800</pubDate>
+      <guid>http://www.moo.do/blog/gmail-preview</guid>
+      <content:encoded><![CDATA[<p>The Gmail plugin for Moo.do is nearing public beta! Moo.do will soon be a full desktop email client. You’ll be able to use Moo.do to read, write, organize, and schedule your emails right next to your events, tasks, and files.</p>
+
+<p>We have gotten a lot of great feedback from our private beta testers which has helped shape Moo.do into what we think is a great tool for working with email. We’re super excited about this and are working to get the Gmail plugin ready for you as quickly as possible. Here&#39;s a quick preview of how email looks inside Moo.do.</p>
+
+<p><a href="/blog/img/update-gmail-preview.png" target="_blank"><img class="postImg postImgGmailPreview" src="/blog/img/update-gmail-preview.png" /></a></p>
+
+<p>More updates on the Gmail plugin coming soon!</p>
+
+<style>
+.postImgGmailPreview {
+    width: 100%;
+    box-shadow: 0 0 1px rgba(0,0,0,0.15);
+    margin: 40px auto;
+}
+</style>
+]]></content:encoded>
+      <dc:date>2016-03-11T00:00:00-08:00</dc:date>
+    </item>
     <item>
       <title>Archived Pane, Search Autocomplete, Hotkeys</title>
       <link>http://www.moo.do/blog/archived-pane</link>
@@ -584,7 +623,7 @@ We want to be totally transparent about what we&#39;re working on, and we know w
 Upcoming roadmap
 
 
-Finish the performance upgrade (maybe about two weeks)
+Finish the performance upgrade
 Important and highly requested features:
 
 
@@ -607,7 +646,7 @@ Start on Gmail plugin
 <h2>Upcoming roadmap</h2>
 
 <ul>
-<li>Finish the performance upgrade (maybe about two weeks)</li>
+<li>Finish the performance upgrade</li>
 <li>Important and highly requested features:
 
 <ul>
@@ -865,10 +904,6 @@ Mailbird
 
 Moo.do is built into Mailbird 2.0 as a dedicated sidebar, so you can drag your emails from Mailbird right into your Moo.do lists. See more about Mailbird at http://getmailbird.com.
 
-
-
-
-
 Try it now
 
 We&#39;ve updated our landing page with live demos of how email and file organization work, so please try it out and let us know what you think!
@@ -937,10 +972,6 @@ html:not(.mobile) #post_announceEmail .demobg {
 <h2>Mailbird</h2>
 
 <p>Moo.do is built into <a href="http://www.getmailbird.com">Mailbird 2.0</a> as a dedicated sidebar, so you can drag your emails from Mailbird right into your Moo.do lists. See more about Mailbird at <a href="http://getmailbird.com">http://getmailbird.com</a>.</p>
-
-<!-- ## Moo.do Premium -->
-
-<!-- We are also announcing our business model. Everything that is already in Moo.do will stay free, and we will have a Premium subscription of $7 per month for the premium integrations: Gmail, Drive, Calendar, and more to come. You can learn more about our pricing [here](/pricing/). -->
 
 <h2>Try it now</h2>
 
@@ -1942,6 +1973,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00-07:00</dc:date>
     </item>
-    <dc:date>2015-12-03T00:00:00-08:00</dc:date>
+    <dc:date>2016-03-11T00:00:00-08:00</dc:date>
   </channel>
 </rss>
