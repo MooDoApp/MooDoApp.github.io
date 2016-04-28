@@ -8,7 +8,26 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Mon, 11 Apr 2016 00:00:00 -0700</pubDate>
+    <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
+    <item>
+      <title>Pricing/Trial Update</title>
+      <link>http://www.moo.do/blog/pricing</link>
+      <description><![CDATA[As the Gmail plugin comes out of Beta, we will be switching from Early Adopter pricing to the normal price of $7 / month and we will also begin offering a yearly pricing option of $70 / year. We want to give our current users time to trial our Premium features before going Premium which is available by going to the Settings menu in the desktop app. 
+
+The change in price will happen in two weeks on May 10th. As thanks for helping us grow in our early days, anyone that signs up for Premium before that date will continue to have Early Adopter pricing for life.
+
+Before the Gmail plugin comes out of Beta we are trying to squash any remaining bugs. If you&#39;ve noticed anything strange or are seeing any issues, please let us know and we will fix them for you. Thank you!
+]]></description>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
+      <guid>http://www.moo.do/blog/pricing</guid>
+      <content:encoded><![CDATA[<p>As the Gmail plugin comes out of Beta, we will be switching from Early Adopter pricing to the normal price of $7 / month and we will also begin offering a yearly pricing option of $70 / year. We want to give our current users time to trial our Premium features before going Premium which is available by going to the Settings menu in the desktop app. </p>
+
+<p>The change in price will happen in two weeks on <strong>May 10th</strong>. As thanks for helping us grow in our early days, anyone that signs up for Premium before that date will continue to have Early Adopter pricing for life.</p>
+
+<p>Before the Gmail plugin comes out of Beta we are trying to squash any remaining bugs. If you&#39;ve noticed anything strange or are seeing any issues, please let us know and we will fix them for you. Thank you!</p>
+]]></content:encoded>
+      <dc:date>2016-04-27T00:00:00-07:00</dc:date>
+    </item>
     <item>
       <title>Gmail Plugin Public Beta</title>
       <link>http://www.moo.do/blog/gmail-public-beta</link>
@@ -2098,6 +2117,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00-07:00</dc:date>
     </item>
-    <dc:date>2016-04-11T00:00:00-07:00</dc:date>
+    <dc:date>2016-04-27T00:00:00-07:00</dc:date>
   </channel>
 </rss>
