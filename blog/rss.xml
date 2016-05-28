@@ -8,7 +8,68 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+    <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
+    <item>
+      <title>Advanced Display Settings</title>
+      <link>http://www.moo.do/blog/advanced-display-settings</link>
+      <description><![CDATA[Building on our earlier release of display settings, we&#39;ve added a huge amount of customization options for our Premium users. You can now change font sizes, paddings, and colors of special text elements.
+
+
+
+We have a lot more new features coming in the next few weeks, so keep an eye on our blog or follow us on Twitter @MooDoApp for updates.
+
+In Development
+
+
+    Scrolling performance improvements
+    Drag & drop onto Agenda
+    Mac App
+    Gmail
+    
+        Attachments
+        Unsubscribe button
+        Multiple accounts
+        Improved Snooze menu
+    
+
+
+
+.postImgAdvDisp {
+    width: 300px;
+    margin: 40px auto;
+}
+]]></description>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
+      <guid>http://www.moo.do/blog/advanced-display-settings</guid>
+      <content:encoded><![CDATA[<p>Building on our earlier release of <a href="/blog/display-settings">display settings</a>, we&#39;ve added a huge amount of customization options for our Premium users. You can now change font sizes, paddings, and colors of special text elements.</p>
+
+<p><img class="postImg postImgAdvDisp" src="/blog/img/update-advanced-display-settings.png" /></p>
+
+<p>We have a lot more new features coming in the next few weeks, so keep an eye on our blog or follow us on Twitter <a href="https://www.twitter.com/MooDoApp">@MooDoApp</a> for updates.</p>
+
+<h1>In Development</h1>
+
+<ul>
+    <li>Scrolling performance improvements</li>
+    <li>Drag & drop onto Agenda</li>
+    <li>Mac App</li>
+    <li>Gmail</li>
+    <ul>
+        <li>Attachments</li>
+        <li>Unsubscribe button</li>
+        <li>Multiple accounts</li>
+        <li>Improved Snooze menu</li>
+    </ul>
+</ul>
+
+<p><style>
+.postImgAdvDisp {
+    width: 300px;
+    margin: 40px auto;
+}</p>
+]]></content:encoded>
+      <dc:date>2016-05-28T00:00:00+08:00</dc:date>
+    </item>
     <item>
       <title>Pricing/Trial Update</title>
       <link>http://www.moo.do/blog/pricing</link>
@@ -333,11 +394,6 @@ Gmail Plugin
 
 
 
-    var els = document.getElementsByClassName('boldHotkey');
-    var isMac = navigator.userAgent.indexOf('Mac') >= 0;
-    for (var i = 0; i 
-
-
 .postImgSettings1 {
     width: 320px;
     margin: 40px auto;
@@ -385,15 +441,6 @@ Gmail Plugin
 <ul>
 <li>Gmail Plugin</li>
 </ul>
-
-<script>
-    var els = document.getElementsByClassName('boldHotkey');
-    var isMac = navigator.userAgent.indexOf('Mac') >= 0;
-    for (var i = 0; i < els.length; i ++)
-    {
-        els[i].textContent = (isMac ? 'Ctrl' : 'Alt') + ' + B';
-    }
-</script>
 
 <style>
 .postImgSettings1 {
@@ -2117,6 +2164,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-04-27T00:00:00+08:00</dc:date>
+    <dc:date>2016-05-28T00:00:00+08:00</dc:date>
   </channel>
 </rss>
