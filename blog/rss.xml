@@ -38,6 +38,7 @@ In Development
     width: 300px;
     margin: 40px auto;
 }
+
 ]]></description>
       <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
       <guid>http://www.moo.do/blog/advanced-display-settings</guid>
@@ -62,11 +63,12 @@ In Development
     </ul>
 </ul>
 
-<p><style>
+<style>
 .postImgAdvDisp {
     width: 300px;
     margin: 40px auto;
-}</p>
+}
+</style>
 ]]></content:encoded>
       <dc:date>2016-05-28T00:00:00+08:00</dc:date>
     </item>
