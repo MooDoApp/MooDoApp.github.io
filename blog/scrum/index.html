@@ -55,23 +55,23 @@ window.__addDemos(
     },
     {
         id: 'demoThreePanes',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,,todo:1,,progress:1,,testing&script=none&dmode=0x2bd',
+        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,,todo:1,,progress:1,,testing&script=none&dmode=0x2b9',
         img: '/img/ss/blog/scrum/demoThreePanes.png',
         forceDesktopIFrame: true
     },
     {
         id: 'demoAgenda',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=2:2,,testing&script=none&dmode=0x2bd',
+        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=2:2,,testing&script=none&dmode=0x2b9',
         img: '/img/ss/blog/scrum/demoAgenda.png'
     },
     {
         id: 'demoAssign',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,,progress:1,' + encodeURIComponent('#J') + ',progress&script=none&dmode=0x2bd',
+        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,,progress:1,' + encodeURIComponent('#J') + ',progress&script=none&dmode=0x2b9',
         img: '/img/ss/blog/scrum/demoAssign.png'
     },
     {
         id: 'demoPersonal',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,' + encodeURIComponent('#Android') + ':1,' + encodeURIComponent('#J ! -//') + '&script=none&dmode=0x2bd',
+        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=1,' + encodeURIComponent('#Android') + ':1,' + encodeURIComponent('#J ! -//') + '&script=none&dmode=0x2b9',
         img: '/img/ss/blog/scrum/demoPersonal.png'
     }
 ]);
@@ -103,10 +103,13 @@ window.__addDemos(
         margin: 0 !important;
     }
     #post_scrum .onePane:not(.demoimg) {
-        width: 350px;
+        width: 410px;
     }
     #post_scrum .twoPane:not(.demoimg) {
-        width: 760px;
+        width: 820px;
+        margin-left: -15px;
+        max-width: -webkit-calc(100% + 30px);
+        max-width: calc(100% + 30px);
     }
     #post_scrum .demoimg {
         width: 100%;
