@@ -8,7 +8,60 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Fri, 29 Jul 2016 00:00:00 +0100</pubDate>
+    <pubDate>Tue, 02 Aug 2016 00:00:00 +0100</pubDate>
+    <item>
+      <title>Gmail Priority View</title>
+      <link>http://www.moo.do/blog/priority-view</link>
+      <description><![CDATA[We want to make it easy to quickly process your emails and keep track of what needs further action or response, so we have a new Priority View to sort emails by priority. Click on the new  icon in the Gmail Pane to switch to the Priority View.
+
+
+
+Our favorite way to use the Priority View is to run through emails in two phases:
+
+Triage emails in the normal time view, marking important emails with a priority or star.
+Switch to Priority View and start at the top, handling emails in priority order.
+
+
+We&#39;re excited to hear how you use the Priority View and how we can make it better for you.
+
+
+.postImgPriTime {
+    width: 16px;
+    margin: 0 4px;
+}
+.postImgPriority {
+    width: 400px;
+    margin: 40px auto;
+}
+
+]]></description>
+      <pubDate>Tue, 02 Aug 2016 00:00:00 +0100</pubDate>
+      <guid>http://www.moo.do/blog/priority-view</guid>
+      <content:encoded><![CDATA[<p>We want to make it easy to quickly process your emails and keep track of what needs further action or response, so we have a new Priority View to sort emails by priority. Click on the new <img class="postImgPriTime" src="/blog/img/update-priority-view2.png"></img> icon in the Gmail Pane to switch to the Priority View.</p>
+
+<p><img class="postImg postImgPriority" src="/blog/img/update-priority-view.jpg" /></a></p>
+
+<p>Our favorite way to use the Priority View is to run through emails in two phases:
+<ul>
+<li>Triage emails in the normal time view, marking important emails with a priority or star.</li>
+<li>Switch to Priority View and start at the top, handling emails in priority order.</li>
+</ul></p>
+
+<p>We&#39;re excited to hear how you use the Priority View and how we can make it better for you.</p>
+
+<style>
+.postImgPriTime {
+    width: 16px;
+    margin: 0 4px;
+}
+.postImgPriority {
+    width: 400px;
+    margin: 40px auto;
+}
+</style>
+]]></content:encoded>
+      <dc:date>2016-08-02T00:00:00+01:00</dc:date>
+    </item>
     <item>
       <title>Rearrange panes</title>
       <link>http://www.moo.do/blog/rearrange-panes</link>
@@ -2384,6 +2437,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00+01:00</dc:date>
     </item>
-    <dc:date>2016-07-29T00:00:00+01:00</dc:date>
+    <dc:date>2016-08-02T00:00:00+01:00</dc:date>
   </channel>
 </rss>
