@@ -4,16 +4,17 @@
     <title>Moo.do Demo</title>
 
     <script>
-        redirURL = 'https://www.moo.do/app/#demo=true&data=press.0';
+        redirURL = '/app/#demo=true&data=press&script=press&panes=PaneGmail:1:2';
     </script>
 
-    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create','UA-37740918-2',{'cookieDomain':'auto'});
-ga('send','pageview',{hitCallback:function(){
-    function isMobile()
+    <script>var hasRun = false;
+
+function runPage()
+{
+    if (hasRun) { return; }
+    hasRun = true;
+
+    function isMobileClient()
     {
         var isMobile = false;
 
@@ -28,7 +29,7 @@ ga('send','pageview',{hitCallback:function(){
             {
                 isMobile = true;
             }
-            else if(!!userAgent.match(/IEMobile/i))
+            else if (!!userAgent.match(/IEMobile/i))
             {
                 isMobile = true;
             }
@@ -60,6 +61,28 @@ ga('send','pageview',{hitCallback:function(){
         return isMobile;
     }
 
+    function setupStyles()
+    {
+        var head = document.head || document.getElementsByTagName('head')[0];
+
+        var styleNode = document.createElement('style');
+
+        styleNode.type = 'text/css';
+        styleNode.rel = 'stylesheet';
+
+        head.appendChild(styleNode);
+
+        var sheet = styleNode.sheet;
+
+        //
+        //
+        //
+
+        sheet.insertRule('body { margin: 0; }', 0);
+        sheet.insertRule('#errorMessage { position: relative; font-size: 24pt; max-width: 100%; width: 600px; margin-left: auto; margin-right: auto; top: 45%; }', 0);
+        sheet.insertRule('#demoFrame { width: 100%; height: 100%; position: fixed; border: 0px none transparent; padding: 0px; margin: 0px; background-color: transparent; overflow: hidden; }', 0);
+    }
+
     function displayErrorMessage()
     {
         var msg = document.createElement('div');
@@ -70,15 +93,49 @@ ga('send','pageview',{hitCallback:function(){
         document.body.appendChild(msg);
     }
 
-    if (!isMobile())
+    function displayDemo()
+    {
+        var demo = document.createElement('iframe');
+
+        demo.id = 'demoFrame';
+
+        demo.setAttribute('seamless', 'seamless');
+        demo.scrolling = 'no';
+
+        demo.src = window.location.protocol + '//' + window.location.host + window.redirURL;
+
+        document.body.appendChild(demo);
+    }
+
+    setupStyles();
+
+    if (isMobileClient())
     {
         displayErrorMessage();
     }
     else
     {
-        window.location = redirURL;
+        displayDemo();
     }
-}});</script>
+}
+
+if (document.readyState === 'interactive' || document.readyState === 'complete')
+{
+    setTimeout(runPage, 0);
+}
+else
+{
+    document.addEventListener('DOMContentLoaded', runPage, false);
+    window.addEventListener('load', runPage, false);
+}
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create','UA-37740918-2',{'cookieDomain':'auto'});
+ga('send','pageview');
+</script>
 </head>
 
 <body>
