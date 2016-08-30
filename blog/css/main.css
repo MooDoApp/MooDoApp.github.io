@@ -43,15 +43,15 @@ hr {
   width: 100%;
   padding: 60px 0;
 }
-@media screen and (min-width: 581px) {
-  .section:not(.section-first) {
-    border-top: 1px solid #eaeaea;
-  }
-}
 @media screen and (max-width: 580px) {
   .section {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 581px) {
+  .section-border {
+    border-top: 1px solid #eaeaea;
   }
 }
 .section-full {
@@ -125,7 +125,7 @@ hr {
   font-size: 36px;
   font-weight: bold;
   line-height: 50px;
-  color: #444;
+  color: #333;
   margin: 0;
   text-align: center;
 }
@@ -134,13 +134,13 @@ hr {
   text-align: left;
   margin: 0 auto;
   line-height: 1.4;
-  color: #777;
+  color: #666;
 }
 .subtitle-center {
   text-align: center;
 }
 .sectionText {
-  color: #777;
+  color: #666;
   max-width: 720px;
   text-align: left;
   margin: 0 auto;
@@ -149,7 +149,7 @@ hr {
 }
 .sectionText h2,
 .sectionText h3 {
-  color: #444;
+  color: #333;
 }
 .sectionDivider {
   position: relative;
@@ -981,7 +981,7 @@ html:not(.mobile) .content {
   margin-bottom: 8px;
 }
 .postTitle a {
-  color: #444;
+  color: #333;
 }
 .postTitle a:hover {
   color: #2bbeff;
@@ -1016,8 +1016,8 @@ html:not(.mobile) .content {
   margin: 0 4px;
 }
 #social {
-  padding-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 #social > * {
   display: inline !important;
