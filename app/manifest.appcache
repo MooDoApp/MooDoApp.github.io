@@ -1,9 +1,10 @@
 CACHE MANIFEST
-# 1485988111170
+# 1486426889994
 
 CACHE:
 /js/main-min.js
 /js/preload-min.js
+/js/rollbar-min.js
 
 /css/app-min.css
 /css/fonts/fonticons.ttf

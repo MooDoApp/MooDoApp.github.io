@@ -1104,10 +1104,21 @@ html:not(.mobile) .content {
   padding: 5px;
 }
 .search {
-  padding: 3px 5px;
-  margin: 0 3px;
-  border: 1px solid #ddd;
   white-space: nowrap;
+  overflow: hidden;
+  margin-right: 3px;
+}
+.search.border {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 3px 5px 4px 5px;
+  margin: 0 3px;
+}
+.searchList img {
+  vertical-align: middle;
+}
+.searchList img:not(:first-child) {
+  margin-left: 4px;
 }
 .b {
   font-weight: bold;
