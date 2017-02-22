@@ -17,7 +17,7 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
   font-size: 16px;
   line-height: 1.5;
   overflow-x: hidden;
@@ -115,7 +115,7 @@ hr {
   left: 0;
   width: 100%;
   top: 50%;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
   margin-top: 18px;
 }
 .pageContent {
@@ -150,28 +150,6 @@ hr {
 .sectionText h2,
 .sectionText h3 {
   color: #333;
-}
-.sectionDivider {
-  position: relative;
-  width: 100%;
-  margin: 30px auto;
-  text-align: center;
-}
-.sectionDivider span {
-  position: relative;
-  background: #fff;
-  z-index: 1;
-  padding: 0 16px;
-  font-weight: bold;
-}
-.sectionDivider:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 1px;
-  background: #ddd;
 }
 @media screen and (max-width: 740px) {
   #topBar {
@@ -213,13 +191,6 @@ hr {
 }
 html:not(.mobile) .mobileOnly {
   display: none !important;
-}
-#pageContainer {
-  position: relative;
-  min-height: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  background: white;
 }
 .link {
   display: inline-block;
@@ -517,46 +488,37 @@ a:hover,
 .smallLink:hover {
   color: #2bbeff;
 }
+.platforms {
+  vertical-align: top;
+}
 .platform {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 36px;
-  font-size: 20px;
-  height: 36px;
+  width: 64px;
+  height: 50px;
   color: #666;
-}
-.platform img {
-  width: 22px;
-  height: 22px;
-  opacity: 0.6;
-}
-.platform a {
+  text-align: center;
   vertical-align: middle;
-}
-.platform div {
-  line-height: 36px;
-}
-.platform [class^="icon-"],
-.platform [class*=" icon-"],
-.platform img {
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-.platform:hover [class^="icon-"],
-.platform:hover [class*=" icon-"],
-.platform:hover img {
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
-  transform: scale(1.3);
-  color: #2bbeff;
+.platform i {
+  font-size: 24px;
+  line-height: 25px;
 }
-.platform > a {
-  color: #666;
-  text-decoration: none;
+.platform div {
+  line-height: 25px;
+  font-size: 13px;
+}
+.platform:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #2bbeff;
 }
 .platforms {
   position: relative;
@@ -570,7 +532,7 @@ a:hover,
 }
 .signup {
   height: 50px;
-  width: 220px;
+  width: 200px;
   cursor: pointer;
   background: #09d;
   font-size: 18px;
@@ -620,6 +582,18 @@ a:hover,
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+.flex-center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .block {
   display: block;
