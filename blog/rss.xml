@@ -10,15 +10,15 @@
     <description>Moo.do - Organize your way</description>
     <pubDate>Mon, 20 Mar 2017 00:00:00 +0100</pubDate>
     <item>
-      <title>Moo.do for Scrum</title>
-      <link>http://www.moo.do/blog/scrum</link>
-      <description><![CDATA[Many Moo.do users like to organize their projects on a Scrum (or Kanban) board for Agile Development. This continues our series of examples of how people and teams are using Moo.do with a description of how Moo.do can be used as a Scrum board.
+      <title>Moo.do for Kanban</title>
+      <link>http://www.moo.do/blog/kanban</link>
+      <description><![CDATA[Many Moo.do users like to organize their projects on a Kanban (or Scrum) board for Agile Development. This continues our series of examples of how people and teams are using Moo.do with a description of how Moo.do can be used as a Kanban board.
 
 
 ]]></description>
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0100</pubDate>
-      <guid>http://www.moo.do/blog/scrum</guid>
-      <content:encoded><![CDATA[<p>Many <strong>Moo.do</strong> users like to organize their projects on a Scrum (or Kanban) board for Agile Development. This continues our series of <a href="/blog/ideas">examples of how people and teams are using <strong>Moo.do</strong></a> with a description of how <strong>Moo.do</strong> can be used as a Scrum board.</p>
+      <guid>http://www.moo.do/blog/kanban</guid>
+      <content:encoded><![CDATA[<p>Many <strong>Moo.do</strong> users like to organize their projects on a Kanban (or Scrum) board for Agile Development. This continues our series of <a href="/blog/ideas">examples of how people and teams are using <strong>Moo.do</strong></a> with a description of how <strong>Moo.do</strong> can be used as a Kanban board.</p>
 
 <p><img alt="Post-it Madness" src="/blog/img/postits.jpg" id="postit-img" class="postImg"></img></p>
 
@@ -99,7 +99,7 @@ window.__addDemos(
     },
     {
         id: 'demoAgenda',
-        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=2:2,,testing&script=none&dmode=0x2b9',
+        src: '/app/#demo=true&touch=false&data=blog-scrum.1&panes=2:2,#J&script=none&dmode=0x2b9',
         imgs: [{ src: '/img/ss/blog/scrum/demoAgenda.png' }]
     },
     {
