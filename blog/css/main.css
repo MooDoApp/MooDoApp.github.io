@@ -3,28 +3,28 @@
   box-sizing: border-box;
 }
 .m8 {
-  margin-top: 120px;
+  margin-top: 120px !important;
 }
 .m7 {
-  margin-top: 96px;
+  margin-top: 96px !important;
 }
 .m6 {
-  margin-top: 64px;
+  margin-top: 64px !important;
 }
 .m5 {
-  margin-top: 48px;
+  margin-top: 48px !important;
 }
 .m4 {
-  margin-top: 32px;
+  margin-top: 32px !important;
 }
 .m3 {
-  margin-top: 24px;
+  margin-top: 24px !important;
 }
 .m2 {
-  margin-top: 16px;
+  margin-top: 16px !important;
 }
 .m1 {
-  margin-top: 8px;
+  margin-top: 8px !important;
 }
 html {
   height: 100%;
@@ -274,7 +274,6 @@ hr {
   #topBar {
     margin: 0 16px !important;
   }
-  #linkHome,
   #linkPress {
     display: none;
   }
@@ -292,17 +291,12 @@ hr {
   display: none !important;
 }
 .mobile .link {
-  margin: 0 3px;
   padding: 0 3px;
   line-height: 44px;
 }
 .mobile #logoWrapper {
   top: 0 !important;
   left: 0 !important;
-}
-.mobile .linkLogin {
-  font-size: 14px;
-  padding: 8px;
 }
 .mobile .ytVideo {
   max-width: 100%;
@@ -313,8 +307,6 @@ html:not(.mobile) .mobileOnly {
 }
 .link {
   display: inline-block;
-  padding: 0 6px;
-  margin: 0 6px;
   cursor: pointer;
   text-decoration: none;
   line-height: 24px;
@@ -331,24 +323,33 @@ html:not(.mobile) .mobileOnly {
   font-weight: bold;
   color: black;
 }
-.linkLogin,
-.linkBlue {
-  background: #09d;
-  padding: 6px 16px;
-  color: white;
-  border-radius: 3px;
-  font-weight: bold;
+.hidden {
+  display: none !important;
+}
+.linkLogin {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: 8px;
+}
+.linkButton {
+  padding: 4px 8px;
+  border-radius: 4px;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-.linkLogin:hover,
+.linkButton:hover {
+  background: #f3f3f3;
+}
+.linkBlue {
+  background: #09d;
+  padding: 6px 16px;
+  color: white;
+  font-weight: bold;
+  border: 0;
+}
 .linkBlue:hover {
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  transform: scale(1.03);
+  background: #2bbeff;
 }
 .center {
   margin-left: auto;
@@ -370,13 +371,6 @@ html:not(.mobile) .mobileOnly {
 }
 .subtext b {
   color: black;
-}
-.subtext a b {
-  color: #08c;
-  text-decoration: none;
-}
-.subtext a b:hover {
-  color: #2bbeff;
 }
 #topBar {
   position: relative;
@@ -432,7 +426,7 @@ html:not(.mobile) .mobileOnly {
   max-width: 100%;
   min-width: 90px;
   box-shadow: 2px 3px 3px #bbb;
-  margin-top: 8px;
+  margin-top: 8px !important;
 }
 .timeBarFree > div:first-child {
   color: #2a6;
@@ -556,25 +550,20 @@ html:not(.mobile) .mobileOnly {
   max-width: 820px;
   text-align: justify;
 }
+#billingForm {
+  width: 60%;
+}
 #footer {
   line-height: 40px;
   height: 40px;
   margin-bottom: 8px;
 }
-#footer .link {
-  padding-left: 4px;
-  padding-right: 4px;
-}
 #footer .socialIcons {
   display: inline-block;
 }
 #footer .socialIcons > a {
-  width: 32px;
-}
-@media screen and (max-width: 570px) {
-  #footer .socialIcons > a {
-    width: 50px;
-  }
+  text-align: center;
+  width: 44px;
 }
 .trans {
   -webkit-transition: all 1000ms;
@@ -636,14 +625,8 @@ iframe[seamless] {
   margin-left: -65px;
   margin-right: -65px;
 }
-a,
-.smallLink {
-  color: #08c;
+a {
   text-decoration: none;
-}
-a:hover,
-.smallLink:hover {
-  color: #2bbeff;
 }
 .platforms {
   vertical-align: top;
@@ -652,30 +635,18 @@ a:hover,
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 64px;
-  height: 50px;
+  width: 72px;
   color: #666;
   text-align: center;
   vertical-align: middle;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  -o-transition: all 300ms;
-  transition: all 300ms;
+  padding: 12px;
 }
 .platform i {
   font-size: 24px;
-  line-height: 25px;
 }
 .platform div {
-  line-height: 25px;
+  margin-top: 4px;
   font-size: 13px;
-}
-.platform:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-  color: #2bbeff;
 }
 .platforms {
   position: relative;
@@ -688,16 +659,16 @@ a:hover,
   padding-top: 3px;
 }
 .signup {
-  height: 50px;
-  width: 200px;
+  height: 60px;
+  width: 240px;
   cursor: pointer;
   background: #09d;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   border-radius: 4px;
 }
 .signup .signInText {
-  line-height: 50px;
+  line-height: 60px;
   color: white;
 }
 .signup:hover .tooltip {
@@ -760,7 +731,7 @@ h3:first-child {
   color: #666;
   padding: 0 16px;
   margin: 0 auto;
-  margin-top: 16px;
+  margin-top: 16px !important;
 }
 .col-subtitle {
   text-align: left;
@@ -768,10 +739,10 @@ h3:first-child {
   line-height: 1.3;
   font-weight: 300;
   color: #666;
-  margin-top: 8px;
+  margin-top: 8px !important;
 }
 .col-subtitle + .col-text {
-  margin-top: 48px;
+  margin-top: 48px !important;
 }
 .col-text {
   text-align: left;
@@ -806,12 +777,11 @@ h3:first-child {
   max-width: 470px;
   font-size: 18px;
   line-height: 1.4;
-  margin-top: 32px;
 }
 .premiumButtons {
   margin: 0 auto;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 32px !important;
 }
 .premiumButtons > div {
   display: inline-block;
@@ -950,29 +920,46 @@ h3:first-child {
 .bioLoc {
   font-size: 15px;
 }
+#purchase #pricingArea > div {
+  display: inline-block;
+}
+#purchase #braintreeSubmit {
+  border: 0;
+}
+#purchase .pricingSelected span {
+  background: #777;
+  cursor: inherit;
+}
+#purchase .pricingSelected span:hover {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+  background: #777 !important;
+}
 .m8 {
-  margin-top: 120px;
+  margin-top: 120px !important;
 }
 .m7 {
-  margin-top: 96px;
+  margin-top: 96px !important;
 }
 .m6 {
-  margin-top: 64px;
+  margin-top: 64px !important;
 }
 .m5 {
-  margin-top: 48px;
+  margin-top: 48px !important;
 }
 .m4 {
-  margin-top: 32px;
+  margin-top: 32px !important;
 }
 .m3 {
-  margin-top: 24px;
+  margin-top: 24px !important;
 }
 .m2 {
-  margin-top: 16px;
+  margin-top: 16px !important;
 }
 .m1 {
-  margin-top: 8px;
+  margin-top: 8px !important;
 }
 /*****************************************************************************/
 /*
