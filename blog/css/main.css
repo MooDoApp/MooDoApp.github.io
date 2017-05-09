@@ -41,7 +41,7 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
   font-size: 16px;
   line-height: 1.5;
   overflow-x: hidden;
@@ -85,7 +85,6 @@ hr {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 16px;
 }
 .columns .demo-img {
   max-width: 380px;
@@ -93,9 +92,6 @@ hr {
 .columns .demo-img > img {
   display: block;
   max-width: 100%;
-}
-.columns .section-text h2 {
-  padding-top: 16px;
 }
 @media screen and (max-width: 700px) {
   .columns {
@@ -131,8 +127,6 @@ hr {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
   }
   .columns.columnsFlipped {
     flex-direction: row-reverse;
@@ -145,11 +139,12 @@ hr {
     margin-right: -20px;
   }
   .columns .section-text {
-    max-width: 400px;
+    max-width: 320px;
+    margin-left: 16px;
   }
   .columns .spacer {
     min-width: 24px;
-    max-width: 80px;
+    max-width: 60px;
     height: 100%;
     -webkit-flex: 1;
     -webkit-box-flex: 1;
@@ -174,11 +169,11 @@ hr {
 .section-full {
   text-align: center;
   overflow: hidden;
-  padding-bottom: 60px;
+  padding-bottom: 64px;
 }
 .section-full + .section-full {
   border-top: 1px solid #eee;
-  padding-top: 60px;
+  padding-top: 64px;
 }
 .section-text {
   z-index: 1;
@@ -233,7 +228,7 @@ hr {
   left: 0;
   width: 100%;
   top: 50%;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
   margin-top: 18px;
 }
 .pageContent {
@@ -660,16 +655,47 @@ a {
 }
 .signup {
   height: 60px;
-  width: 240px;
-  cursor: pointer;
-  background: #09d;
   font-size: 20px;
-  font-weight: bold;
-  border-radius: 4px;
+  font-weight: 600;
 }
 .signup .signInText {
+  display: inline-block;
+  cursor: pointer;
   line-height: 60px;
+  padding: 0 32px;
+  border-radius: 6px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+.signup.blue .signInText {
+  background: #09d;
   color: white;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.signup.blue .signInText:hover {
+  background: #2bbeff !important;
+}
+.signup.red .signInText {
+  background: #de4c3c;
+  color: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+.signup.red .signInText:hover {
+  background: #f34433 !important;
+}
+.signup.green .signInText {
+  background: #4ec9a6;
+  color: white;
+}
+.signup.green .signInText:hover {
+  background: #62cfb0;
 }
 .signup:hover .tooltip {
   opacity: 1;
@@ -691,21 +717,24 @@ a {
   }
 }
 .section-full h2 {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1;
   font-weight: bold;
+  color: #333;
   margin: 0;
 }
 .section-full h2 i {
   display: inline-block;
-  font-size: 33px;
+  font-size: 26px;
   vertical-align: bottom;
+  line-height: 32px;
   margin-right: 16px;
+  color: #444;
 }
 .section-full h2 img {
-  height: 40px;
-  vertical-align: top;
-  margin-right: 16px;
+  height: 34px;
+  vertical-align: bottom;
+  margin-right: 12px;
 }
 h3 {
   font-size: 26px;
@@ -725,17 +754,19 @@ h3:first-child {
 }
 .iSubtitle {
   text-align: center;
-  font-size: 18px;
-  line-height: 1.3;
-  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.4;
   color: #666;
   padding: 0 16px;
   margin: 0 auto;
-  margin-top: 16px !important;
+  margin-top: 24px;
+}
+.iSubtitle b {
+  color: #444;
 }
 .col-subtitle {
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
   font-weight: 300;
   color: #666;
@@ -984,8 +1015,8 @@ body {
 body {
   overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 1.5;
   word-wrap: break-word;
 }
 .post,
@@ -1107,7 +1138,7 @@ ul + p {
 a {
   text-decoration: none;
 }
-a:hover {
+a:not(.linkButton):hover {
   color: #2bbeff;
 }
 /*****************************************************************************/
