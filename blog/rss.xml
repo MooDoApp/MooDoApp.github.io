@@ -8,7 +8,90 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Fri, 05 May 2017 00:00:00 +0700</pubDate>
+    <pubDate>Tue, 16 May 2017 00:00:00 +0700</pubDate>
+    <item>
+      <title>Beta: Mac & Windows Apps</title>
+      <link>http://www.moo.do/blog/desktop-apps</link>
+      <description><![CDATA[Good news today for the huge number of people who have been requesting this for a long time now: Moo.do now has desktop apps!
+
+Mac App
+
+
+
+Windows App
+
+
+
+Download the Mac app and Windows app right now. Or you can find them later in the options menu from the web app.
+
+Notifications
+
+The desktop apps support notifications, and now the web apps do too. You can now also choose how far before events to have Moo.do display notifications.
+
+
+
+Help us improve
+
+As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!
+
+
+.postImgUpdateNotifications {
+    width: 400px;
+    margin: 24px auto;
+}
+.postImgUpdateApps {
+    width: 700px;
+    margin: 0;
+    box-shadow: none;
+}
+.postImgUpdateAppsMac {
+    width: 720px;
+    margin-left: -10px;
+}
+
+]]></description>
+      <pubDate>Tue, 16 May 2017 00:00:00 +0700</pubDate>
+      <guid>http://www.moo.do/blog/desktop-apps</guid>
+      <content:encoded><![CDATA[<p>Good news today for the huge number of people who have been requesting this for a long time now: Moo.do now has desktop apps!</p>
+
+<h1>Mac App</h1>
+
+<p><img class="postImg postImgUpdateApps postImgUpdateAppsMac" src="/blog/img/update-apps-mac.png" /></p>
+
+<h1 style="margin-top: 0.5em">Windows App</h1>
+
+<p><img class="postImg postImgUpdateApps" src="/blog/img/update-apps-win.png" /></p>
+
+<p>Download the <a href="https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.0.2/Moo.do-1.0.2-mac.zip">Mac app</a> and <a href="https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.0.2/Moo.do.Setup.1.0.2.exe">Windows app</a> right now. Or you can find them later in the options menu from the web app.</p>
+
+<h1>Notifications</h1>
+
+<p>The desktop apps support notifications, and now the web apps do too. You can now also choose how far before events to have Moo.do display notifications.</p>
+
+<p><img class="postImg postImgUpdateNotifications" src="/blog/img/update-notifications.png" /></p>
+
+<h1>Help us improve</h1>
+
+<p>As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!</p>
+
+<style>
+.postImgUpdateNotifications {
+    width: 400px;
+    margin: 24px auto;
+}
+.postImgUpdateApps {
+    width: 700px;
+    margin: 0;
+    box-shadow: none;
+}
+.postImgUpdateAppsMac {
+    width: 720px;
+    margin-left: -10px;
+}
+</style>
+]]></content:encoded>
+      <dc:date>2017-05-16T00:00:00+07:00</dc:date>
+    </item>
     <item>
       <title>iOS Connection Fixes</title>
       <link>http://www.moo.do/blog/ios-login-update</link>
@@ -2836,6 +2919,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00+07:00</dc:date>
     </item>
-    <dc:date>2017-05-05T00:00:00+07:00</dc:date>
+    <dc:date>2017-05-16T00:00:00+07:00</dc:date>
   </channel>
 </rss>
