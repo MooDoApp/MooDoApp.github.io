@@ -8,7 +8,62 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Tue, 16 May 2017 00:00:00 +0700</pubDate>
+    <pubDate>Mon, 29 May 2017 00:00:00 +0700</pubDate>
+    <item>
+      <title>Design Update for Desktop and Web</title>
+      <link>http://www.moo.do/blog/desktop-design</link>
+      <description><![CDATA[Today we have a new design for the desktop apps to make Moo.do more intuitive and more attractive. There are small tweaks all over the app but the most notable changes are:
+
+
+
+
+Top buttons moved into a sidebar. This makes it clearer what the buttons do and we think it’s prettier :). Toggle the sidebar with Ctrl + Option + S on Mac and Ctrl + Alt + S on Windows or Linux, and you can still access the buttons by hotkey.
+Rearranged pane header. The titles are on the first row and search is on the second row, with the search box and filters split to make them more distinct.
+Improved workspace switching. Open the workspaces menu with Ctrl + W and use the arrow keys to switch between them.
+Many icon changes. We switched many old icons for newer, prettier icons from the Material Design icon set.
+
+
+
+
+Help us improve
+
+As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!
+
+
+.postImgUpdateDesign {
+    width: 100%;
+    margin: 24px auto;
+}
+
+]]></description>
+      <pubDate>Mon, 29 May 2017 00:00:00 +0700</pubDate>
+      <guid>http://www.moo.do/blog/desktop-design</guid>
+      <content:encoded><![CDATA[<p>Today we have a new design for the desktop apps to make Moo.do more intuitive and more attractive. There are small tweaks all over the app but the most notable changes are:</p>
+
+<p></p>
+
+<ul>
+<li><strong>Top buttons moved into a sidebar.</strong> This makes it clearer what the buttons do and we think it’s prettier :). Toggle the sidebar with <strong>Ctrl + Option + S</strong> on Mac and <strong>Ctrl + Alt + S</strong> on Windows or Linux, and you can still access the buttons by hotkey.</li>
+<li><strong>Rearranged pane header.</strong> The titles are on the first row and search is on the second row, with the search box and filters split to make them more distinct.</li>
+<li><strong>Improved workspace switching.</strong> Open the workspaces menu with Ctrl + W and use the arrow keys to switch between them.</li>
+<li><strong>Many icon changes.</strong> We switched many old icons for newer, prettier icons from the Material Design icon set.</li>
+</ul>
+
+<p><img class="postImg postImgUpdateDesign" src="/blog/img/update-design.png" /></p>
+
+<h1>Help us improve</h1>
+
+<p>As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!</p>
+
+<style>
+.postImgUpdateDesign {
+    width: 100%;
+    margin: 24px auto;
+}
+</style>
+]]></content:encoded>
+      <dc:date>2017-05-29T00:00:00+07:00</dc:date>
+    </item>
     <item>
       <title>Beta: Mac & Windows Apps</title>
       <link>http://www.moo.do/blog/desktop-apps</link>
@@ -62,7 +117,7 @@ As always, please let us know if you find any issues or how we can make our apps
 
 <p><img class="postImg postImgUpdateApps" src="/blog/img/update-apps-win.png" /></p>
 
-<p>Download the <a href="https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.0.2/Moo.do-1.0.2-mac.zip">Mac app</a> and <a href="https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.0.2/Moo.do.Setup.1.0.2.exe">Windows app</a> right now. Or you can find them later in the options menu from the web app.</p>
+<p>Download the <a href="https://moo.do/lnk/mac">Mac app</a> and <a href="https://moo.do/lnk/windows">Windows app</a> right now. Or you can find them later in the options menu from the web app.</p>
 
 <h1>Notifications</h1>
 
@@ -2919,6 +2974,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00+07:00</dc:date>
     </item>
-    <dc:date>2017-05-16T00:00:00+07:00</dc:date>
+    <dc:date>2017-05-29T00:00:00+07:00</dc:date>
   </channel>
 </rss>

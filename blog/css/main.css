@@ -328,6 +328,7 @@ html:not(.mobile) .mobileOnly {
 .linkButton {
   padding: 4px 8px;
   border-radius: 4px;
+  cursor: pointer;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
@@ -350,6 +351,9 @@ html:not(.mobile) .mobileOnly {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+.ib {
+  display: inline-block;
 }
 .mc {
   margin: 0 auto;
@@ -654,14 +658,25 @@ a {
   padding-top: 3px;
 }
 .signup {
-  height: 60px;
-  font-size: 20px;
   font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .signup {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .signup {
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+  }
 }
 .signup .signInText {
   display: inline-block;
   cursor: pointer;
-  line-height: 60px;
   padding: 0 32px;
   border-radius: 6px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -702,8 +717,9 @@ a {
 }
 .section-full h1 {
   text-align: center;
-  line-height: 1;
+  line-height: 1.3;
   font-weight: bold;
+  padding: 0 16px;
   margin: 0;
 }
 @media screen and (max-width: 600px) {
@@ -713,7 +729,7 @@ a {
 }
 @media screen and (min-width: 601px) {
   .section-full h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 .section-full h2 {
@@ -806,7 +822,7 @@ h3:first-child {
 .premiumSubtitle {
   margin: 0 auto;
   max-width: 470px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.4;
 }
 .premiumButtons {
@@ -954,8 +970,9 @@ h3:first-child {
 #purchase #pricingArea > div {
   display: inline-block;
 }
-#purchase #braintreeSubmit {
-  border: 0;
+#purchase input {
+  font-size: 16px;
+  line-height: 1.5;
 }
 #purchase .pricingSelected span {
   background: #777;
@@ -1232,7 +1249,7 @@ html:not(.mobile) .content {
   margin: 0 auto;
   clear: both;
   color: #666;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #e3e3e3;
   margin-top: 2em;
   padding: 0.5em 0;
   overflow: hidden;
