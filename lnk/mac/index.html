@@ -5,7 +5,7 @@
 
     <script>
         function run()
-         {
+        {
             var xhr = new XMLHttpRequest(),
                 url = 'https://api.github.com/repos/MooDoApp/MooDoApp.github.io/releases/latest';
 
@@ -43,7 +43,9 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create','UA-37740918-2',{'cookieDomain':'auto'});
-        ga('send','pageview',{hitCallback:run});
+        ga('send','pageview');
+
+        run();
     </script>
 </head>
 
