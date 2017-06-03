@@ -101,6 +101,9 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
+  .columns > * .col-text {
+    text-align: center;
+  }
   .columns > *:last-child {
     margin-top: 40px;
   }
@@ -859,6 +862,25 @@ h3:first-child {
 #sectionDisplaySettings .columns {
   margin-top: 48px;
 }
+.videoWrapper,
+.demo-img-large-border,
+.screenshot img {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 0 8px 0 rgba(0, 0, 0, 0.22);
+}
+@media screen and (max-width: 600px) {
+  .videoWrapper,
+  .demo-img-large-border,
+  .screenshot img {
+    border-radius: 4px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .videoWrapper,
+  .demo-img-large-border,
+  .screenshot img {
+    border-radius: 8px;
+  }
+}
 .colorHigh {
   color: #f30;
 }
@@ -1188,12 +1210,7 @@ a:not(.linkButton):hover {
   margin: 0 auto;
   max-width: 100%;
   min-height: calc(100vh - 44px - 40px);
-}
-html:not(.mobile) .content {
   padding-top: 60px;
-}
-.mobile .content {
-  padding-top: 20px;
 }
 .headerContent {
   margin: 0 auto;
@@ -1305,7 +1322,7 @@ html:not(.mobile) .content {
 }
 .postTitle {
   font-weight: bold;
-  line-height: 1.2em;
+  line-height: 1.3em;
   margin-bottom: 8px;
 }
 .postTitle a {
