@@ -1134,11 +1134,12 @@ ul + p {
 }
 .postContent ul li:before,
 .postExcerpt ul li:before {
+  content: '\2022';
   color: #ddd;
   float: left;
-  margin: -1px 0 0 -25px;
+  margin-left: -25px;
   font-size: 24px;
-  content: '\2022';
+  line-height: 1;
 }
 .postContent ul ul,
 .postExcerpt ul ul {
