@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 1501452176775
+# 1501990266782
 
 CACHE:
 /js/main-min.js
@@ -9,6 +9,8 @@ CACHE:
 /css/app-min.css
 /css/fonts/fonticons.ttf
 /css/fonts/fonticons.woff
+
+/img/stripe.png
 
 /img/apple-touch-icon.png
 /img/logoForBlack112.png
