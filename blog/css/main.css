@@ -1146,6 +1146,15 @@ ul + p {
   border-left: 1px solid #eee;
   padding-left: 20px;
 }
+.postContent ol,
+.postExcerpt ol {
+  padding-left: 20px;
+  margin: 1em 0;
+}
+.postContent ol li,
+.postExcerpt ol li {
+  padding: 3px 0;
+}
 .postContent tr,
 .postExcerpt tr {
   vertical-align: top;
