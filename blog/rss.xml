@@ -8,7 +8,74 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Sat, 26 Aug 2017 00:00:00 +1200</pubDate>
+    <pubDate>Sat, 16 Sep 2017 00:00:00 +1200</pubDate>
+    <item>
+      <title>Updates September 16</title>
+      <link>http://www.moo.do/blog/update-09-16</link>
+      <description><![CDATA[Evernote integration
+
+If you paste an Evernote link into Moo.do or drag a note from Evernote (dragging only works on Mac), you will now see an Evernote icon next to it. Clicking an Evernote link will (optionally) open it in the native Evernote app.
+
+Image lightbox
+
+
+Images now open in a lightbox for quick previewing.
+Ctrl + click to open in a new tab as before.
+This works for images in Google Drive, image email attachments, and links to images.
+
+
+Misc
+
+
+Changed: Switched hotkeys for new item and new email. N is for New item and E is for New Email.
+New: Option to add events to Google Calendar without creating a local item
+New: Highlight opened email in Outline pane
+Fixed: Android typing missing characters
+Fixed: Some repeat dates not showing notifications
+Fixed: Some parsing issues with repeat dates
+
+
+
+    var els = document.getElementsByClassName('updateEvHotkey');
+    var isMac = navigator.userAgent.indexOf('Mac') >= 0;
+    for (var i = 0; i 
+]]></description>
+      <pubDate>Sat, 16 Sep 2017 00:00:00 +1200</pubDate>
+      <guid>http://www.moo.do/blog/update-09-16</guid>
+      <content:encoded><![CDATA[<h1>Evernote integration</h1>
+
+<p>If you paste an Evernote link into Moo.do or drag a note from Evernote (dragging only works on Mac), you will now see an Evernote icon next to it. Clicking an Evernote link will (optionally) open it in the native Evernote app.</p>
+
+<h1>Image lightbox</h1>
+
+<ul>
+<li>Images now open in a lightbox for quick previewing.</li>
+<li><span class="updateEvHotkey">Ctrl</span> + click to open in a new tab as before.</li>
+<li>This works for images in Google Drive, image email attachments, and links to images.</li>
+</ul>
+
+<h1>Misc</h1>
+
+<ul>
+<li>Changed: Switched hotkeys for new item and new email. <strong>N</strong> is for <strong>N</strong>ew item and <strong>E</strong> is for New <strong>E</strong>mail.</li>
+<li>New: Option to add events to Google Calendar without creating a local item</li>
+<li>New: Highlight opened email in Outline pane</li>
+<li>Fixed: Android typing missing characters</li>
+<li>Fixed: Some repeat dates not showing notifications</li>
+<li>Fixed: Some parsing issues with repeat dates</li>
+</ul>
+
+<script>
+    var els = document.getElementsByClassName('updateEvHotkey');
+    var isMac = navigator.userAgent.indexOf('Mac') >= 0;
+    for (var i = 0; i < els.length; i ++)
+    {
+        els[i].textContent = (isMac ? 'Cmd' : 'Ctrl');
+    }
+</script>
+]]></content:encoded>
+      <dc:date>2017-09-16T00:00:00+12:00</dc:date>
+    </item>
     <item>
       <title>Markdown</title>
       <link>http://www.moo.do/blog/markdown</link>
@@ -3461,6 +3528,6 @@ contact@moo.do
 ]]></content:encoded>
       <dc:date>2014-06-11T00:00:00+12:00</dc:date>
     </item>
-    <dc:date>2017-08-26T00:00:00+12:00</dc:date>
+    <dc:date>2017-09-16T00:00:00+12:00</dc:date>
   </channel>
 </rss>
