@@ -1,0 +1,117 @@
+<html style="opacity: 1;">
+
+<head>
+    <title>Moo.do Mac</title>
+    <link rel="stylesheet" href="/landing/css/fonticons.css" type="text/css">
+    <link rel="stylesheet" href="/landing/css/landing.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <script>
+        function run()
+        {
+            var xhr = new XMLHttpRequest(),
+                url = 'https://api.github.com/repos/MooDoApp/MooDoApp.github.io/releases/latest',
+                userAgent = navigator.userAgent,
+                os,
+                macDL,
+                winDL;
+
+            if (userAgent.indexOf('Win') !== -1)
+            {
+                os = 'Windows';
+            }
+            else if (userAgent.indexOf('Mac') !== -1)
+            {
+                os = 'Mac';
+            }
+
+            xhr.onreadystatechange = function ()
+            {
+                if (xhr.readyState === 4)
+                {
+                    if (xhr.status === 200)
+                    {
+                        var data = JSON.parse(xhr.responseText);
+
+                        if (data && data.assets)
+                        {
+                            for (var i = 0; i < data.assets.length; ++i)
+                            {
+                                var asset = data.assets[i],
+                                    url = asset.browser_download_url;
+
+                                if (asset.name.indexOf('.zip') > 0)
+                                {
+                                    macDL = url;
+                                }
+                                else if (asset.name.indexOf('.exe') > 0)
+                                {
+                                    winDL = asset.browser_download_url;
+                                }
+                            }
+
+                            if (os === 'Windows' && winDL)
+                            {
+                                window.location = winDL;
+                            }
+                            else if (os === 'Mac' && macDL)
+                            {
+                                window.location = macDL;
+                            }
+                            else
+                            {
+                                document.getElementById('downloadWindows').href = winDL;
+                                document.getElementById('downloadOSX').href = macDL;
+                                document.getElementById('spanText').style.display = 'none';
+                                document.getElementById('spanButtons').style.display = '';
+                            }
+                        }
+                    }
+                }
+            }
+
+            xhr.open('GET', url);
+            xhr.send();
+        }
+
+        (function (i, s, o, g, r, a, m)
+        {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function ()
+        {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-37740918-2', { 'cookieDomain': 'auto' });
+        ga('send', 'pageview');
+
+        run();
+    </script>
+</head>
+
+<body style="padding: 32px">
+    <span id="spanText">Downloading Moo.do app...</span>
+    <div id="spanButtons" class="platforms" style="display: none;">
+        <a class="platform linkButton" id="downloadWindows" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
+            <i class="icon-windows"></i>
+            <div>Windows</div>
+        </a>
+        <a class="platform linkButton" id="downloadOSX" href="https://github.com/MooDoApp/MooDoApp.github.io/releases/latest/">
+            <i class="icon-desktop"></i>
+            <div>Mac</div>
+        </a>
+        <a class="platform linkButton" href="https://chrome.google.com/webstore/detail/moodo/iffimmolghilclfndeiebgppddmagofk">
+            <i class="icon-chrome"></i>
+            <div>Chrome</div>
+        </a>
+        <a class="platform linkButton" href="https://itunes.apple.com/us/app/moo.do-organize-your-way/id889830074?ls=1&mt=8">
+            <i class="icon-apple"></i>
+            <div>iOS</div>
+        </a>
+        <a class="platform linkButton" href="https://play.google.com/store/apps/details?id=moo.do">
+            <i class="icon-android"></i>
+            <div>Android</div>
+        </a>
+    </div>
+</body>
+
+</html>
