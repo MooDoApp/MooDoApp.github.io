@@ -41,9 +41,9 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: 'Yantramanav', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
   overflow-x: hidden;
   position: absolute;
   width: 100%;
@@ -58,10 +58,10 @@ body {
 .topTitle {
   text-align: center;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: bold;
   color: #494949;
   padding: 0 8px;
-  font-size: 40px;
+  font-size: 48px;
 }
 hr {
   display: block;
@@ -191,14 +191,13 @@ hr {
 }
 .videoWrapper,
 .landing-img > * {
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15), 0 1px 16px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 16px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   max-width: 100%;
 }
 .section-full {
   text-align: center;
   overflow: hidden;
-  font-size: 16px;
   clear: both;
 }
 @media screen and (max-width: 700px) {
@@ -279,7 +278,7 @@ hr {
   left: 0;
   width: 100%;
   top: 50%;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
+  font-family: 'Yantramanav', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, "Segoe UI", Helvetica, Arial, Sans-serif;
   margin-top: 18px;
 }
 .pageContent {
@@ -360,7 +359,7 @@ html:not(.mobile) .mobileOnly {
   text-decoration: none;
   line-height: 24px;
   color: #444;
-  font-size: 14px;
+  font-size: 15px;
 }
 .link i {
   font-size: 18px;
@@ -457,21 +456,22 @@ html:not(.mobile) .mobileOnly {
 #topBar #topLinks {
   white-space: nowrap;
   display: inline-block;
+  font-weight: 500;
+}
+#topBar .linkButton {
+  margin: 0 4px;
+  color: #555;
+}
+#topBar .linkButton:hover {
+  color: #222;
 }
 #topBar .linkGetStarted {
   background: #09d;
   color: white;
   margin: 0 8px;
-  font-size: 13px;
   padding-left: 12px;
   padding-right: 12px;
-}
-#topBar .linkLogin {
-  border: 2px solid #09d;
-  color: #09d;
-  margin-left: 4px;
-  padding: 2px 12px;
-  font-size: 13px;
+  font-weight: bold;
 }
 @media screen and (max-width: 560px) {
   #topBar #linkHelp {
@@ -749,7 +749,7 @@ a {
   line-height: 44px;
   font-weight: 600;
   font-size: 16px;
-  padding: 0 24px;
+  padding: 0 32px;
   border-radius: 3px;
   cursor: pointer;
   white-space: nowrap;
@@ -793,7 +793,7 @@ a {
   margin-left: 12px;
 }
 .section-full h1 {
-  font-size: 30px;
+  font-size: 34px;
   line-height: 1.2;
   font-weight: 600;
   margin: 0;
@@ -801,7 +801,7 @@ a {
   color: #333;
 }
 .sectionSubtitle {
-  color: #777;
+  color: #555;
   max-width: 500px;
   margin: 16px auto 32px auto;
 }
@@ -1377,27 +1377,24 @@ h3:first-child {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 10px calc(0%);
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.25));
   cursor: pointer;
-  transition: opacity 150ms;
 }
 .video-overlay-container.is-hidden {
   display: none;
 }
 .video-overlay-play-button {
+  display: block;
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 80px;
-  height: 80px;
-  margin-left: -40px;
-  margin-top: -40px;
-  display: block;
-  opacity: 0.9;
-  transition: opacity 150ms;
-  -webkit-filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.5));
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin-left: -50px;
+  margin-top: -50px;
+  border-radius: 50%;
+  opacity: 0.92;
+  background: #333;
 }
 .video-overlay-play-button:hover {
   opacity: 1;
@@ -1449,8 +1446,8 @@ body {
 body {
   overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.3;
   word-wrap: break-word;
 }
 .post,
