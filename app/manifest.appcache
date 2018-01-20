@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 1514403238189
+# 1516413643103
 
 CACHE:
 /js/main-min.js
@@ -14,6 +14,10 @@ CACHE:
 
 /img/apple-touch-icon.png
 /img/logoForWhite600.png
+
+/img/btn_google_signin_dark_normal_web@2x.png
+/img/btn_google_signin_dark_focus_web@2x.png
+/img/btn_google_signin_dark_pressed_web@2x.png
 
 /img/plugin-gdocs.png
 /img/plugin-gsheets.png

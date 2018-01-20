@@ -8,7 +8,7 @@
     <title>Moo.do</title>
     <link>http://www.moo.do/blog</link>
     <description>Moo.do - Organize your way</description>
-    <pubDate>Fri, 03 Nov 2017 00:00:00 +0800</pubDate>
+    <pubDate>Fri, 03 Nov 2017 00:00:00 -0700</pubDate>
     <item>
       <title>November Update</title>
       <link>http://www.moo.do/blog/november-update</link>
@@ -70,7 +70,7 @@ Help us improve
 
 As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!
 ]]></description>
-      <pubDate>Fri, 03 Nov 2017 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 03 Nov 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/november-update</guid>
       <content:encoded><![CDATA[<script>
     var els = document.getElementsByClassName('updateDesignHotkey');
@@ -134,7 +134,7 @@ The keyboard toolbar is larger and more attractive. It saves your scroll positio
 
 <p>As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!</p>
 ]]></content:encoded>
-      <dc:date>2017-11-03T00:00:00+08:00</dc:date>
+      <dc:date>2017-11-03T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>International Dates</title>
@@ -149,7 +149,7 @@ OneNote integration
 
 If you paste a OneNote link into Moo.do, you will now see a OneNote icon next to it. Clicking a OneNote link will open it in the native OneNote app.
 ]]></description>
-      <pubDate>Tue, 26 Sep 2017 00:00:00 +0800</pubDate>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/international-dates</guid>
       <content:encoded><![CDATA[<p>We have added international date formats!</p>
 
@@ -161,7 +161,7 @@ If you paste a OneNote link into Moo.do, you will now see a OneNote icon next to
 
 <p>If you paste a OneNote link into Moo.do, you will now see a OneNote icon next to it. Clicking a OneNote link will open it in the native OneNote app.</p>
 ]]></content:encoded>
-      <dc:date>2017-09-26T00:00:00+08:00</dc:date>
+      <dc:date>2017-09-26T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Updates September 16</title>
@@ -194,7 +194,7 @@ Fixed: Some parsing issues with repeat dates
     var isMac = navigator.userAgent.indexOf('Mac') >= 0;
     for (var i = 0; i 
 ]]></description>
-      <pubDate>Sat, 16 Sep 2017 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 16 Sep 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/update-09-16</guid>
       <content:encoded><![CDATA[<h1>Evernote integration</h1>
 
@@ -228,7 +228,7 @@ Fixed: Some parsing issues with repeat dates
     }
 </script>
 ]]></content:encoded>
-      <dc:date>2017-09-16T00:00:00+08:00</dc:date>
+      <dc:date>2017-09-16T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Markdown</title>
@@ -291,7 +291,7 @@ New advanced settings for header size, checkbox opacity, and background color
 }
 
 ]]></description>
-      <pubDate>Sat, 26 Aug 2017 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/markdown</guid>
       <content:encoded><![CDATA[<p>We&#39;ve added your most <a href="http://feedback.moo.do/forums/274238-general/suggestions/9415551-markdown-or-just-a-little-bit">requested feature</a>: Markdown! This brings three main benefits:</p>
 
@@ -355,7 +355,7 @@ New advanced settings for header size, checkbox opacity, and background color
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-08-26T00:00:00+08:00</dc:date>
+      <dc:date>2017-08-26T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Updates August 6</title>
@@ -414,7 +414,7 @@ Tapping on the sides of items on mobile no long collapses or completes items. Sw
 }
 
 ]]></description>
-      <pubDate>Sun, 06 Aug 2017 00:00:00 +0800</pubDate>
+      <pubDate>Sun, 06 Aug 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/update-08-06</guid>
       <content:encoded><![CDATA[<p>This update continues improving pain points in our desktop user experience and includes many bug fixes.</p>
 
@@ -474,7 +474,7 @@ Tapping on the sides of items on mobile no long collapses or completes items. Sw
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-08-06T00:00:00+08:00</dc:date>
+      <dc:date>2017-08-06T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>July Design Update</title>
@@ -525,7 +525,7 @@ The Boards list in the sidebar can be sorted with drag/drop.
 }
 
 ]]></description>
-      <pubDate>Fri, 28 Jul 2017 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 28 Jul 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/july-design</guid>
       <content:encoded><![CDATA[<p>This month we&#39;ve been working with both new and power users to find pain points in our desktop UX. These updates include features for managing large documents, as well as making interactions more intuitive.</p>
 
@@ -577,7 +577,7 @@ The Boards list in the sidebar can be sorted with drag/drop.
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-07-28T00:00:00+08:00</dc:date>
+      <dc:date>2017-07-28T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Dark Theme</title>
@@ -595,7 +595,7 @@ Let us know if you have any feedback or see any issues with this dark theme. Tha
 }
 
 ]]></description>
-      <pubDate>Sat, 08 Jul 2017 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 08 Jul 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/dark-theme</guid>
       <content:encoded><![CDATA[<p>Moo.do now has a dark theme for the desktop app. You can enable it from the Display Settings, accessible by clicking the gear button in the left sidebar of the desktop app.</p>
 
@@ -610,7 +610,7 @@ Let us know if you have any feedback or see any issues with this dark theme. Tha
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-07-08T00:00:00+08:00</dc:date>
+      <dc:date>2017-07-08T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Asian language support and bugfixes</title>
@@ -653,7 +653,7 @@ As always, please let us know if you find any issues or how we can make our apps
     var isMac = navigator.userAgent.indexOf('Mac') >= 0;
     for (var i = 0; i 
 ]]></description>
-      <pubDate>Fri, 23 Jun 2017 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 23 Jun 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/asian-languages-and-fixes</guid>
       <content:encoded><![CDATA[<p>Since the Moo.do 3.0 release last month, we&#39;ve been heavily focused on fixing bugs. Thank you to everyone who sent in feedback and bug reports. If you continue to see any issues, please let us know.</p>
 
@@ -697,7 +697,7 @@ As always, please let us know if you find any issues or how we can make our apps
     }
 </script>
 ]]></content:encoded>
-      <dc:date>2017-06-23T00:00:00+08:00</dc:date>
+      <dc:date>2017-06-23T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Design Update for Desktop and Web</title>
@@ -731,7 +731,7 @@ As always, please let us know if you find any issues or how we can make our apps
 }
 
 ]]></description>
-      <pubDate>Mon, 29 May 2017 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 29 May 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/desktop-design</guid>
       <content:encoded><![CDATA[<p>Today we have a new design for the desktop apps to make Moo.do more intuitive and more attractive. There are small tweaks all over the app but the most notable changes are:</p>
 
@@ -766,7 +766,7 @@ As always, please let us know if you find any issues or how we can make our apps
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-05-29T00:00:00+08:00</dc:date>
+      <dc:date>2017-05-29T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Mac & Windows Apps</title>
@@ -809,7 +809,7 @@ As always, please let us know if you find any issues or how we can make our apps
 }
 
 ]]></description>
-      <pubDate>Tue, 16 May 2017 00:00:00 +0800</pubDate>
+      <pubDate>Tue, 16 May 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/desktop-apps</guid>
       <content:encoded><![CDATA[<p>Good news today for the huge number of people who have been requesting this for a long time now: Moo.do now has desktop apps!</p>
 
@@ -849,7 +849,7 @@ As always, please let us know if you find any issues or how we can make our apps
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-05-16T00:00:00+08:00</dc:date>
+      <dc:date>2017-05-16T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>iOS Connection Fixes</title>
@@ -858,13 +858,13 @@ As always, please let us know if you find any issues or how we can make our apps
 
 Google has changed their policy on the authentication method that we were using. Going forward, our native apps will use your pre-existing Google authentication on your device.
 ]]></description>
-      <pubDate>Fri, 05 May 2017 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 05 May 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/ios-login-update</guid>
       <content:encoded><![CDATA[<p>We have released an update to our iOS app that fixes login and connection isues. If you are having connection problems, update the iOS app in the App Store.</p>
 
 <p>Google has changed their policy on the authentication method that we were using. Going forward, our native apps will use your pre-existing Google authentication on your device.</p>
 ]]></content:encoded>
-      <dc:date>2017-05-05T00:00:00+08:00</dc:date>
+      <dc:date>2017-05-05T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Moo.do for Kanban</title>
@@ -873,7 +873,7 @@ Google has changed their policy on the authentication method that we were using.
 
 
 ]]></description>
-      <pubDate>Mon, 20 Mar 2017 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/kanban</guid>
       <content:encoded><![CDATA[<p>Many <strong>Moo.do</strong> users like to organize their projects on a Kanban (or Scrum) board for Agile Development. This continues our series of <a href="/blog/ideas">examples of how people and teams are using <strong>Moo.do</strong></a> with a description of how <strong>Moo.do</strong> can be used as a Kanban board.</p>
 
@@ -1033,7 +1033,7 @@ window.__addDemos(
     }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-03-20T00:00:00+08:00</dc:date>
+      <dc:date>2017-03-20T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Moo.do for Project Management</title>
@@ -1042,7 +1042,7 @@ window.__addDemos(
 
 We have spent a majority of the development process working remotely and in vastly different time zones, so making sure we know what to work on next without additional communication is especially important.
 ]]></description>
-      <pubDate>Sun, 19 Mar 2017 00:00:00 +0800</pubDate>
+      <pubDate>Sun, 19 Mar 2017 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/project-management</guid>
       <content:encoded><![CDATA[<p><strong>Moo.do</strong> is designed to be extremely flexible. Our goal is to allow anyone to organize in a way that makes the most sense for them. While building <strong>Moo.do</strong>, we&#39;ve been using it to manage its own development: as a planner, project manager, todo list, calendar, and bug tracker. I&#39;ll describe how we use <strong>Moo.do</strong> as the first of a series of <a href="/blog/ideas">examples of how people and teams are using <strong>Moo.do</strong></a>.</p>
 
@@ -1229,7 +1229,7 @@ window.__addDemos(
     }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-03-19T00:00:00+08:00</dc:date>
+      <dc:date>2017-03-19T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Calendar Pane (Beta)</title>
@@ -1273,7 +1273,7 @@ This is an Early Access release, meaning we want your feedback to get this featu
 }
 
 ]]></description>
-      <pubDate>Sun, 19 Feb 2017 00:00:00 +0800</pubDate>
+      <pubDate>Sun, 19 Feb 2017 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/calendar-pane</guid>
       <content:encoded><![CDATA[<p>Moo.do now has a full Calendar! The new Calendar Pane has the original Agenda view as well as Day, Week, and Month views.</p>
 
@@ -1314,7 +1314,7 @@ This is an Early Access release, meaning we want your feedback to get this featu
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-02-19T00:00:00+08:00</dc:date>
+      <dc:date>2017-02-19T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Mobile Gmail Update</title>
@@ -1344,7 +1344,7 @@ We&#39;ve also been doing a lot of work on the speed of the iOS and Android apps
 }
 
 ]]></description>
-      <pubDate>Wed, 04 Jan 2017 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/mobile-gmail-update</guid>
       <content:encoded><![CDATA[<p>Over the past two months we&#39;ve been steadily improving the mobile Gmail experience, and today we are releasing some new features that make organizing your emails much easier.</p>
 
@@ -1371,7 +1371,7 @@ We&#39;ve also been doing a lot of work on the speed of the iOS and Android apps
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2017-01-04T00:00:00+08:00</dc:date>
+      <dc:date>2017-01-04T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Mobile Gmail Beta</title>
@@ -1403,7 +1403,7 @@ In Development
 }
 
 ]]></description>
-      <pubDate>Sat, 12 Nov 2016 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 12 Nov 2016 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/mobile-gmail-beta</guid>
       <content:encoded><![CDATA[<p>Premium users will notice there is now a Gmail button in the bottom toolbar of the Moo.do iOS and Android apps. Moo.do now has a full mobile email client!</p>
 
@@ -1432,7 +1432,7 @@ In Development
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-11-12T00:00:00+08:00</dc:date>
+      <dc:date>2016-11-12T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Workspaces</title>
@@ -1451,7 +1451,7 @@ Workspaces lets you save multiple sets of panes and easily switch between workfl
 }
 
 ]]></description>
-      <pubDate>Thu, 20 Oct 2016 00:00:00 +0800</pubDate>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/workspaces</guid>
       <content:encoded><![CDATA[<p>Update: This feature is now called Boards and was updated in <a href="/blog/desktop-design">https://moo.do/blog/desktop-design</a>.</p>
 
@@ -1467,7 +1467,7 @@ Workspaces lets you save multiple sets of panes and easily switch between workfl
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-10-20T00:00:00+08:00</dc:date>
+      <dc:date>2016-10-20T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Mobile Design Update</title>
@@ -1515,7 +1515,7 @@ In addition to continuing the improvements to the mobile app, we have some new p
 }
 
 ]]></description>
-      <pubDate>Mon, 03 Oct 2016 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/mobile-design</guid>
       <content:encoded><![CDATA[<p>Our next major goal for Moo.do is to bring the mobile app up to date with all of the features we have added on the desktop. Today&#39;s update is the first step towards that goal, bringing the iOS and Android apps up to date with modern design patterns and preparing to support the Gmail and Drive panes.</p>
 
@@ -1560,7 +1560,7 @@ In addition to continuing the improvements to the mobile app, we have some new p
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-10-03T00:00:00+08:00</dc:date>
+      <dc:date>2016-10-03T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Signatures, Aliases, and Product Hunt</title>
@@ -1571,7 +1571,7 @@ Thank you to everyone who requested that feature! We&#39;re always looking for w
 
 We&#39;re also very excited that Moo.do is on Product Hunt today! Your support and thoughts in the comments would be incredibly helpful to us. Thank you!
 ]]></description>
-      <pubDate>Wed, 07 Sep 2016 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 07 Sep 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/signatures-aliases</guid>
       <content:encoded><![CDATA[<p>Moo.do will now use your signature and alias settings from Gmail. You don&#39;t even have to do anything to set up signatures in Moo.do.</p>
 
@@ -1579,7 +1579,7 @@ We&#39;re also very excited that Moo.do is on Product Hunt today! Your support a
 
 <p>We&#39;re also very excited that Moo.do is on Product Hunt today! Your support and thoughts in the comments would be incredibly helpful to us. Thank you!</p>
 ]]></content:encoded>
-      <dc:date>2016-09-07T00:00:00+08:00</dc:date>
+      <dc:date>2016-09-07T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Gmail Plugin Launch</title>
@@ -1610,7 +1610,7 @@ If you are not already using Moo.do for Gmail, you can enable the Gmail plugin f
 }
 
 ]]></description>
-      <pubDate>Tue, 30 Aug 2016 00:00:00 +0800</pubDate>
+      <pubDate>Tue, 30 Aug 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/gmail-launch</guid>
       <content:encoded><![CDATA[<p>Four months ago we released the Gmail plugin into Early Access Beta. Thanks to all of your support and feedback, we are happy to announce that Moo.do for Gmail is now available for free to everyone!</p>
 
@@ -1638,7 +1638,7 @@ If you are not already using Moo.do for Gmail, you can enable the Gmail plugin f
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-08-30T00:00:00+08:00</dc:date>
+      <dc:date>2016-08-30T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Gmail Priority View</title>
@@ -1666,7 +1666,7 @@ We&#39;re excited to hear how you use the Priority View and how we can make it b
 }
 
 ]]></description>
-      <pubDate>Tue, 02 Aug 2016 00:00:00 +0800</pubDate>
+      <pubDate>Tue, 02 Aug 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/priority-view</guid>
       <content:encoded><![CDATA[<p>We want to make it easy to quickly process your emails and keep track of what needs further action or response, so we have a new Priority View to sort emails by priority. Click on the new <img class="postImgPriTime" src="/blog/img/update-priority-view2.png"></img> icon in the Gmail Pane to switch to the Priority View.</p>
 
@@ -1691,7 +1691,7 @@ We&#39;re excited to hear how you use the Priority View and how we can make it b
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-08-02T00:00:00+08:00</dc:date>
+      <dc:date>2016-08-02T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Rearrange panes</title>
@@ -1707,7 +1707,7 @@ We&#39;re excited to hear how you use the Priority View and how we can make it b
 }
 
 ]]></description>
-      <pubDate>Fri, 29 Jul 2016 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 29 Jul 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/rearrange-panes</guid>
       <content:encoded><![CDATA[<p>We&#39;ve recently been mainly focused on fixing bugs, so everything should be feeling smoother and faster, especially on iOS and Android. We also have a fun new feature today: rearrangeable panes.</p>
 
@@ -1720,7 +1720,7 @@ We&#39;re excited to hear how you use the Priority View and how we can make it b
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-07-29T00:00:00+08:00</dc:date>
+      <dc:date>2016-07-29T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Link multiple Gmail accounts</title>
@@ -1747,7 +1747,7 @@ This update also includes a lot of bug fixes, expecially for iOS and Android. If
 }
 
 ]]></description>
-      <pubDate>Sun, 17 Jul 2016 00:00:00 +0800</pubDate>
+      <pubDate>Sun, 17 Jul 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/multiuser</guid>
       <content:encoded><![CDATA[<p>If you have multiple Gmail accounts for personal and work emails you can now link them together in Moo.do. In the &#39;Linked Accounts&#39; page of the Settings just enter the email address of the account you want to link.</p>
 
@@ -1771,7 +1771,7 @@ This update also includes a lot of bug fixes, expecially for iOS and Android. If
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-07-17T00:00:00+08:00</dc:date>
+      <dc:date>2016-07-17T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Email Attachments</title>
@@ -1808,7 +1808,7 @@ In Development
 }
 
 ]]></description>
-      <pubDate>Fri, 24 Jun 2016 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 24 Jun 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/email-attachments</guid>
       <content:encoded><![CDATA[<p>Moo.do is now a fully functional email client! Today&#39;s release brings many bugfixes along with two major email features. You can attach files to an email by dragging a file onto an email from a Google Drive pane or from your computer.</p>
 
@@ -1842,7 +1842,7 @@ In Development
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-06-24T00:00:00+08:00</dc:date>
+      <dc:date>2016-06-24T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Agenda Drag Drop</title>
@@ -1872,7 +1872,7 @@ In Development
 }
 
 ]]></description>
-      <pubDate>Mon, 13 Jun 2016 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/agenda-drag-drop</guid>
       <content:encoded><![CDATA[<p>Droppable agenda is here! You can drag and drop items and emails onto the Agenda pane to schedule and prioritize them. We&#39;re very excited about this feature as it makes it so much easier to manage appointments, and more importantly, it&#39;s easy to drag emails right onto your calendar.</p>
 
@@ -1899,7 +1899,7 @@ In Development
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-06-13T00:00:00+08:00</dc:date>
+      <dc:date>2016-06-13T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Advanced Display Settings</title>
@@ -1931,7 +1931,7 @@ In Development
 }
 
 ]]></description>
-      <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 28 May 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/advanced-display-settings</guid>
       <content:encoded><![CDATA[<p>Building on our earlier release of <a href="/blog/display-settings">display settings</a>, we&#39;ve added a huge amount of customization options for our Premium users. You can now change font sizes, paddings, and colors of special text elements.</p>
 
@@ -1960,7 +1960,7 @@ In Development
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-05-28T00:00:00+08:00</dc:date>
+      <dc:date>2016-05-28T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Pricing/Trial Update</title>
@@ -1971,7 +1971,7 @@ The change in price will happen in two weeks on May 10th. As thanks for helping 
 
 Before the Gmail plugin comes out of Beta we are trying to squash any remaining bugs. If you&#39;ve noticed anything strange or are seeing any issues, please let us know and we will fix them for you. Thank you!
 ]]></description>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/pricing</guid>
       <content:encoded><![CDATA[<p>As the Gmail plugin comes out of Beta, we will be switching from Early Adopter pricing to the normal price of $7 / month and we will also begin offering a yearly pricing option of $70 / year. We want to give our current users time to trial our Premium features before going Premium which is available by going to the Settings menu in the desktop app. </p>
 
@@ -1979,7 +1979,7 @@ Before the Gmail plugin comes out of Beta we are trying to squash any remaining 
 
 <p>Before the Gmail plugin comes out of Beta we are trying to squash any remaining bugs. If you&#39;ve noticed anything strange or are seeing any issues, please let us know and we will fix them for you. Thank you!</p>
 ]]></content:encoded>
-      <dc:date>2016-04-27T00:00:00+08:00</dc:date>
+      <dc:date>2016-04-27T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Gmail Plugin Public Beta</title>
@@ -2005,7 +2005,7 @@ We are continuing to add features to the Gmail plugin. Let us know if there&#39;
 }
 
 ]]></description>
-      <pubDate>Mon, 11 Apr 2016 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 11 Apr 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/gmail-public-beta</guid>
       <content:encoded><![CDATA[<h1>Free trial for everyone!</h1>
 
@@ -2028,7 +2028,7 @@ We are continuing to add features to the Gmail plugin. Let us know if there&#39;
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-04-11T00:00:00+08:00</dc:date>
+      <dc:date>2016-04-11T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Notes</title>
@@ -2057,7 +2057,7 @@ Notes are currently plain text, but we would like to make a more powerful rich n
 }
 
 ]]></description>
-      <pubDate>Tue, 05 Apr 2016 00:00:00 +0800</pubDate>
+      <pubDate>Tue, 05 Apr 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/notes</guid>
       <content:encoded><![CDATA[<p>As we are putting the final touches on the Gmail plugin we are releasing a much requested feature - Notes! With notes you can easily add more context and information to items without cluttering your outline. Notes display with a preview of their first line as small gray text under an item.</p>
 
@@ -2083,7 +2083,7 @@ Notes are currently plain text, but we would like to make a more powerful rich n
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-04-05T00:00:00+08:00</dc:date>
+      <dc:date>2016-04-05T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Outline Upgrade</title>
@@ -2104,7 +2104,7 @@ More updates on the Gmail plugin coming soon!
 }
 
 ]]></description>
-      <pubDate>Sat, 19 Mar 2016 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 19 Mar 2016 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/new-overview</guid>
       <content:encoded><![CDATA[<p>We&#39;ve redesigned the Outline to make it easier to navigate large documents and renamed it to &quot;Overview.&quot; The new Overview is a companion that opens next to a pane for a top level view of your lists. As you scroll your list it highlights and tracks your position in the document. Clicking any item in the Overview will scroll to it and dragging items onto the Overview moves them to the list they are dropped on.</p>
 
@@ -2122,7 +2122,7 @@ More updates on the Gmail plugin coming soon!
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-03-19T00:00:00+08:00</dc:date>
+      <dc:date>2016-03-19T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Moo.do for Gmail Coming Soon</title>
@@ -2142,7 +2142,7 @@ More updates on the Gmail plugin coming soon!
 }
 
 ]]></description>
-      <pubDate>Fri, 11 Mar 2016 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/gmail-preview</guid>
       <content:encoded><![CDATA[<p>The Gmail plugin for Moo.do is nearing public beta! Moo.do will soon be a full desktop email client. You’ll be able to use Moo.do to read, write, organize, and schedule your emails right next to your events, tasks, and files.</p>
 
@@ -2159,7 +2159,7 @@ More updates on the Gmail plugin coming soon!
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2016-03-11T00:00:00+08:00</dc:date>
+      <dc:date>2016-03-11T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Archived Pane, Search Autocomplete, Hotkeys</title>
@@ -2203,7 +2203,7 @@ Gmail Plugin
 }
 
 ]]></description>
-      <pubDate>Thu, 03 Dec 2015 00:00:00 +0800</pubDate>
+      <pubDate>Thu, 03 Dec 2015 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/archived-pane</guid>
       <content:encoded><![CDATA[<h1>Archived Pane</h1>
 
@@ -2244,7 +2244,7 @@ Gmail Plugin
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-12-03T00:00:00+08:00</dc:date>
+      <dc:date>2015-12-03T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Display Settings: Bullets and Lines</title>
@@ -2296,7 +2296,7 @@ Gmail Plugin
 }
 
 ]]></description>
-      <pubDate>Fri, 20 Nov 2015 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 20 Nov 2015 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/display-settings</guid>
       <content:encoded><![CDATA[<p>One fascinating thing we&#39;ve learned while building Moo.do is that everybody uses it differently. Everyone considers something different to be the &quot;killer feature&quot; and people have very different preferences in how items should be displayed. So today we are introducing display themes to make Moo.do customizable to your individual preferences.</p>
 
@@ -2345,7 +2345,7 @@ Gmail Plugin
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-11-20T00:00:00+08:00</dc:date>
+      <dc:date>2015-11-20T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Google Calendar</title>
@@ -2417,7 +2417,7 @@ Gmail Plugin
 }
 
 ]]></description>
-      <pubDate>Sun, 08 Nov 2015 00:00:00 +0800</pubDate>
+      <pubDate>Sun, 08 Nov 2015 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/google-calendar</guid>
       <content:encoded><![CDATA[<p>Today we are releasing the Google Calendar plugin into Early Access! Google Calendar is a Premium plugin and it is also available as a free trial to our Community Members (anyone who has invited 5 or more people).</p>
 
@@ -2490,7 +2490,7 @@ Gmail Plugin
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-11-08T00:00:00+08:00</dc:date>
+      <dc:date>2015-11-08T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Search</title>
@@ -2519,7 +2519,7 @@ Gmail integration
 }
 
 ]]></description>
-      <pubDate>Mon, 26 Oct 2015 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 26 Oct 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/search</guid>
       <content:encoded><![CDATA[<p>Search is one of Moo.do&#39;s most powerful features so we&#39;ve upgraded it to be more intuitive and to support advanced search functions for our upcoming plugins.</p>
 
@@ -2545,7 +2545,7 @@ Gmail integration
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-10-26T00:00:00+08:00</dc:date>
+      <dc:date>2015-10-26T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Editable Agenda</title>
@@ -2582,7 +2582,7 @@ Gmail integration
 }
 
 ]]></description>
-      <pubDate>Mon, 19 Oct 2015 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/editable-agenda</guid>
       <content:encoded><![CDATA[<p>We wanted the Agenda to be editable from the beginning, but it hasn&#39;t been possible to make it a good experience until the changes we made in our <a href="/blog/performance">performance update</a>. With that done, we are happy to announce that items in the Agenda pane are now editable!</p>
 
@@ -2616,7 +2616,7 @@ Gmail integration
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-10-19T00:00:00+08:00</dc:date>
+      <dc:date>2015-10-19T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Revision History</title>
@@ -2625,13 +2625,13 @@ Gmail integration
 
 You can find Revision History in the options menu below Export Data. If you have any trouble with this tool, please let us know. Nobody has ever lost data in Moo.do and we plan to keep it that way.
 ]]></description>
-      <pubDate>Sat, 03 Oct 2015 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 03 Oct 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/revision-history</guid>
       <content:encoded><![CDATA[<p>The most important feature of a productivity app is that it <strong>never</strong> lose your data, which is why we designed Moo.do so that losing data is not even possible. Moo.do keeps a full revision history of all changes so that if anything goes wrong, everything can always be recovered. We just released a new tool for browsing your revision history to get back anything you may have lost. If you ever need to get something back, you can either revert to a previous version or copy and paste what you need back into Moo.do.</p>
 
 <p>You can find Revision History in the options menu below Export Data. If you have any trouble with this tool, please let us know. Nobody has ever lost data in Moo.do and we plan to keep it that way.</p>
 ]]></content:encoded>
-      <dc:date>2015-10-03T00:00:00+08:00</dc:date>
+      <dc:date>2015-10-03T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Performance Upgrade</title>
@@ -2666,7 +2666,7 @@ Gmail integration
 }
 
 ]]></description>
-      <pubDate>Mon, 14 Sep 2015 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 14 Sep 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/performance</guid>
       <content:encoded><![CDATA[<p>We just launched a <strong>huge</strong> performance upgrade for Moo.do which dramatically reduces load time and makes interaction feel much snappier. This update improves Moo.do everywhere: on the web, Chrome, iOS, and Android.</p>
 
@@ -2698,7 +2698,7 @@ Gmail integration
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-09-14T00:00:00+08:00</dc:date>
+      <dc:date>2015-09-14T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Recent Roadmap Changes</title>
@@ -2724,7 +2724,7 @@ Notes
 Start on Gmail plugin
 
 ]]></description>
-      <pubDate>Sat, 27 Jun 2015 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 27 Jun 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/updated-roadmap</guid>
       <content:encoded><![CDATA[<p>We&#39;ve spent the past month working on improving Moo.do&#39;s performance, based on your feedback and to get ready for the Gmail and Google Calendar integrations. We found a way to dramatically improve Moo.do&#39;s speed and load time, but the changes required ended up being larger than expected. The delay is totally worth it though, as Moo.do will soon be able to handle tens of thousands of items with ease and feel much snappier overall. This update will improve our apps on all platforms: web, Chrome, iOS, and Android.</p>
 
@@ -2747,7 +2747,7 @@ Start on Gmail plugin
 <li>Start on Gmail plugin</li>
 </ul>
 ]]></content:encoded>
-      <dc:date>2015-06-27T00:00:00+08:00</dc:date>
+      <dc:date>2015-06-27T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Google Drive and Premium</title>
@@ -2811,7 +2811,7 @@ html:not(.mobile) #post_launchPremium .demobg {
 }
 
 ]]></description>
-      <pubDate>Wed, 06 May 2015 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 06 May 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/premium</guid>
       <content:encoded><![CDATA[<p>For the past six months since our public launch, we&#39;ve focused on improving the free version of Moo.do, including what we believe are basic features that every productivity app needs to have for free: real-time collaboration, offline support, availability on every device, and no limits on usage. We really appreciate your feedback and support that has helped us shape Moo.do into a great tool for managing projects, tasks, and to-do lists. Now it’s time to make Moo.do into much more than just a to-do list app.</p>
 
@@ -2872,7 +2872,7 @@ html:not(.mobile) #post_launchPremium .demobg {
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-05-06T00:00:00+08:00</dc:date>
+      <dc:date>2015-05-06T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Development Update 4/16</title>
@@ -2898,7 +2898,7 @@ International dates like DD/MM/YYYY or YYYY/MM/DD
 Gmail
 
 ]]></description>
-      <pubDate>Thu, 16 Apr 2015 00:00:00 +0800</pubDate>
+      <pubDate>Thu, 16 Apr 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/update-04-16</guid>
       <content:encoded><![CDATA[<p>We&#39;ve been quiet recently while working on big new features for Moo.do, so we just wanted to update everyone on some recent changes and the roadmap for the next few months.</p>
 
@@ -2921,7 +2921,7 @@ Gmail
 <li>Gmail</li>
 </ul>
 ]]></content:encoded>
-      <dc:date>2015-04-16T00:00:00+08:00</dc:date>
+      <dc:date>2015-04-16T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Moo.do & Mailbird</title>
@@ -2946,7 +2946,7 @@ Get Mailbird 2.0 at http://www.getmailbird.com.
 }
 
 ]]></description>
-      <pubDate>Thu, 12 Mar 2015 00:00:00 +0800</pubDate>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/mailbird-launch</guid>
       <content:encoded><![CDATA[<p>We just launched a deep integration with <a href="http://www.getmailbird.com">Mailbird 2.0</a>, which is (in our humble opinions) the best email app for Windows. With Mailbird and Moo.do, email becomes a real to-do list that you can organize, prioritize, and schedule right alongside all your other projects and tasks.</p>
 
@@ -2968,7 +2968,7 @@ Get Mailbird 2.0 at http://www.getmailbird.com.
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-03-12T00:00:00+08:00</dc:date>
+      <dc:date>2015-03-12T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Announcing Gmail and Drive Integration</title>
@@ -3040,7 +3040,7 @@ html:not(.mobile) #post_announceEmail .demobg {
 }
 
 ]]></description>
-      <pubDate>Wed, 25 Feb 2015 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 25 Feb 2015 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/announcing-email</guid>
       <content:encoded><![CDATA[<p>We are very happy to announce the next big step for Moo.do, and the reason we created Moo.do in the first place. You will soon be able to <strong>organize your email</strong> in Moo.do.</p>
 
@@ -3109,7 +3109,7 @@ html:not(.mobile) #post_announceEmail .demobg {
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-02-25T00:00:00+08:00</dc:date>
+      <dc:date>2015-02-25T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Desktop Design Update 1/17</title>
@@ -3149,7 +3149,7 @@ Reduced visual distraction from the top-bar by removing the background color.
 }
 
 ]]></description>
-      <pubDate>Sat, 17 Jan 2015 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 17 Jan 2015 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/update-01-17</guid>
       <content:encoded><![CDATA[<p>We released an update with improvements to the design of our web and Chrome apps to reduce distraction so you can focus on your content.</p>
 
@@ -3186,7 +3186,7 @@ Reduced visual distraction from the top-bar by removing the background color.
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2015-01-17T00:00:00+08:00</dc:date>
+      <dc:date>2015-01-17T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Development Update 1/4</title>
@@ -3212,7 +3212,7 @@ Upcoming Changes
 Design update for Web and Chrome apps
 
 ]]></description>
-      <pubDate>Sun, 04 Jan 2015 00:00:00 +0800</pubDate>
+      <pubDate>Sun, 04 Jan 2015 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/update-01-04</guid>
       <content:encoded><![CDATA[<h2>Notable Updates</h2>
 
@@ -3235,7 +3235,7 @@ Design update for Web and Chrome apps
 <li>Design update for Web and Chrome apps</li>
 </ul>
 ]]></content:encoded>
-      <dc:date>2015-01-04T00:00:00+08:00</dc:date>
+      <dc:date>2015-01-04T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Repeated Dates Update 11/21</title>
@@ -3295,7 +3295,7 @@ Other Date Fixes
 Dates like @next friday 3pm are parsed correctly.
 
 ]]></description>
-      <pubDate>Wed, 19 Nov 2014 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 19 Nov 2014 00:00:00 -0800</pubDate>
       <guid>http://www.moo.do/blog/update-repeat-dates</guid>
       <content:encoded><![CDATA[<p>We&#39;ve added support for repeated dates!</p>
 
@@ -3352,7 +3352,7 @@ Dates like @next friday 3pm are parsed correctly.
 <li>Dates like <b class="date">@next friday 3pm</b> are parsed correctly.</li>
 </ul>
 ]]></content:encoded>
-      <dc:date>2014-11-19T00:00:00+08:00</dc:date>
+      <dc:date>2014-11-19T00:00:00-08:00</dc:date>
     </item>
     <item>
       <title>Development Update 10/31</title>
@@ -3389,7 +3389,7 @@ iOS background fetch to keep your iPhone/iPad up to date
 List of Keyboard Shortcuts in Help
 
 ]]></description>
-      <pubDate>Fri, 31 Oct 2014 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 31 Oct 2014 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/update-10-31</guid>
       <content:encoded><![CDATA[<p>Today&#39;s update includes a big improvement to the way you complete and collapse items.</p>
 
@@ -3423,7 +3423,7 @@ List of Keyboard Shortcuts in Help
 <li>List of Keyboard Shortcuts in Help</li>
 </ul>
 ]]></content:encoded>
-      <dc:date>2014-10-31T00:00:00+08:00</dc:date>
+      <dc:date>2014-10-31T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Development Update 10/23</title>
@@ -3450,7 +3450,7 @@ We have an RSS feed now
 You can now comment on our blog posts
 
 ]]></description>
-      <pubDate>Thu, 23 Oct 2014 00:00:00 +0800</pubDate>
+      <pubDate>Thu, 23 Oct 2014 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/update-10-23</guid>
       <content:encoded><![CDATA[<h2>Bugs fixed</h2>
 
@@ -3474,7 +3474,7 @@ You can now comment on our blog posts
 <li>You can now comment on our blog posts</li>
 </ul>
 ]]></content:encoded>
-      <dc:date>2014-10-23T00:00:00+08:00</dc:date>
+      <dc:date>2014-10-23T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Big Mobile Update 10/14</title>
@@ -3528,7 +3528,7 @@ Autocomplete opening or closing when it was not desirable
 }
 
 ]]></description>
-      <pubDate>Tue, 14 Oct 2014 00:00:00 +0800</pubDate>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/update-mobile-design</guid>
       <content:encoded><![CDATA[<p>We just released an update with huge improvements to our mobile apps (both iOS and Android). Let us know what you think by sending us an email at <a href="mailto:contact@moo.do">contact@moo.do</a>.</p>
 
@@ -3579,7 +3579,7 @@ Autocomplete opening or closing when it was not desirable
 }
 </style>
 ]]></content:encoded>
-      <dc:date>2014-10-14T00:00:00+08:00</dc:date>
+      <dc:date>2014-10-14T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Development Update 10/10</title>
@@ -3598,7 +3598,7 @@ Dates rollover at midnight correctly (e.g. @tomorrow becomes @today)
 Switching between multiple Google accounts is now supported
 
 ]]></description>
-      <pubDate>Fri, 10 Oct 2014 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 10 Oct 2014 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/update-10-10</guid>
       <content:encoded><![CDATA[<h2>Features</h2>
 
@@ -3614,7 +3614,7 @@ Switching between multiple Google accounts is now supported
 <li>Switching between multiple Google accounts is now supported</li>
 </ul>
 ]]></content:encoded>
-      <dc:date>2014-10-10T00:00:00+08:00</dc:date>
+      <dc:date>2014-10-10T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Launch</title>
@@ -3632,7 +3632,7 @@ facebook.com/MooDoApp
 google.com/+MooDoApp
 contact@moo.do
 ]]></description>
-      <pubDate>Wed, 10 Sep 2014 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 10 Sep 2014 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/launch</guid>
       <content:encoded><![CDATA[<p>We are proud to officially announce the launch of <strong>Moo.do</strong> at <a href="https://www.moo.do/">https://moo.do</a> and on the <a href="https://itunes.apple.com/us/app/moo.do-organize-your-way/id889830074?ls=1&amp;mt=8">iOS</a>, <a href="https://play.google.com/store/apps/details?id=moo.do">Android</a>, and <a href="https://chrome.google.com/webstore/detail/moodo/iffimmolghilclfndeiebgppddmagofk">Chrome</a> App Stores. <strong>Moo.do</strong> is designed to be the best and easiest way to organize everything in your life: projects, to-do lists, appointments, contacts, reminders, events, and anything else you can write down. As all modern apps should be, <strong>Moo.do</strong> is available on any computer, tablet, or phone and synchronizes all devices and users in realtime.</p>
 
@@ -3647,7 +3647,7 @@ contact@moo.do
 <a href="https://google.com/+MooDoApp">google.com/+MooDoApp</a><br/>
 <a href="mailto:contact@moo.do">contact@moo.do</a></p>
 ]]></content:encoded>
-      <dc:date>2014-09-10T00:00:00+08:00</dc:date>
+      <dc:date>2014-09-10T00:00:00-07:00</dc:date>
     </item>
     <item>
       <title>Public Beta</title>
@@ -3665,7 +3665,7 @@ facebook.com/MooDoApp
 google.com/+MooDoApp
 contact@moo.do
 ]]></description>
-      <pubDate>Wed, 11 Jun 2014 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 11 Jun 2014 00:00:00 -0700</pubDate>
       <guid>http://www.moo.do/blog/public-beta</guid>
       <content:encoded><![CDATA[<p>We are excited to announce that <strong>Moo.do</strong> is entering into public beta today at <a href="https://www.moo.do/">https://moo.do</a>. <strong>Moo.do</strong> lets you organize your life as easily as writing on a piece of paper. <strong>Moo.do</strong> organizes your projects, to do lists, calendar, contacts, reminders, events, and anything else you can write down. It is flexible, available offline, works on your mobile devices, and synchronizes in realtime with all your devices and other collaborators. You can even share specific lists with your friends, group members or co-workers.</p>
 
@@ -3680,8 +3680,8 @@ contact@moo.do
 <a href="https://google.com/+MooDoApp">google.com/+MooDoApp</a><br/>
 <a href="mailto:contact@moo.do">contact@moo.do</a></p>
 ]]></content:encoded>
-      <dc:date>2014-06-11T00:00:00+08:00</dc:date>
+      <dc:date>2014-06-11T00:00:00-07:00</dc:date>
     </item>
-    <dc:date>2017-11-03T00:00:00+08:00</dc:date>
+    <dc:date>2017-11-03T00:00:00-07:00</dc:date>
   </channel>
 </rss>
