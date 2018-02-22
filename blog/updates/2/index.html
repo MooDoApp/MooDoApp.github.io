@@ -21,7 +21,34 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-37740918-2',{'cookieDomain':'auto','siteSpeedSampleRate': 1});
     ga('require','displayfeatures');ga('send','pageview');
-</script></head><body><div class="container"><div id="topBar"><div id="topBarInside"><a id="logoWrapper" href="/"><img class="logo" src="/img/logoForWhite600.png" /></a><div id="topLinks"><a id="linkPremium" class="link linkButton" href="/premium/">Premium</a><a id="linkHelp" class="link linkButton" href="/help/">Help</a><a id="linkBlog" class="link linkButton selected" href="/blog/">Blog</a><span class="link linkLogin linkButton noMobile" title="Login" onclick="openApp('topbar')">Login</span><span class="link linkGetStarted linkButton noMobile" title="Get Started" onclick="openApp('topbar')">Get Started</span></div></div></div><div class="content"><div class="page"><div id="home"><ul class="posts"><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/july-design/">July Design Update</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
+</script></head><body><div class="container"><div id="topBar"><div id="topBarInside"><a id="logoWrapper" href="/"><img class="logo" src="/img/logoForWhite600.png" /></a><div id="topLinks"><a id="linkPremium" class="link linkButton" href="/premium/">Premium</a><a id="linkHelp" class="link linkButton" href="/help/">Help</a><a id="linkBlog" class="link linkButton selected" href="/blog/">Blog</a><span class="link linkLogin linkButton noMobile" title="Login" onclick="openApp('topbar')">Login</span><span class="link linkGetStarted linkButton noMobile" title="Get Started" onclick="openApp('topbar')">Get Started</span></div></div></div><div class="content"><div class="page"><div id="home"><ul class="posts"><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/update-08-06/">Updates August 6</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
+            Jay Meistrich
+            </a>
+            
+            and
+            
+        
+            <a href="mailto:grant@moo.do">
+            Grant Watters
+            </a>
+            
+        
+        on
+        
+        </span><span class="postDate">August 06, 2017</span><span class="postCategories"> in
+        
+            <span><a href="/blog/updates/">updates</a></span></span></div></div><div class="postExcerpt padded"><p>This update continues improving pain points in our desktop user experience and includes many bug fixes.</p><p><img class="postImg postImgAugustUpdate" src="/blog/img/update-august-update.png" /></p><h1>General</h1><ul><li>New &quot;<strong>Create Task</strong>&quot; for emails (pictured above): Add selected email(s) as child of the new task, set a note and priority, optionally add it to an existing item, and add it to the Outline.</li><li>&quot;<strong>New item</strong>&quot; menu has options for adding as a child of an existing item, note and priority</li><li><strong><span class="updateAugustHotkey">Ctrl</span> + click</strong> on filters for the opposite filter, such as &quot;Show only completed&quot;</li><li><strong>Fixed</strong>: Notifications firing for children of completed items</li><li><strong>Fixed</strong>: Issues with @soon, @later, and @someday appearing in the incorrect Agenda block</li><li><strong>Fixed</strong>: Flat search hiding children of completed items</li></ul><h1>Panes</h1><ul><li>Click and hold on item text in pane headers to show a menu of that item&#39;s siblings to zoom into them. In the Gmail pane that makes it easy to switch between accounts.</li></ul><h1>Calendar</h1><ul><li>Adding an item in the Calendar pane can optionally sync the new item with Google Calendar</li><li>Better error reporting for calendar syncing</li><li>Make read-only calendars easier to work with</li><li>Added a Calendars button to change which Google Calendars are visible in the Calendar pane, as well as toggle display of local non-Google Calendar items.</li></ul><h1>Desktop app</h1><ul><li>Downloading attachments shows progress and opens the attachment when it&#39;s done downloading.</li></ul><h1>Mobile</h1><ul><li><strong>Fixed</strong>: Editing issues on Android with Enter and Backspace</li><li>Tapping on the sides of items on mobile no long collapses or completes items. Swipe left or right on an item to collapse or complete it.</li></ul><script>
+    var els = document.getElementsByClassName('updateAugustHotkey');
+    var isMac = navigator.userAgent.indexOf('Mac') >= 0;
+    for (var i = 0; i < els.length; i ++)
+    {
+        els[i].textContent = (isMac ? 'Ctrl' : 'Alt');
+    }
+</script><style>
+.postImgAugustUpdate {
+    width: 400px;
+}
+</style><div class="postFooter"><div class="readMore"><a href="/blog/update-08-06/">Continue Reading...</a></div></div></div></li><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/july-design/">July Design Update</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
             Jay Meistrich
             </a>
             
@@ -125,37 +152,7 @@
     width: 100%;
     margin: 24px auto;
 }
-</style><div class="postFooter"><div class="readMore"><a href="/blog/desktop-design/">Continue Reading...</a></div></div></div></li><li class="post" ><div class="postHeader"><div class="postTitle padded"><a href="/blog/desktop-apps/">Mac & Windows Apps</a></div><div class="postMetadata padded"><span class="postAuthor"><a href="mailto:j@moo.do">
-            Jay Meistrich
-            </a>
-            
-            and
-            
-        
-            <a href="mailto:grant@moo.do">
-            Grant Watters
-            </a>
-            
-        
-        on
-        
-        </span><span class="postDate">May 16, 2017</span><span class="postCategories"> in
-        
-            <span><a href="/blog/updates/">updates</a></span></span></div></div><div class="postExcerpt padded"><p>Good news today for the huge number of people who have been requesting this for a long time now: Moo.do now has desktop apps!</p><h1>Mac App</h1><p><img class="postImg postImgUpdateApps postImgUpdateAppsMac" src="/blog/img/update-apps-mac.png" /></p><h1 style="margin-top: 0.5em">Windows App</h1><p><img class="postImg postImgUpdateApps" src="/blog/img/update-apps-win.png" /></p><p>Download the <a href="https://moo.do/lnk/mac">Mac app</a> and <a href="https://moo.do/lnk/windows">Windows app</a> right now. Or you can find them later in the options menu from the web app.</p><h1>Notifications</h1><p>The desktop apps support notifications, and now the web apps do too. You can now also choose how far before events to have Moo.do display notifications.</p><p><img class="postImg postImgUpdateNotifications" src="/blog/img/update-notifications.png" /></p><h1>Help us improve</h1><p>As always, please let us know if you find any issues or how we can make our apps better for you. Thanks!</p><style>
-.postImgUpdateNotifications {
-    width: 400px;
-    margin: 24px auto;
-}
-.postImgUpdateApps {
-    width: 700px;
-    margin: 0;
-    box-shadow: none;
-}
-.postImgUpdateAppsMac {
-    width: 720px;
-    margin-left: -10px;
-}
-</style><div class="postFooter"><div class="readMore"><a href="/blog/desktop-apps/">Continue Reading...</a></div></div></div></li></ul><div class="pagination padded"><a href="/blog/updates/index.html">&laquo; Previous</a><a href="/blog/updates/index.html">1</a><span>2</span><a href="/blog/updates/3">3</a><a href="/blog/updates/4">4</a><a href="/blog/updates/5">5</a><a href="/blog/updates/6">6</a><a href="/blog/updates/7">7</a><a href="/blog/updates/8">8</a><a href="/blog/updates/9">9</a><a href="/blog/updates/10">10</a><a href="/blog/updates/3">Next &raquo;</a></div></div></div></div><div id="footer" class="center"><a class="link linkButton noMobile" href="/">Home</a><a class="link linkButton" href="/premium/">Premium</a><a class="link linkButton" href="/help/">Help</a><a class="link linkButton selected" href="/blog/">Blog</a><a class="link linkButton" href="/us/">About Us</a><a class="link linkButton" href="/contact/">Contact</a><a class="link linkButton" href="/press/">Press</a><a class="link linkButton" href="/privacy/">Privacy</a><span class="socialIcons"><a class="link linkButton" target="_blank" onclick="sendToSocialMedia('Facebook', 'bot')" href="https://www.facebook.com/MooDoApp"><i class="icon-facebook"></i></a><a class="link linkButton" target="_blank" onclick="sendToSocialMedia('Twitter', 'bot')" href="https://www.twitter.com/MooDoApp"><i class="icon-twitter"></i></a><a class="link linkButton" target="_blank" onclick="sendToSocialMedia('Google', 'bot')" ref="publisher" href="https://www.google.com/+MooDoApp"><i class="icon-google-plus"></i></a><a class="link linkButton" target="_blank" onclick="sendToSocialMedia('Email', 'bot')"><i class="icon-envelope"></i></a></span></div></div><script type="text/javascript">
+</style><div class="postFooter"><div class="readMore"><a href="/blog/desktop-design/">Continue Reading...</a></div></div></div></li></ul><div class="pagination padded"><a href="/blog/updates/index.html">&laquo; Previous</a><a href="/blog/updates/index.html">1</a><span>2</span><a href="/blog/updates/3">3</a><a href="/blog/updates/4">4</a><a href="/blog/updates/5">5</a><a href="/blog/updates/6">6</a><a href="/blog/updates/7">7</a><a href="/blog/updates/8">8</a><a href="/blog/updates/9">9</a><a href="/blog/updates/10">10</a><a href="/blog/updates/11">11</a><a href="/blog/updates/3">Next &raquo;</a></div></div></div></div><div id="footer" class="center"><a class="link linkButton noMobile" href="/">Home</a><a class="link linkButton" href="/premium/">Premium</a><a class="link linkButton" href="/help/">Help</a><a class="link linkButton selected" href="/blog/">Blog</a><a class="link linkButton" href="/us/">About Us</a><a class="link linkButton" href="/contact/">Contact</a><a class="link linkButton" href="/press/">Press</a><a class="link linkButton" href="/privacy/">Privacy</a><span class="socialIcons"><a class="link linkButton" target="_blank" onclick="sendToSocialMedia('Facebook', 'bot')" href="https://www.facebook.com/MooDoApp"><i class="icon-facebook"></i></a><a class="link linkButton" target="_blank" onclick="sendToSocialMedia('Twitter', 'bot')" href="https://www.twitter.com/MooDoApp"><i class="icon-twitter"></i></a><a class="link linkButton" target="_blank" onclick="sendToSocialMedia('Google', 'bot')" ref="publisher" href="https://www.google.com/+MooDoApp"><i class="icon-google-plus"></i></a><a class="link linkButton" target="_blank" onclick="sendToSocialMedia('Email', 'bot')"><i class="icon-envelope"></i></a></span></div></div><script type="text/javascript">
           (function() {
             var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
             po.src = 'https://apis.google.com/js/platform.js';
