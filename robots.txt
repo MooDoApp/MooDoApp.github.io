@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow:
 Crawl-delay: 3
 Disallow: /js/
-Disallow: /sounds/
