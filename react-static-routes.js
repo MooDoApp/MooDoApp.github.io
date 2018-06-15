@@ -22,16 +22,17 @@ const universalOptions = {
   const t_0 = universal(import('../src/containers/Home'), universalOptions)
 const t_1 = universal(import('../src/containers/Premium'), universalOptions)
 const t_2 = universal(import('../src/containers/Help'), universalOptions)
-const t_3 = universal(import('../src/containers/Us'), universalOptions)
-const t_4 = universal(import('../src/containers/Contact'), universalOptions)
-const t_5 = universal(import('../src/containers/Press'), universalOptions)
-const t_6 = universal(import('../src/containers/Privacy'), universalOptions)
-const t_7 = universal(import('../src/containers/Unsubscribe'), universalOptions)
-const t_8 = universal(import('../src/containers/Purchase'), universalOptions)
-const t_9 = universal(import('../src/containers/Invoice'), universalOptions)
-const t_10 = universal(import('../src/containers/Beta'), universalOptions)
-const t_11 = universal(import('../src/containers/Blog'), universalOptions)
-const t_12 = universal(import('../src/containers/404'), universalOptions)
+const t_3 = universal(import('../src/containers/Changelog'), universalOptions)
+const t_4 = universal(import('../src/containers/Us'), universalOptions)
+const t_5 = universal(import('../src/containers/Contact'), universalOptions)
+const t_6 = universal(import('../src/containers/Press'), universalOptions)
+const t_7 = universal(import('../src/containers/Privacy'), universalOptions)
+const t_8 = universal(import('../src/containers/Unsubscribe'), universalOptions)
+const t_9 = universal(import('../src/containers/Purchase'), universalOptions)
+const t_10 = universal(import('../src/containers/Invoice'), universalOptions)
+const t_11 = universal(import('../src/containers/Beta'), universalOptions)
+const t_12 = universal(import('../src/containers/Blog'), universalOptions)
+const t_13 = universal(import('../src/containers/404'), universalOptions)
 
 
 // Template Map
@@ -48,12 +49,13 @@ t_8,
 t_9,
 t_10,
 t_11,
-t_12
+t_12,
+t_13
 ]
 
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
-  '404': 12
+  '404': 13
 }
 
 // Get template for given path

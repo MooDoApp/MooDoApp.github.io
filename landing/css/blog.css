@@ -95,6 +95,10 @@ ul + p {
 .postExcerpt tr {
   vertical-align: top;
 }
+.linkChangelog {
+  padding-top: 3em;
+  padding-bottom: 1px;
+}
 @media screen and (max-width: 920px) {
   .postContent > .demo img {
     margin-left: 10px;
