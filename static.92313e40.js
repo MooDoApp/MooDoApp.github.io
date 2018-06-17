@@ -5948,7 +5948,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
             ),
             _react2.default.createElement(
                 'a',
-                { style: { marginTop: 16 }, className: 'slackInvite', target: '_blank', href: 'https://join.slack.com/t/moodo/shared_invite/enQtMzY2MjMyNzg5OTU0LTg2ZWU1ODQxY2EyY2Y4ZWNiOWZkN2Q1MzllYjhlMGUzNzRhNmI2MTkzZjZkODliNmY1YmY0NmYxMmE4MjRiZTQ' },
+                { style: { marginTop: 16 }, className: 'slackInvite', target: '_blank', href: 'https://join.slack.com/t/moodo/shared_invite/enQtMzgyOTY4MzY4Nzg3LTQxMTllZTE1MjM4MTRlMjViOGM3ZjU5ZTZhMjAxZjI1NjM3NWM5MTM3Y2M4MWYzODRmNjUwYTk0Njg2YWI0NzU' },
                 _react2.default.createElement('object', { className: 'slackMark', data: '/img/slack.svg', type: 'image/svg+xml' }),
                 'Join us with Slack'
             )
@@ -8393,4 +8393,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.6349bac2.js.map
+//# sourceMappingURL=static.92313e40.js.map
