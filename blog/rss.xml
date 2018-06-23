@@ -9,9 +9,9 @@
             <link>https://www.moo.do</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 22 Jun 2018 14:42:59 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 23 Jun 2018 08:16:42 GMT</lastBuildDate>
         <atom:link href="https://www.moo.do/blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 22 Jun 2018 14:42:59 GMT</pubDate>
+        <pubDate>Sat, 23 Jun 2018 08:16:42 GMT</pubDate>
         <item>
             <title><![CDATA[Big update: killer task management]]></title>
             <description><![CDATA[<p>We began this year with a new goal: to make Moo.do into a <strong>killer task management app</strong>. Until now we had been focused on putting the pieces together: outlining, task management, calendar, and email. And with that complete, we took a step back to redesign Moo.do around the way people actually use it.</p>
