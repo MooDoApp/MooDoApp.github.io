@@ -340,6 +340,10 @@ hr {
   margin-right: auto;
   padding: 0 16px;
 }
+.sectionText ul ul {
+  padding-inline-start: 40px;
+  list-style-type: disc;
+}
 #about .sectionText {
   color: #666;
 }
