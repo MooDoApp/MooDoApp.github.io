@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="/landing/css/landing.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Yantramanav:300,400,500,600,700' rel='stylesheet' type='text/css'>
     <script>
-
-
         (function (i, s, o, g, r, a, m)
         {
         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function ()
@@ -53,23 +51,58 @@
     <script>
         (function run()
         {
-            var userAgent = navigator.userAgent;
+            var userAgent = navigator.userAgent,
+                assetExt;
 
             if (userAgent.indexOf('Mac') !== -1)
             {
-                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.1.1/Moo.do-1.1.1-mac.zip';
+                assetExt = '-mac.zip';
             }
             else if (userAgent.indexOf('Windows') !== -1)
             {
-                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.1.1/Moo.do-Setup-1.1.1.exe';
+                assetExt = '.exe';
             }
             else if (userAgent.indexOf('Linux') !== -1)
             {
-                window.location = 'https://github.com/MooDoApp/MooDoApp.github.io/releases/download/v1.1.1/Moo.do-1.1.1-x86_64.AppImage';
+                assetExt = '.AppImage';
             }
             else
             {
                 document.getElementById('spanText').textContent = 'App is not available for your platform yet. Please email support@moo.do to request it.';
+            }
+
+            if (assetExt)
+            {
+                var xhr = new XMLHttpRequest(),
+                    url = 'https://api.github.com/repos/MooDoApp/MooDoApp.github.io/releases/latest';
+
+                xhr.onreadystatechange = function ()
+                {
+                    if (xhr.readyState === 4)
+                    {
+                        if (xhr.status === 200)
+                        {
+                            var data = JSON.parse(xhr.responseText);
+
+                            if (data && data.assets)
+                            {
+                                for (var i = 0; i < data.assets.length; ++i)
+                                {
+                                    var asset = data.assets[i];
+                                    if (asset.name.indexOf(assetExt) > 0)
+                                    {
+                                        window.location = asset.browser_download_url;
+                                        return;
+                                    }
+                                }
+                            }
+                        }
+                        window.location = url;
+                    }
+                }
+
+                xhr.open('GET', url);
+                xhr.send();
             }
         })();
     </script>
