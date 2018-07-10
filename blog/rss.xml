@@ -9,16 +9,33 @@
             <link>https://www.moo.do</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 03 Jul 2018 11:59:34 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Jul 2018 16:40:36 GMT</lastBuildDate>
         <atom:link href="https://www.moo.do/blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 03 Jul 2018 11:59:34 GMT</pubDate>
+        <pubDate>Tue, 10 Jul 2018 16:40:36 GMT</pubDate>
+        <item>
+            <title><![CDATA[Images]]></title>
+            <description><![CDATA[<p>Moo.do now has full support for inline images: for links to online images, images in your Google Drive, and images uploaded from your computer. There’s a new option in the settings which is enabled by default:
+<img class="postImg" src="https://www.moo.do/blog/img/update-images-2.png" /></p>
+<p>With that setting enabled, you can add images in multiple ways:</p>
+<ol>
+<li>Click the + button next to an empty item and select Image</li>
+<li>Click the image icon at the top of a pane</li>
+<li>Drag an image file from your computer onto a pane</li>
+<li>Paste a link to an image</li>
+</ol>
+<p><img class="postImg" src="https://www.moo.do/blog/img/update-images-3.png" /></p>
+<p>You can resize the images to fit your document perfectly, and you can always toggle between showing the image or its text representation by right clicking it and selecting “Show as text”.</p>
+<p>Are there any additional features you’d like to see for images?</p>
+]]></description>
+            <guid isPermaLink="false">https://www.moo.do/blog/images</guid>
+        </item>
         <item>
             <title><![CDATA[Big update: killer task management]]></title>
             <description><![CDATA[<p>We began this year with a new goal: to make Moo.do into a <strong>killer task management app</strong>. Until now we had been focused on putting the pieces together: outlining, task management, calendar, and email. And with that complete, we took a step back to redesign Moo.do around the way people actually use it.</p>
 <p>We worked with a group of wonderful beta testers, experimenting and tweaking both our and their ideas until they felt right, resulting in what we think is a much better product.</p>
 <p>And today we are very happy to finally release this update in public beta to everyone!</p>
 <h1 id="get-into-it">Get into it</h1>
-<p>The new web app is at a new address: <a href="https://www.moo.do/web/">https://www.moo.do/web/</a>. The Mac and Windows apps will update themselves, or download them and the new Linux app at <a href="https://www.moo.do/download/">https://www.moo.do/download/</a>. In the app you will see a “Use latest version” checkbox in the <span class="onlyMac">Moo.do</span><span class="onlyWin">File</span> menu to toggle between the latest version and the previous version.<span class="onlyWin"> You may need to press Alt to open the File menu.</span></p>
+<p>The new web app is at a new address: <a href="https://www.moo.do/web/">https://www.moo.do/web/</a>. The Mac and Windows apps will update themselves, or download them and the new Linux app at <a href="https://www.moo.do/download/">https://www.moo.do/download/</a>. In the app you will see a “Use latest version” checkbox in the <span class="onlyMac">Moo.do</span><span class="onlyWin">system File</span> menu to toggle between the latest version and the previous version.<span class="onlyWin"> On Windows 8 and 10, you may need to press Alt to open the File menu.</span></p>
 <p>Note: This update is for the desktop apps. An update for the mobile apps will be coming in a few weeks.</p>
 <h1 id="new-design">New design</h1>
 <p>We’ve updated the design of the app with a more modern look. The new top toolbar makes it easy to switch boards and takes up less of that crucial horizontal space, or the sidebar is still an option if you prefer it.</p>
