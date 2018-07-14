@@ -9,9 +9,9 @@
             <link>https://www.moo.do</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 10 Jul 2018 16:40:36 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 Jul 2018 20:01:58 GMT</lastBuildDate>
         <atom:link href="https://www.moo.do/blog/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 10 Jul 2018 16:40:36 GMT</pubDate>
+        <pubDate>Sat, 14 Jul 2018 20:01:58 GMT</pubDate>
         <item>
             <title><![CDATA[Images]]></title>
             <description><![CDATA[<p>Moo.do now has full support for inline images: for links to online images, images in your Google Drive, and images uploaded from your computer. There’s a new option in the settings which is enabled by default:
