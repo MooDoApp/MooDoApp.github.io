@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1532344893748',
+var CacheName = 'moodo-cache-1535391511118',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -22,14 +22,14 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/appmobile/',
-                '/appmobile/index-1532344893748.html',
-                '/appmobile/js/vendor-1532344893748.js',
-                '/appmobile/js/delayedUI-1532344893748.js',
-                '/appmobile/js/main-min-1532344893748.js',
-                '/appmobile/js/preload-min-1532344893748.js',
-                '/appmobile/css/app-min-1532344893748.css',
-                '/appmobile/css/fonts/fonticons-1532344893748.woff',
-                '/appmobile/css/fonts/fonticons-1532344893748.ttf'
+                '/appmobile/index-1535391511118.html',
+                '/appmobile/js/vendor-1535391511118.js',
+                '/appmobile/js/delayedUI-1535391511118.js',
+                '/appmobile/js/main-min-1535391511118.js',
+                '/appmobile/js/preload-min-1535391511118.js',
+                '/appmobile/css/app-min-1535391511118.css',
+                '/appmobile/css/fonts/fonticons-1535391511118.woff',
+                '/appmobile/css/fonts/fonticons-1535391511118.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -68,29 +68,20 @@ self.addEventListener('fetch', function (event)
     const urlObj = new URL(event.request.url);
     var url = event.request.url;
 
-    if (urlObj.origin === location.origin)
+    if (urlObj.origin === location.origin && urlObj.href.indexOf(urlObj.origin + pathname) === 0)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1532344893748.html');
+            url = url.replace(pathname, pathname + 'index-1535391511118.html');
         }
 
         event.respondWith(
             caches.match(url).then(function (response)
             {
-                return response || fetch(event.request).then(function (response2)
-                {
-                    var response3 = response2.clone();
-                    caches.open(CacheNameCommon).then(function (cache)
-                    {
-                        cache.put(event.request, response3.clone());
-                    })
-                    return response2;
-                });
-            })
+                return response || fetch(event.request);
+            }).catch(function () { })
         );
     }
-
 });
 
 self.addEventListener('activate', function (event)

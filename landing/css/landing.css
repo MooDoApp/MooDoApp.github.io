@@ -733,12 +733,12 @@ iframe[seamless] {
   color: #09d;
 }
 .pageWidth > div {
-  max-width: 760px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 .padded {
-  max-width: 760px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -746,8 +746,8 @@ iframe[seamless] {
 }
 .unpadded {
   max-width: 920px;
-  margin-left: -95px;
-  margin-right: -95px;
+  margin-left: -75px;
+  margin-right: -75px;
 }
 a {
   text-decoration: none;
@@ -1498,4 +1498,67 @@ html:not(.Mac) .hotkeyAlt:before {
 }
 html:not(.Mac) .onlyMac {
   display: none;
+}
+.changelog li {
+  list-style-type: none;
+  font-size: 15px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+}
+.changelog .change {
+  display: block;
+  font-weight: bold;
+  color: white;
+  width: 82px;
+  min-width: 82px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 16px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 16px;
+  margin-top: -3px;
+  float: left;
+  height: 100%;
+}
+.changelog h1 {
+  margin-top: 1.5em;
+  margin-bottom: 24px;
+  color: #444;
+}
+.changelog h2 {
+  margin-bottom: 24px;
+}
+.changelog h3 {
+  font-weight: 400;
+  color: #777;
+  font-size: 18px;
+  margin: 16px 0 12px 4px;
+}
+.changelog .changeFix {
+  background: #09d;
+}
+.changelog .changeFeature {
+  background: #2a6;
+}
+.changelog .changeChange {
+  background: #fa0;
+}
+.changelog .changeSpeed {
+  background: #c21;
+}
+.changelog .changeBlog,
+.changelog .changeRelease,
+.changelog .changeMisc {
+  background: #444;
 }
