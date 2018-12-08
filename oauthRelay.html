@@ -6,6 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 <script type="text/javascript">
+    var token = undefined;
+
     function getQueryByName(name)
     {
         var regex = /([^&=]+)=([^&]*)/g;
@@ -19,108 +21,47 @@
             }
         }
 
-        while (m = regex.exec(location.hash.substring(1)))
-        {
-            if (decodeURIComponent(m[1]) === name)
-            {
-                return decodeURIComponent(m[2]);
-            }
-        }
-
         return undefined;
-    }
-
-    function runFinish(data)
-    {
-        if (window.opener)
-        {
-            window.opener.postMessage(data, '*');
-
-            window.close();
-        }
-        else
-        {
-            var url = 'https://' + window.location.host + '/web/' + window.location.hash;
-
-            window.location = url;
-        }
     }
 
     function handleGoogleAuth()
     {
-        var token;
-
-        var access_token = getQueryByName('access_token');
-
-        if (access_token)
-        {
-            var scopeString = getQueryByName('scope');
-
-            var scopes;
-            if (scopeString)
-            {
-                scopes = scopeString.split('+');
-            }
-
-            function computeIssuedAt()
-            {
-                return '' + Math.floor((Date.now() - (1000 * 60)) / 1000);
-            }
-
-            function computeExpiresAt(expiresInStr, issuedAt)
-            {
-                return '' + Math.floor(parseInt(issuedAt) + ((parseInt(expiresInStr) * 1000) / 1000));
-            }
-
-            var issued_at = getQueryByName('issued_at') ? getQueryByName('issued_at') : computeIssuedAt();
-            var expires_in = getQueryByName('expires_in');
-            var expires_at = getQueryByName('expires_at') ? getQueryByName('expires_at') : computeExpiresAt(expires_in, issued_at);
-
-            var token_type = getQueryByName('token_type');
-            var id_token = getQueryByName('id_token');
-
-            token =
-            {
-                access_token: access_token,
-                id_token: id_token,
-                issued_at: issued_at,
-                expires_in: expires_in,
-                expires_at: expires_at,
-                scope: scopes,
-                token_type: token_type
+        token = {
+                access_token: getQueryByName('access_token'),
+                expires_at: getQueryByName('expires_at'),
+                scopes: getQueryByName('scopes'),
+                scope: getQueryByName('scope')
             };
-        }
-        else
+
+        if (window.opener)
         {
-            token = { error: true };
+            window.opener.postMessage(token, '*');
+
+            window.close();
         }
 
         return token;
     }
 
-    function runPostMessageRelay()
+    if ('BroadcastChannel' in self)
     {
-        var remoteApp = getQueryByName('remoteApp');
+        let channel = new BroadcastChannel('Moo.do_auth_gapi_channel');
 
-        var state = getQueryByName('state');
-        var code = getQueryByName('code');
-
-        var responseData;
-        if (state && code)
+        channel.onmessage = function (event)
         {
-            responseData = { code: code, state: state };
-        }
-        else
-        {
-            responseData = handleGoogleAuth();
-        }
+            if (event.data === 'checkAuth')
+            {
+                channel.postMessage(token);
 
-        runFinish(responseData);
+                window.close();
+            }
+        };
     }
+
 </script>
 
 </head>
-<body onload='runPostMessageRelay()'>
+<body onload="handleGoogleAuth()">
 
 </body>
 </html>

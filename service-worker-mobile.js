@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1538038620623',
+var CacheName = 'moodo-cache-1544266686217',
     CacheNameCommon = 'moodo-cache-common';
 
 function notifyClient(text)
@@ -21,15 +21,16 @@ self.addEventListener('install', function (e)
         caches.open(CacheName).then(function (cache)
         {
             return cache.addAll([
-                '/appmobile/',
-                '/appmobile/index-1538038620623.html',
-                '/appmobile/js/vendor-1538038620623.js',
-                '/appmobile/js/delayedUI-1538038620623.js',
-                '/appmobile/js/main-min-1538038620623.js',
-                '/appmobile/js/preload-min-1538038620623.js',
-                '/appmobile/css/app-min-1538038620623.css',
-                '/appmobile/css/fonts/fonticons-1538038620623.woff',
-                '/appmobile/css/fonts/fonticons-1538038620623.ttf'
+                '/newmobile/',
+                '/newmobile/index-1544266686217.html',
+                '/newmobile/js/vendor-1544266686217.js',
+                '/newmobile/js/delayedUI-1544266686217.js',
+                '/newmobile/js/app-1544266686217.js',
+                '/newmobile/js/preload-1544266686217.js',
+                '/newmobile/js/preload.worker-1544266686217.js',
+                '/newmobile/css/app-min-1544266686217.css',
+                '/newmobile/css/fonts/fonticons-1544266686217.woff',
+                '/newmobile/css/fonts/fonticons-1544266686217.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -61,7 +62,7 @@ self.addEventListener('install', function (e)
     );
 });
 
-var pathname = '/appmobile/';
+var pathname = '/newmobile/';
 
 self.addEventListener('fetch', function (event)
 {
@@ -72,7 +73,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1538038620623.html');
+            url = url.replace(pathname, pathname + 'index-1544266686217.html');
         }
 
         event.respondWith(
