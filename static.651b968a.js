@@ -7821,6 +7821,23 @@ exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteDat
             'Collapsing is a good way to hide projects you don\u2019t look at very often, or keep details of projects closed until you\u2019re ready to work on them. Click on the arrow on the left side of an item to collapse it, or click the [arrow] icon at the top of the pane to collapse everything.'
         ),
         _react2.default.createElement(
+            'h2',
+            null,
+            'Dates'
+        ),
+        _react2.default.createElement(
+            'p',
+            null,
+            'Press ! or ',
+            _react2.default.createElement(
+                'span',
+                { className: 'hotkey' },
+                _react2.default.createElement('span', { className: 'hotkeyPri' }),
+                ' + Shift + D'
+            ),
+            ' to open the date picker. There you can either type a date or repeat date like "every friday" or click on a date in the date picker. You can even drag across the calendar to select a range of dates.'
+        ),
+        _react2.default.createElement(
             'h1',
             null,
             'Using multiple panes to create boards'
@@ -8450,4 +8467,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.fe35d5a2.js.map
+//# sourceMappingURL=static.651b968a.js.map
