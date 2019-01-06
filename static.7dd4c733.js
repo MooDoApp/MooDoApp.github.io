@@ -297,28 +297,41 @@ auth.prototype = {
     requestAuthorization: function requestAuthorization(goPremium) {
         var ua = navigator.userAgent;
 
-        if (!window.gapi || !window.gapi.auth) {
-            this.sendToApp(false, goPremium);
-        } else if (ua.indexOf('MSIE') !== -1 || ua.indexOf('Trident') !== -1) {
-            // Send directly to app for login for IE as immediate login does not currently work
-            this.sendToApp(false, goPremium);
-        } else {
-            this.authenticate(false, function (isAuthorized) {
-                if (isAuthorized) {
-                    this.getEmailAddr(function (userInfo) {
-                        var currentUser = this.getCurrentAppUser();
+        // if (!window.gapi || !window.gapi.auth)
+        // {
+        this.sendToApp(false, goPremium);
+        // }
+        // else if (ua.indexOf('MSIE') !== -1 || ua.indexOf('Trident') !== -1)
+        // {
+        //     // Send directly to app for login for IE as immediate login does not currently work
+        //     this.sendToApp(false, goPremium);
+        // }
+        // else
+        // {
+        //     this.authenticate(false, function (isAuthorized)
+        //     {
+        //         if (isAuthorized)
+        //         {
+        //             this.getEmailAddr(function(userInfo)
+        //             {
+        //                 var currentUser = this.getCurrentAppUser();
 
-                        if (currentUser === userInfo.email) {
-                            this.sendToApp(false, goPremium);
-                        } else {
-                            this.sendToApp(userInfo.email, goPremium);
-                        }
-                    }.bind(this));
-                } else {
-                    this.sendToApp();
-                }
-            }.bind(this));
-        }
+        //                 if (currentUser === userInfo.email)
+        //                 {
+        //                     this.sendToApp(false, goPremium);
+        //                 }
+        //                 else
+        //                 {
+        //                     this.sendToApp(userInfo.email, goPremium);
+        //                 }
+        //             }.bind(this));
+        //         }
+        //         else
+        //         {
+        //             this.sendToApp();
+        //         }
+        //     }.bind(this));
+        // }
     },
     sendToApp: function sendToApp(forceUser, goPremium, noLogin, isPremium) {
         var host = window.location.host;
@@ -8467,4 +8480,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.651b968a.js.map
+//# sourceMappingURL=static.7dd4c733.js.map
