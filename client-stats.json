@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "e53cc046c4e459ac540a",
-  "time": 22292,
+  "hash": "8c088de57519865c22ba",
+  "time": 8783,
   "publicPath": "##BR_SITE_ROOT##/",
   "assetsByChunkName": {
     "src/containers/Help": [
@@ -63,8 +63,8 @@
       "templates/src/containers/404.6fcdf968.js.map"
     ],
     "main": [
-      "main.3ff4dbd8.js",
-      "main.3ff4dbd8.js.map"
+      "main.b96e98c1.js",
+      "main.b96e98c1.js.map"
     ],
     "bootstrap": [
       "bootstrap.b1d16509.js",
@@ -238,8 +238,8 @@
       "emitted": true
     },
     {
-      "name": "main.3ff4dbd8.js",
-      "size": 310489,
+      "name": "main.b96e98c1.js",
+      "size": 310786,
       "chunks": [
         15
       ],
@@ -422,8 +422,8 @@
       "emitted": true
     },
     {
-      "name": "main.3ff4dbd8.js.map",
-      "size": 1681082,
+      "name": "main.b96e98c1.js.map",
+      "size": 1681056,
       "chunks": [
         15
       ],
@@ -454,8 +454,8 @@
       "assets": [
         "bootstrap.b1d16509.js",
         "bootstrap.b1d16509.js.map",
-        "main.3ff4dbd8.js",
-        "main.3ff4dbd8.js.map"
+        "main.b96e98c1.js",
+        "main.b96e98c1.js.map"
       ],
       "isOverSizeLimit": true
     }
@@ -2192,15 +2192,15 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 596648,
+      "size": 596362,
       "names": [
         "main"
       ],
       "files": [
-        "main.3ff4dbd8.js",
-        "main.3ff4dbd8.js.map"
+        "main.b96e98c1.js",
+        "main.b96e98c1.js.map"
       ],
-      "hash": "3ff4dbd80ace327f22bd",
+      "hash": "b96e98c1f870ad87326c",
       "parents": [
         16
       ],
@@ -3227,9 +3227,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router-dom/es/BrowserRouter.js",
-          "issuerId": 76,
-          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": 82,
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3330,9 +3330,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-          "issuerId": 133,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+          "issuerId": 134,
+          "issuerName": "./node_modules/history/createMemoryHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3639,9 +3639,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/methods.js",
-          "issuerId": 11,
-          "issuerName": "./node_modules/react-static/lib/client/methods.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/RouteData.js",
+          "issuerId": 106,
+          "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -3823,9 +3823,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router-dom/es/BrowserRouter.js",
-          "issuerId": 76,
-          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": 82,
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4513,9 +4513,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-          "issuerId": 133,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+          "issuerId": 134,
+          "issuerName": "./node_modules/history/createMemoryHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5141,9 +5141,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-          "issuerId": 133,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+          "issuerId": 134,
+          "issuerName": "./node_modules/history/createMemoryHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5197,9 +5197,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-          "issuerId": 133,
-          "issuerName": "./node_modules/history/createBrowserHistory.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+          "issuerId": 134,
+          "issuerName": "./node_modules/history/createMemoryHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5670,9 +5670,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router/es/generatePath.js",
-          "issuerId": 36,
-          "issuerName": "./node_modules/react-router/es/generatePath.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router/es/matchPath.js",
+          "issuerId": 23,
+          "issuerName": "./node_modules/react-router/es/matchPath.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5911,9 +5911,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/methods.js",
-          "issuerId": 11,
-          "issuerName": "./node_modules/react-static/lib/client/methods.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+          "issuerId": 128,
+          "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -6821,7 +6821,7 @@
           "name": "./src/js/auth.js",
           "index": 139,
           "index2": 135,
-          "size": 7172,
+          "size": 6886,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -6932,7 +6932,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 3,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _util = require('./util');\n\nvar _util2 = _interopRequireDefault(_util);\n\nvar _DemoManager = require('./DemoManager');\n\nvar _DemoManager2 = _interopRequireDefault(_DemoManager);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction auth() {\n    this.clientId = \"597847337936.apps.googleusercontent.com\";\n\n    this.scopes = ['https://www.googleapis.com/auth/drive.file', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/drive.install', 'https://www.googleapis.com/auth/drive.appdata'];\n\n    this.isLoggedIn = false;\n}\n\nauth.prototype = {\n    init: function init(cb) {\n        gapi.auth.init(); // Always call init on load so popup doesn't get blocked later\n\n        this.authenticate( /*immediate*/true, cb);\n    },\n    getCurrentAppUser: function getCurrentAppUser() {\n        try {\n            var localSettings = window.localStorage.getItem('localSettings');\n\n            var localSettingsObj = JSON.parse(localSettings);\n\n            if (localSettingsObj) {\n                var currentUser = localSettingsObj.values.Default.activeUser;\n\n                return currentUser;\n            }\n        } catch (err) {\n            log('Error getting app user: ', err);\n        }\n\n        return undefined;\n    },\n    requestAuthorization: function requestAuthorization(goPremium) {\n        var ua = navigator.userAgent;\n\n        // if (!window.gapi || !window.gapi.auth)\n        // {\n        this.sendToApp(false, goPremium);\n        // }\n        // else if (ua.indexOf('MSIE') !== -1 || ua.indexOf('Trident') !== -1)\n        // {\n        //     // Send directly to app for login for IE as immediate login does not currently work\n        //     this.sendToApp(false, goPremium);\n        // }\n        // else\n        // {\n        //     this.authenticate(false, function (isAuthorized)\n        //     {\n        //         if (isAuthorized)\n        //         {\n        //             this.getEmailAddr(function(userInfo)\n        //             {\n        //                 var currentUser = this.getCurrentAppUser();\n\n        //                 if (currentUser === userInfo.email)\n        //                 {\n        //                     this.sendToApp(false, goPremium);\n        //                 }\n        //                 else\n        //                 {\n        //                     this.sendToApp(userInfo.email, goPremium);\n        //                 }\n        //             }.bind(this));\n        //         }\n        //         else\n        //         {\n        //             this.sendToApp();\n        //         }\n        //     }.bind(this));\n        // }\n    },\n    sendToApp: function sendToApp(forceUser, goPremium, noLogin, isPremium) {\n        var host = window.location.host;\n\n        // if (host === 'beta.moo.do')\n        // {\n        //     host = 'www.moo.do';\n        // }\n\n        var inviteParam = _util2.default.getURLHashParam('invite');\n\n        // if (window.location.search.indexOf('ref=producthunt') > 0)\n        // {\n        //     inviteParam = 'producthunt';\n        // }\n\n        var newAddr;\n        var hash = '';\n\n        if (forceUser) {\n            hash = 'user=' + encodeURIComponent(forceUser);\n            newAddr = 'https://' + host + '/web/';\n        } else {\n            if (!noLogin) hash += 'login=true';\n\n            newAddr = 'https://' + host + '/web/';\n        }\n\n        if (inviteParam) {\n            hash += (hash ? '&' : '') + 'invite=' + inviteParam;\n        }\n\n        if (goPremium) {\n            hash += (hash ? '&' : '') + 'premium=true';\n        }\n\n        if (isPremium) {\n            hash += (hash ? '&' : '') + 'ispremium=true';\n        }\n\n        window.location.href = newAddr + (hash ? '#' + hash : '');\n    },\n    authenticate: function authenticate(immediate, callback) {\n        var config = {\n            'client_id': this.clientId,\n            'scope': this.scopes,\n            'immediate': immediate,\n            'response_type': 'token id_token',\n            'authuser': -1\n        };\n\n        var standalone = !!window.navigator.standalone || window.navigator.userAgent.indexOf('FluidApp') >= 0;\n\n        var requireCustomRedirect = standalone || this.isMobro();\n\n        if (requireCustomRedirect && !immediate) {\n            config['redirect_uri'] = 'https://' + window.location.host + '/web/';\n        }\n\n        gapi.auth.authorize(config, function (token) {\n            //console.log('Landing Page Auth Token: ', token);\n\n            if (token && !token.error) {\n                this.isLoggedIn = true;\n\n                console.log('Landing Page Auth Logged In');\n            } else {\n                console.log('Landing Page Auth Logged Out');\n            }\n\n            if (callback) {\n                callback(this.isLoggedIn);\n            }\n        }.bind(this));\n    },\n    decodeIDToken: function decodeIDToken(jwt) {\n        var decoded;\n\n        if (jwt) {\n            var parts = jwt.split('.');\n\n            try {\n                decoded = JSON.parse(_util2.default.b64_to_utf8(parts[1]));\n            } catch (err) {\n                log('Decode Error: ', err);\n            }\n        }\n\n        return decoded;\n    },\n    getEmailAddr: function getEmailAddr(_cb) {\n        var token = gapi.auth.getToken();\n\n        if (token) {\n            var url = 'https://www.googleapis.com/oauth2/v2/userinfo?alt=json&access_token=' + token.access_token;\n\n            _util2.default.XHR({\n                type: 'GET',\n                url: url,\n                autoRetry: true,\n                cb: function cb(xhr) {\n                    if (xhr.status === 200) {\n                        var userInfoParsed = {};\n\n                        try {\n                            userInfoParsed = JSON.parse(xhr.responseText);\n                        } catch (err) {\n                            log('Error: ', err);\n                        }\n\n                        _cb(userInfoParsed);\n                    } else {\n                        _cb();\n                    }\n                }\n            });\n        }\n    },\n    isMobro: function isMobro() {\n        var supported = null,\n            errorName;\n\n        try {\n            new ActiveXObject(\"\");\n        } catch (e) {\n            // FF has ReferenceError here\n            errorName = e.name;\n        }\n\n        try {\n            supported = !!new ActiveXObject(\"htmlfile\");\n        } catch (e) {\n            supported = false;\n        }\n\n        if (errorName != 'ReferenceError' && supported == false) {\n            supported = false;\n        } else {\n            supported = true;\n        }\n\n        return !supported;\n    },\n    openApp: function openApp() {\n        _util2.default.sendEvent(_util2.default.PageEvents.GetStartedClicked, location);\n\n        _util2.default.setSegment(_util2.default.Segment.SignedUp);\n\n        if (_DemoManager2.default.isMobile()) {\n            _util2.default.sendToAppStore(_DemoManager2.default.OS);\n        } else {\n            this.sendToApp(false, false, /*noLogin*/true);\n        }\n    }\n};\n\nexports.default = new auth();"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _util = require('./util');\n\nvar _util2 = _interopRequireDefault(_util);\n\nvar _DemoManager = require('./DemoManager');\n\nvar _DemoManager2 = _interopRequireDefault(_DemoManager);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction auth() {\n    this.clientId = \"597847337936.apps.googleusercontent.com\";\n\n    this.scopes = ['https://www.googleapis.com/auth/drive.file', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/drive.install', 'https://www.googleapis.com/auth/drive.appdata'];\n\n    this.isLoggedIn = false;\n}\n\nauth.prototype = {\n    init: function init(cb) {\n        gapi.auth.init(); // Always call init on load so popup doesn't get blocked later\n\n        this.authenticate( /*immediate*/true, cb);\n    },\n    getCurrentAppUser: function getCurrentAppUser() {\n        try {\n            var localSettings = window.localStorage.getItem('localSettings');\n\n            var localSettingsObj = JSON.parse(localSettings);\n\n            if (localSettingsObj) {\n                var currentUser = localSettingsObj.values.Default.activeUser;\n\n                return currentUser;\n            }\n        } catch (err) {\n            log('Error getting app user: ', err);\n        }\n\n        return undefined;\n    },\n    requestAuthorization: function requestAuthorization(goPremium) {\n        var ua = navigator.userAgent;\n\n        if (!window.gapi || !window.gapi.auth) {\n            this.sendToApp(false, goPremium);\n        } else if (ua.indexOf('MSIE') !== -1 || ua.indexOf('Trident') !== -1) {\n            // Send directly to app for login for IE as immediate login does not currently work\n            this.sendToApp(false, goPremium);\n        } else {\n            this.authenticate(false, function (isAuthorized) {\n                if (isAuthorized) {\n                    this.getEmailAddr(function (userInfo) {\n                        var currentUser = this.getCurrentAppUser();\n\n                        if (currentUser === userInfo.email) {\n                            this.sendToApp(false, goPremium);\n                        } else {\n                            this.sendToApp(userInfo.email, goPremium);\n                        }\n                    }.bind(this));\n                } else {\n                    this.sendToApp();\n                }\n            }.bind(this));\n        }\n    },\n    sendToApp: function sendToApp(forceUser, goPremium, noLogin, isPremium) {\n        var host = window.location.host;\n\n        // if (host === 'beta.moo.do')\n        // {\n        //     host = 'www.moo.do';\n        // }\n\n        var inviteParam = _util2.default.getURLHashParam('invite');\n\n        // if (window.location.search.indexOf('ref=producthunt') > 0)\n        // {\n        //     inviteParam = 'producthunt';\n        // }\n\n        var newAddr;\n        var hash = '';\n\n        if (forceUser) {\n            hash = 'user=' + encodeURIComponent(forceUser);\n            newAddr = 'https://' + host + '/web/';\n        } else {\n            if (!noLogin) hash += 'login=true';\n\n            newAddr = 'https://' + host + '/web/';\n        }\n\n        if (inviteParam) {\n            hash += (hash ? '&' : '') + 'invite=' + inviteParam;\n        }\n\n        if (goPremium) {\n            hash += (hash ? '&' : '') + 'premium=true';\n        }\n\n        if (isPremium) {\n            hash += (hash ? '&' : '') + 'ispremium=true';\n        }\n\n        window.location.href = newAddr + (hash ? '#' + hash : '');\n    },\n    authenticate: function authenticate(immediate, callback) {\n        var config = {\n            'client_id': this.clientId,\n            'scope': this.scopes,\n            'immediate': immediate,\n            'response_type': 'token id_token',\n            'authuser': -1\n        };\n\n        var standalone = !!window.navigator.standalone || window.navigator.userAgent.indexOf('FluidApp') >= 0;\n\n        var requireCustomRedirect = standalone || this.isMobro();\n\n        if (requireCustomRedirect && !immediate) {\n            config['redirect_uri'] = 'https://' + window.location.host + '/web/';\n        }\n\n        gapi.auth.authorize(config, function (token) {\n            //console.log('Landing Page Auth Token: ', token);\n\n            if (token && !token.error) {\n                this.isLoggedIn = true;\n\n                console.log('Landing Page Auth Logged In');\n            } else {\n                console.log('Landing Page Auth Logged Out');\n            }\n\n            if (callback) {\n                callback(this.isLoggedIn);\n            }\n        }.bind(this));\n    },\n    decodeIDToken: function decodeIDToken(jwt) {\n        var decoded;\n\n        if (jwt) {\n            var parts = jwt.split('.');\n\n            try {\n                decoded = JSON.parse(_util2.default.b64_to_utf8(parts[1]));\n            } catch (err) {\n                log('Decode Error: ', err);\n            }\n        }\n\n        return decoded;\n    },\n    getEmailAddr: function getEmailAddr(_cb) {\n        var token = gapi.auth.getToken();\n\n        if (token) {\n            var url = 'https://www.googleapis.com/oauth2/v2/userinfo?alt=json&access_token=' + token.access_token;\n\n            _util2.default.XHR({\n                type: 'GET',\n                url: url,\n                autoRetry: true,\n                cb: function cb(xhr) {\n                    if (xhr.status === 200) {\n                        var userInfoParsed = {};\n\n                        try {\n                            userInfoParsed = JSON.parse(xhr.responseText);\n                        } catch (err) {\n                            log('Error: ', err);\n                        }\n\n                        _cb(userInfoParsed);\n                    } else {\n                        _cb();\n                    }\n                }\n            });\n        }\n    },\n    isMobro: function isMobro() {\n        var supported = null,\n            errorName;\n\n        try {\n            new ActiveXObject(\"\");\n        } catch (e) {\n            // FF has ReferenceError here\n            errorName = e.name;\n        }\n\n        try {\n            supported = !!new ActiveXObject(\"htmlfile\");\n        } catch (e) {\n            supported = false;\n        }\n\n        if (errorName != 'ReferenceError' && supported == false) {\n            supported = false;\n        } else {\n            supported = true;\n        }\n\n        return !supported;\n    },\n    openApp: function openApp() {\n        _util2.default.sendEvent(_util2.default.PageEvents.GetStartedClicked, location);\n\n        _util2.default.setSegment(_util2.default.Segment.SignedUp);\n\n        if (_DemoManager2.default.isMobile()) {\n            _util2.default.sendToAppStore(_DemoManager2.default.OS);\n        } else {\n            this.sendToApp(false, false, /*noLogin*/true);\n        }\n    }\n};\n\nexports.default = new auth();"
         },
         {
           "id": 69,
@@ -11105,9 +11105,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": 76,
-      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": 82,
+      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -11208,9 +11208,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-      "issuerId": 133,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+      "issuerId": 134,
+      "issuerName": "./node_modules/history/createMemoryHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -11517,9 +11517,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/methods.js",
-      "issuerId": 11,
-      "issuerName": "./node_modules/react-static/lib/client/methods.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/RouteData.js",
+      "issuerId": 106,
+      "issuerName": "./node_modules/react-static/lib/client/components/RouteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -11701,9 +11701,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": 76,
-      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": 82,
+      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -12391,9 +12391,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-      "issuerId": 133,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+      "issuerId": 134,
+      "issuerName": "./node_modules/history/createMemoryHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -13019,9 +13019,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-      "issuerId": 133,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+      "issuerId": 134,
+      "issuerName": "./node_modules/history/createMemoryHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -13075,9 +13075,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createBrowserHistory.js",
-      "issuerId": 133,
-      "issuerName": "./node_modules/history/createBrowserHistory.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/history/createMemoryHistory.js",
+      "issuerId": 134,
+      "issuerName": "./node_modules/history/createMemoryHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -13548,9 +13548,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router/es/generatePath.js",
-      "issuerId": 36,
-      "issuerName": "./node_modules/react-router/es/generatePath.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-router/es/matchPath.js",
+      "issuerId": 23,
+      "issuerName": "./node_modules/react-router/es/matchPath.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -13789,9 +13789,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/methods.js",
-      "issuerId": 11,
-      "issuerName": "./node_modules/react-static/lib/client/methods.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/lib/client/components/SiteData.js",
+      "issuerId": 128,
+      "issuerName": "./node_modules/react-static/lib/client/components/SiteData.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -14699,7 +14699,7 @@
       "name": "./src/js/auth.js",
       "index": 139,
       "index2": 135,
-      "size": 7172,
+      "size": 6886,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -14810,7 +14810,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 3,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _util = require('./util');\n\nvar _util2 = _interopRequireDefault(_util);\n\nvar _DemoManager = require('./DemoManager');\n\nvar _DemoManager2 = _interopRequireDefault(_DemoManager);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction auth() {\n    this.clientId = \"597847337936.apps.googleusercontent.com\";\n\n    this.scopes = ['https://www.googleapis.com/auth/drive.file', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/drive.install', 'https://www.googleapis.com/auth/drive.appdata'];\n\n    this.isLoggedIn = false;\n}\n\nauth.prototype = {\n    init: function init(cb) {\n        gapi.auth.init(); // Always call init on load so popup doesn't get blocked later\n\n        this.authenticate( /*immediate*/true, cb);\n    },\n    getCurrentAppUser: function getCurrentAppUser() {\n        try {\n            var localSettings = window.localStorage.getItem('localSettings');\n\n            var localSettingsObj = JSON.parse(localSettings);\n\n            if (localSettingsObj) {\n                var currentUser = localSettingsObj.values.Default.activeUser;\n\n                return currentUser;\n            }\n        } catch (err) {\n            log('Error getting app user: ', err);\n        }\n\n        return undefined;\n    },\n    requestAuthorization: function requestAuthorization(goPremium) {\n        var ua = navigator.userAgent;\n\n        // if (!window.gapi || !window.gapi.auth)\n        // {\n        this.sendToApp(false, goPremium);\n        // }\n        // else if (ua.indexOf('MSIE') !== -1 || ua.indexOf('Trident') !== -1)\n        // {\n        //     // Send directly to app for login for IE as immediate login does not currently work\n        //     this.sendToApp(false, goPremium);\n        // }\n        // else\n        // {\n        //     this.authenticate(false, function (isAuthorized)\n        //     {\n        //         if (isAuthorized)\n        //         {\n        //             this.getEmailAddr(function(userInfo)\n        //             {\n        //                 var currentUser = this.getCurrentAppUser();\n\n        //                 if (currentUser === userInfo.email)\n        //                 {\n        //                     this.sendToApp(false, goPremium);\n        //                 }\n        //                 else\n        //                 {\n        //                     this.sendToApp(userInfo.email, goPremium);\n        //                 }\n        //             }.bind(this));\n        //         }\n        //         else\n        //         {\n        //             this.sendToApp();\n        //         }\n        //     }.bind(this));\n        // }\n    },\n    sendToApp: function sendToApp(forceUser, goPremium, noLogin, isPremium) {\n        var host = window.location.host;\n\n        // if (host === 'beta.moo.do')\n        // {\n        //     host = 'www.moo.do';\n        // }\n\n        var inviteParam = _util2.default.getURLHashParam('invite');\n\n        // if (window.location.search.indexOf('ref=producthunt') > 0)\n        // {\n        //     inviteParam = 'producthunt';\n        // }\n\n        var newAddr;\n        var hash = '';\n\n        if (forceUser) {\n            hash = 'user=' + encodeURIComponent(forceUser);\n            newAddr = 'https://' + host + '/web/';\n        } else {\n            if (!noLogin) hash += 'login=true';\n\n            newAddr = 'https://' + host + '/web/';\n        }\n\n        if (inviteParam) {\n            hash += (hash ? '&' : '') + 'invite=' + inviteParam;\n        }\n\n        if (goPremium) {\n            hash += (hash ? '&' : '') + 'premium=true';\n        }\n\n        if (isPremium) {\n            hash += (hash ? '&' : '') + 'ispremium=true';\n        }\n\n        window.location.href = newAddr + (hash ? '#' + hash : '');\n    },\n    authenticate: function authenticate(immediate, callback) {\n        var config = {\n            'client_id': this.clientId,\n            'scope': this.scopes,\n            'immediate': immediate,\n            'response_type': 'token id_token',\n            'authuser': -1\n        };\n\n        var standalone = !!window.navigator.standalone || window.navigator.userAgent.indexOf('FluidApp') >= 0;\n\n        var requireCustomRedirect = standalone || this.isMobro();\n\n        if (requireCustomRedirect && !immediate) {\n            config['redirect_uri'] = 'https://' + window.location.host + '/web/';\n        }\n\n        gapi.auth.authorize(config, function (token) {\n            //console.log('Landing Page Auth Token: ', token);\n\n            if (token && !token.error) {\n                this.isLoggedIn = true;\n\n                console.log('Landing Page Auth Logged In');\n            } else {\n                console.log('Landing Page Auth Logged Out');\n            }\n\n            if (callback) {\n                callback(this.isLoggedIn);\n            }\n        }.bind(this));\n    },\n    decodeIDToken: function decodeIDToken(jwt) {\n        var decoded;\n\n        if (jwt) {\n            var parts = jwt.split('.');\n\n            try {\n                decoded = JSON.parse(_util2.default.b64_to_utf8(parts[1]));\n            } catch (err) {\n                log('Decode Error: ', err);\n            }\n        }\n\n        return decoded;\n    },\n    getEmailAddr: function getEmailAddr(_cb) {\n        var token = gapi.auth.getToken();\n\n        if (token) {\n            var url = 'https://www.googleapis.com/oauth2/v2/userinfo?alt=json&access_token=' + token.access_token;\n\n            _util2.default.XHR({\n                type: 'GET',\n                url: url,\n                autoRetry: true,\n                cb: function cb(xhr) {\n                    if (xhr.status === 200) {\n                        var userInfoParsed = {};\n\n                        try {\n                            userInfoParsed = JSON.parse(xhr.responseText);\n                        } catch (err) {\n                            log('Error: ', err);\n                        }\n\n                        _cb(userInfoParsed);\n                    } else {\n                        _cb();\n                    }\n                }\n            });\n        }\n    },\n    isMobro: function isMobro() {\n        var supported = null,\n            errorName;\n\n        try {\n            new ActiveXObject(\"\");\n        } catch (e) {\n            // FF has ReferenceError here\n            errorName = e.name;\n        }\n\n        try {\n            supported = !!new ActiveXObject(\"htmlfile\");\n        } catch (e) {\n            supported = false;\n        }\n\n        if (errorName != 'ReferenceError' && supported == false) {\n            supported = false;\n        } else {\n            supported = true;\n        }\n\n        return !supported;\n    },\n    openApp: function openApp() {\n        _util2.default.sendEvent(_util2.default.PageEvents.GetStartedClicked, location);\n\n        _util2.default.setSegment(_util2.default.Segment.SignedUp);\n\n        if (_DemoManager2.default.isMobile()) {\n            _util2.default.sendToAppStore(_DemoManager2.default.OS);\n        } else {\n            this.sendToApp(false, false, /*noLogin*/true);\n        }\n    }\n};\n\nexports.default = new auth();"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _util = require('./util');\n\nvar _util2 = _interopRequireDefault(_util);\n\nvar _DemoManager = require('./DemoManager');\n\nvar _DemoManager2 = _interopRequireDefault(_DemoManager);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction auth() {\n    this.clientId = \"597847337936.apps.googleusercontent.com\";\n\n    this.scopes = ['https://www.googleapis.com/auth/drive.file', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/drive.install', 'https://www.googleapis.com/auth/drive.appdata'];\n\n    this.isLoggedIn = false;\n}\n\nauth.prototype = {\n    init: function init(cb) {\n        gapi.auth.init(); // Always call init on load so popup doesn't get blocked later\n\n        this.authenticate( /*immediate*/true, cb);\n    },\n    getCurrentAppUser: function getCurrentAppUser() {\n        try {\n            var localSettings = window.localStorage.getItem('localSettings');\n\n            var localSettingsObj = JSON.parse(localSettings);\n\n            if (localSettingsObj) {\n                var currentUser = localSettingsObj.values.Default.activeUser;\n\n                return currentUser;\n            }\n        } catch (err) {\n            log('Error getting app user: ', err);\n        }\n\n        return undefined;\n    },\n    requestAuthorization: function requestAuthorization(goPremium) {\n        var ua = navigator.userAgent;\n\n        if (!window.gapi || !window.gapi.auth) {\n            this.sendToApp(false, goPremium);\n        } else if (ua.indexOf('MSIE') !== -1 || ua.indexOf('Trident') !== -1) {\n            // Send directly to app for login for IE as immediate login does not currently work\n            this.sendToApp(false, goPremium);\n        } else {\n            this.authenticate(false, function (isAuthorized) {\n                if (isAuthorized) {\n                    this.getEmailAddr(function (userInfo) {\n                        var currentUser = this.getCurrentAppUser();\n\n                        if (currentUser === userInfo.email) {\n                            this.sendToApp(false, goPremium);\n                        } else {\n                            this.sendToApp(userInfo.email, goPremium);\n                        }\n                    }.bind(this));\n                } else {\n                    this.sendToApp();\n                }\n            }.bind(this));\n        }\n    },\n    sendToApp: function sendToApp(forceUser, goPremium, noLogin, isPremium) {\n        var host = window.location.host;\n\n        // if (host === 'beta.moo.do')\n        // {\n        //     host = 'www.moo.do';\n        // }\n\n        var inviteParam = _util2.default.getURLHashParam('invite');\n\n        // if (window.location.search.indexOf('ref=producthunt') > 0)\n        // {\n        //     inviteParam = 'producthunt';\n        // }\n\n        var newAddr;\n        var hash = '';\n\n        if (forceUser) {\n            hash = 'user=' + encodeURIComponent(forceUser);\n            newAddr = 'https://' + host + '/web/';\n        } else {\n            if (!noLogin) hash += 'login=true';\n\n            newAddr = 'https://' + host + '/web/';\n        }\n\n        if (inviteParam) {\n            hash += (hash ? '&' : '') + 'invite=' + inviteParam;\n        }\n\n        if (goPremium) {\n            hash += (hash ? '&' : '') + 'premium=true';\n        }\n\n        if (isPremium) {\n            hash += (hash ? '&' : '') + 'ispremium=true';\n        }\n\n        window.location.href = newAddr + (hash ? '#' + hash : '');\n    },\n    authenticate: function authenticate(immediate, callback) {\n        var config = {\n            'client_id': this.clientId,\n            'scope': this.scopes,\n            'immediate': immediate,\n            'response_type': 'token id_token',\n            'authuser': -1\n        };\n\n        var standalone = !!window.navigator.standalone || window.navigator.userAgent.indexOf('FluidApp') >= 0;\n\n        var requireCustomRedirect = standalone || this.isMobro();\n\n        if (requireCustomRedirect && !immediate) {\n            config['redirect_uri'] = 'https://' + window.location.host + '/web/';\n        }\n\n        gapi.auth.authorize(config, function (token) {\n            //console.log('Landing Page Auth Token: ', token);\n\n            if (token && !token.error) {\n                this.isLoggedIn = true;\n\n                console.log('Landing Page Auth Logged In');\n            } else {\n                console.log('Landing Page Auth Logged Out');\n            }\n\n            if (callback) {\n                callback(this.isLoggedIn);\n            }\n        }.bind(this));\n    },\n    decodeIDToken: function decodeIDToken(jwt) {\n        var decoded;\n\n        if (jwt) {\n            var parts = jwt.split('.');\n\n            try {\n                decoded = JSON.parse(_util2.default.b64_to_utf8(parts[1]));\n            } catch (err) {\n                log('Decode Error: ', err);\n            }\n        }\n\n        return decoded;\n    },\n    getEmailAddr: function getEmailAddr(_cb) {\n        var token = gapi.auth.getToken();\n\n        if (token) {\n            var url = 'https://www.googleapis.com/oauth2/v2/userinfo?alt=json&access_token=' + token.access_token;\n\n            _util2.default.XHR({\n                type: 'GET',\n                url: url,\n                autoRetry: true,\n                cb: function cb(xhr) {\n                    if (xhr.status === 200) {\n                        var userInfoParsed = {};\n\n                        try {\n                            userInfoParsed = JSON.parse(xhr.responseText);\n                        } catch (err) {\n                            log('Error: ', err);\n                        }\n\n                        _cb(userInfoParsed);\n                    } else {\n                        _cb();\n                    }\n                }\n            });\n        }\n    },\n    isMobro: function isMobro() {\n        var supported = null,\n            errorName;\n\n        try {\n            new ActiveXObject(\"\");\n        } catch (e) {\n            // FF has ReferenceError here\n            errorName = e.name;\n        }\n\n        try {\n            supported = !!new ActiveXObject(\"htmlfile\");\n        } catch (e) {\n            supported = false;\n        }\n\n        if (errorName != 'ReferenceError' && supported == false) {\n            supported = false;\n        } else {\n            supported = true;\n        }\n\n        return !supported;\n    },\n    openApp: function openApp() {\n        _util2.default.sendEvent(_util2.default.PageEvents.GetStartedClicked, location);\n\n        _util2.default.setSegment(_util2.default.Segment.SignedUp);\n\n        if (_DemoManager2.default.isMobile()) {\n            _util2.default.sendToAppStore(_DemoManager2.default.OS);\n        } else {\n            this.sendToApp(false, false, /*noLogin*/true);\n        }\n    }\n};\n\nexports.default = new auth();"
     },
     {
       "id": 55,
