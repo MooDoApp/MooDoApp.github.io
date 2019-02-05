@@ -26,12 +26,13 @@
 
     function handleGoogleAuth()
     {
-        token = {
-                access_token: getQueryByName('access_token'),
-                expires_at: getQueryByName('expires_at'),
-                scopes: getQueryByName('scopes'),
-                scope: getQueryByName('scope')
-            };
+        var keys = [ 'access_token', 'expires_at', 'scopes', 'scope', 'code', 'state' ];
+
+        token = {};
+        for (var i = 0; i < keys.length; i ++)
+        {
+            token[keys[i]] = getQueryByName(keys[i]);
+        }
 
         if (window.opener)
         {
