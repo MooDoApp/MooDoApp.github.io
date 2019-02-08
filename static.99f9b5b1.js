@@ -2604,16 +2604,6 @@ var Home = function (_React$Component) {
                             ),
                             _react2.default.createElement(
                                 'a',
-                                { className: 'platform linkButton', onClick: _util2.default.sendToAppStore.bind(_util2.default, 'Chrome', 'top'), href: 'https://chrome.google.com/webstore/detail/moodo/iffimmolghilclfndeiebgppddmagofk', target: '_blank' },
-                                _react2.default.createElement('i', { className: 'icon-chrome' }),
-                                _react2.default.createElement(
-                                    'div',
-                                    null,
-                                    'Chrome'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'a',
                                 { className: 'platform linkButton', onClick: _util2.default.sendToAppStore.bind(_util2.default, 'iOS', 'top'), href: 'https://itunes.apple.com/us/app/moo.do-organize-your-way/id889830074?ls=1&mt=8', target: '_blank' },
                                 _react2.default.createElement('i', { className: 'icon-apple' }),
                                 _react2.default.createElement(
@@ -8467,4 +8457,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.651b968a.js.map
+//# sourceMappingURL=static.99f9b5b1.js.map
