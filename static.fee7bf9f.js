@@ -3857,12 +3857,12 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                     _react2.default.createElement(
                         'div',
                         null,
-                        '2 days'
+                        '5 days'
                     ),
                     _react2.default.createElement(
                         'div',
                         null,
-                        '30 days'
+                        '120 days'
                     )
                 ),
                 _react2.default.createElement(
@@ -9979,4 +9979,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.dbb66d2e.js.map
+//# sourceMappingURL=static.fee7bf9f.js.map
