@@ -2347,6 +2347,8 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(3);
 
+var _reactStatic = __webpack_require__(4);
+
 var _reactAutobind = __webpack_require__(15);
 
 var _reactAutobind2 = _interopRequireDefault(_reactAutobind);
@@ -3057,7 +3059,7 @@ var Home = function (_React$Component) {
                             _react2.default.createElement(
                                 'p',
                                 null,
-                                'Moo.do synchronizes in realtime between all your devices and collaborators, using the same technology as Google Docs.'
+                                'Moo.do synchronizes in realtime between all your devices and collaborators.'
                             )
                         ),
                         _react2.default.createElement(
@@ -3071,7 +3073,7 @@ var Home = function (_React$Component) {
                             _react2.default.createElement(
                                 'p',
                                 null,
-                                'Moo.do works offline on every device. Changes will synchronize automatically when you come online.'
+                                'Moo.do works offline on every device. Changes synchronize automatically when you come online.'
                             )
                         )
                     ),
@@ -3089,7 +3091,7 @@ var Home = function (_React$Component) {
                             _react2.default.createElement(
                                 'p',
                                 null,
-                                'Your data is stored in your personal Google Drive account. None of your data ever goes through our servers.'
+                                'Your data is encrypted client-side so nobody else can read your data. Moo.do syncs with external services client-side so none of your private data ever goes through our servers.'
                             ),
                             _react2.default.createElement('br', null),
                             _react2.default.createElement(
@@ -3099,9 +3101,9 @@ var Home = function (_React$Component) {
                                     'div',
                                     { className: 'button signup white' },
                                     _react2.default.createElement(
-                                        'a',
-                                        { onClick: _util2.default.sendToExternalPage.bind(_util2.default, 'https://medium.com/startup-grind/serverless-bootstrap-your-startup-by-only-doing-half-of-the-work-46a7a4fca5cf') },
-                                        'Read more about Moo.do\'s architecture'
+                                        _reactStatic.Link,
+                                        { to: '/privacy' },
+                                        'Read more in our Privacy Policy'
                                     )
                                 )
                             )
@@ -5388,10 +5390,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(3);
 
-var _auth = __webpack_require__(6);
-
-var _auth2 = _interopRequireDefault(_auth);
-
 var _Nav = __webpack_require__(2);
 
 var _Nav2 = _interopRequireDefault(_Nav);
@@ -5423,18 +5421,46 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
             _react2.default.createElement(
                 'div',
                 { className: 'title' },
-                'Google Drive'
+                'Encryption'
             ),
             _react2.default.createElement(
                 'div',
                 { className: 'sectionText' },
-                'None of the information entered into your document is sent to us or stored on our servers. All information is saved on Google Drive and subject to the ',
+                'Moo.do implements full end-to-end zero-knowledge encryption. Item data is encrypted client-side before syncing the encrypted data to Firebase. Moo.do has three levels of encryption:',
                 _react2.default.createElement(
-                    'a',
-                    { href: 'http://www.google.com/intl/en/policies/privacy/' },
-                    'Google Privacy Policy'
-                ),
-                '. Moo.do will only access and modify files that it has created on your Google Drive account unless you specify otherwise (See Authorization Scopes). Moo.do does not have access to your other files by default.'
+                    'ol',
+                    null,
+                    _react2.default.createElement(
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'b',
+                            null,
+                            'Global: '
+                        ),
+                        'By default Moo.do uses a global encryption key, which protects your data against naive attackers but is potentially possible to reverse engineer, and it is theoretically possible for us (the developers) to read this data.'
+                    ),
+                    _react2.default.createElement(
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'b',
+                            null,
+                            'User Password: '
+                        ),
+                        'You can optionally set a password to encrypt your data. This password is only cached client-side in your browser, in IndexedDB in a way that it is not exportable. If you use this option, nobody (including us) can decrypt your data.'
+                    ),
+                    _react2.default.createElement(
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'b',
+                            null,
+                            'Document password: '
+                        ),
+                        'You can optionally set passwords on individual documents. This is useful if you only want the added security on a specific document, or to add security to a document you share with someone.'
+                    )
+                )
             )
         ),
         _react2.default.createElement(
@@ -5443,72 +5469,57 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
             _react2.default.createElement(
                 'div',
                 { className: 'title' },
-                'Authorization Scopes'
+                'Google Services'
             ),
             _react2.default.createElement(
                 'div',
                 { className: 'sectionText' },
-                'By default, Moo.do will request access to the ',
                 _react2.default.createElement(
-                    'b',
+                    'p',
                     null,
-                    'UserInfo.Email'
+                    'Moo.do syncs with these services fully client-side so that none of the data is ever sent to any other servers. When you add an email or file into your document, it stores only the ID of the email and the accountID it came from, so that no personal data is stored in your documents. Each Moo.do client then syncs with Google to get the full information for those IDs.'
                 ),
-                ', ',
                 _react2.default.createElement(
-                    'b',
+                    'p',
                     null,
-                    'Drive.File'
-                ),
-                ', ',
-                _react2.default.createElement(
-                    'b',
-                    null,
-                    'Drive.Install'
-                ),
-                ', and ',
-                _react2.default.createElement(
-                    'b',
-                    null,
-                    'Drive.AppData'
-                ),
-                ' OAuth scopes. These allow Moo.do to access only files that were created with Moo.do and allow Moo.do to see your Google email address. Over the course of using Moo.do you may need to grant additional authorization scopes to enable additional features. These may include but are not limited to: ',
-                _react2.default.createElement(
-                    'b',
-                    null,
-                    'Contacts.Readonly'
-                ),
-                ', ',
-                _react2.default.createElement(
-                    'b',
-                    null,
-                    'Tasks.Readonly'
-                ),
-                ', ',
-                _react2.default.createElement(
-                    'b',
-                    null,
-                    'Drive.Metadata'
-                ),
-                ', ',
-                _react2.default.createElement(
-                    'b',
-                    null,
-                    'Full Drive Read/Write'
-                ),
-                ', ',
-                _react2.default.createElement(
-                    'b',
-                    null,
-                    'Drive.Gmail'
-                ),
-                ', and ',
-                _react2.default.createElement(
-                    'b',
-                    null,
-                    'Calendar'
-                ),
-                ' scopes. Any data that is accessed through these scopes is only sent to devices that you use Moo.do with. Moo.do does not send or store this information anywhere except locally on your devices.'
+                    'By default, Moo.do will request access to the ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'userinfo.email'
+                    ),
+                    ', and ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'userinfo.profile'
+                    ),
+                    ' OAuth scopes. These allow Moo.do to know your name and email address. Over the course of using Moo.do you may want to grant additional authorization scopes to enable additional features. The Gmail plugin needs the ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'gmail.modify'
+                    ),
+                    ' and ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'gmail.compose'
+                    ),
+                    ' scopes, the Drive plugin needs the ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'drive'
+                    ),
+                    ' scope, and the Calendar plugin needs the ',
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'calendar'
+                    ),
+                    ' scope. Any data that is accessed through these scopes is only sent to devices that you use Moo.do with. Moo.do does not send or store this information anywhere except locally on your devices.'
+                )
             )
         ),
         _react2.default.createElement(
@@ -5556,7 +5567,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
             _react2.default.createElement(
                 'span',
                 null,
-                'February 15th, 2015'
+                'July 23, 2019'
             )
         )
     );
@@ -9979,4 +9990,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.fee7bf9f.js.map
+//# sourceMappingURL=static.002192a9.js.map

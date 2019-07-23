@@ -1562,3 +1562,6 @@ html:not(.Mac) .onlyMac {
 .changelog .changeMisc {
   background: #444;
 }
+#privacy li {
+  margin-top: 16px;
+}
