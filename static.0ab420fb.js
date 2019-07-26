@@ -3344,12 +3344,6 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                                 'li',
                                 null,
                                 _react2.default.createElement('span', { className: 'icon-check' }),
-                                'Calendar pane'
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement('span', { className: 'icon-check' }),
                                 'Google Calendar sync'
                             ),
                             _react2.default.createElement(
@@ -3432,12 +3426,6 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                                 'li',
                                 null,
                                 _react2.default.createElement('span', { className: 'icon-check' }),
-                                'Calendar pane'
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                null,
-                                _react2.default.createElement('span', { className: 'icon-check' }),
                                 'Google Calendar sync'
                             ),
                             _react2.default.createElement(
@@ -3482,21 +3470,6 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                     )
                 )
             )
-        ),
-        _react2.default.createElement(
-            'div',
-            { className: 'section-full' },
-            _react2.default.createElement(
-                'h1',
-                null,
-                'Calendar Pane'
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'sectionSubtitle' },
-                'Day, Week, and Month views for managing your calendar.'
-            ),
-            _react2.default.createElement('img', { id: 'img-calendar', className: 'premiumImg demo-img-large-border', src: '/img/about/CalendarPane.gif' })
         ),
         _react2.default.createElement(
             'div',
@@ -3553,7 +3526,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
             _react2.default.createElement(
                 'h1',
                 null,
-                'Boards'
+                'More than 5 Boards'
             ),
             _react2.default.createElement(
                 'div',
@@ -3607,7 +3580,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
             _react2.default.createElement(
                 'div',
                 { className: 'iSubtitle' },
-                'Cache emails for access while offline and quicker load time.'
+                'Cache emails for up to 120 days for access while offline and quicker load time.'
             ),
             _react2.default.createElement(
                 'div',
@@ -9990,4 +9963,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.002192a9.js.map
+//# sourceMappingURL=static.0ab420fb.js.map
