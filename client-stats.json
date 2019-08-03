@@ -3,7 +3,7 @@
   "warnings": [],
   "version": "3.12.0",
   "hash": "ca705a6f2bd1c1454698",
-  "time": 5138,
+  "time": 5316,
   "publicPath": "##BR_SITE_ROOT##/",
   "assetsByChunkName": {
     "src/containers/Help": [
@@ -5291,9 +5291,9 @@
             15
           ],
           "assets": [],
-          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router/es/generatePath.js",
-          "issuerId": 32,
-          "issuerName": "./node_modules/react-static/node_modules/react-router/es/generatePath.js",
+          "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router/es/matchPath.js",
+          "issuerId": 18,
+          "issuerName": "./node_modules/react-static/node_modules/react-router/es/matchPath.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -12612,9 +12612,9 @@
         15
       ],
       "assets": [],
-      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router/es/generatePath.js",
-      "issuerId": 32,
-      "issuerName": "./node_modules/react-static/node_modules/react-router/es/generatePath.js",
+      "issuer": "/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/node_modules/react-static/node_modules/react-router/es/matchPath.js",
+      "issuerId": 18,
+      "issuerName": "./node_modules/react-static/node_modules/react-router/es/matchPath.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
