@@ -652,17 +652,17 @@ self.XHR = function (params) {
     var username = params.username;
     var password = params.password;
 
-    var productionAPI = '//api.moo.do/';
+    var productionAPI = '//api-old.moo.do/';
     if (url.startsWith('https:' + productionAPI)) {
         if (window.location.hostname === 'beta.moo.do') {
-            url = url.replace('api.moo.do', 'api-beta.moo.do');
+            url = url.replace('api-old.moo.do', 'api-beta.moo.do');
         } else if (window.location.hostname === 'dev.moo.do' || window.location.hostname === 'localhost') {
-            url = url.replace('api.moo.do', 'api-dev.moo.do');
+            url = url.replace('api-old.moo.do', 'api-dev.moo.do');
         }
         // else if (window.location.hostname === 'localhost')
         // {
         //     console.log('xhr local');
-        //     url = url.replace('https://api.moo.do', 'http://localhost:9024');
+        //     url = url.replace('https://api-old.moo.do', 'http://localhost:9024');
         // }
     }
 
@@ -738,7 +738,7 @@ self.XHR = function (params) {
 
 self.XHR_PrivateAPI = function (params) {
     var basePath = '/private/v1',
-        url = window.location.hostname === 'beta.moo.do' ? 'api-beta.moo.do' : 'api.moo.do';
+        url = window.location.hostname === 'beta.moo.do' ? 'api-beta.moo.do' : 'api-old.moo.do';
 
     // TODO: Does not support authenticated requests
 
@@ -9963,4 +9963,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.0ab420fb.js.map
+//# sourceMappingURL=static.89b21a94.js.map
