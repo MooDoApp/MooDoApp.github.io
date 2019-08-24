@@ -9627,7 +9627,13 @@ exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteDat
             _react2.default.createElement(
                 'li',
                 null,
-                'Use the Create Task menu described in #2 above and type a @date after the task name.',
+                'Use the Create Task menu described in #2 above and type a ',
+                _react2.default.createElement(
+                    'span',
+                    { 'class': 'hotkey' },
+                    '!date'
+                ),
+                ' after the task name.',
                 _react2.default.createElement('img', { className: 'helpImg imgOnePane', src: '/img/help/email/createTaskCalendar.png' })
             ),
             _react2.default.createElement(
@@ -9963,4 +9969,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.89b21a94.js.map
+//# sourceMappingURL=static.b962cbd5.js.map

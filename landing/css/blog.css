@@ -407,3 +407,10 @@ a:not(.linkButton) {
 .b {
   font-weight: bold;
 }
+code {
+  background: #F6F8FA;
+  padding: 8px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  border: 1px solid #eef1f3;
+  border-radius: 2px;
+}
