@@ -852,49 +852,6 @@ var nativeDownloadDefault = 'https://www.moo.do/download/';
 var nativeDownloadOSX = 'https://www.moo.do/lnk/mac';
 var nativeDownloadWin = 'https://www.moo.do/lnk/windows';
 
-// (function ()
-// {
-//     self.XHR({
-//         type: 'GET',
-//         url: 'https://api.github.com/repos/MooDoApp/MooDoApp.github.io/releases/latest',
-//         cb: function (xhr)
-//         {
-//             if (xhr.status === 200)
-//             {
-//                 var data = JSON.parse(xhr.responseText);
-
-//                 for (var i = 0; i < data.assets.length; ++i)
-//                 {
-//                     var asset = data.assets[i];
-
-//                     if (endsWith(asset.name, '.exe'))
-//                     {
-//                         nativeDownloadWin = asset.browser_download_url;
-
-//                         var linkWin = document.getElementById('downloadWindows');
-
-//                         if (linkWin)
-//                         {
-//                             linkWin.href = nativeDownloadWin;
-//                         }
-//                     }
-//                     else if (endsWith(asset.name, '.zip'))
-//                     {
-//                         nativeDownloadOSX = asset.browser_download_url;
-
-//                         var linkOSX = document.getElementById('downloadOSX');
-
-//                         if (linkOSX)
-//                         {
-//                             linkOSX.href = nativeDownloadOSX;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     });
-// })();
-
 self.updateDownloadUrl = function () {
     if (typeof XMLHttpRequest !== 'undefined') {
         var xhr = new XMLHttpRequest(),
@@ -908,7 +865,7 @@ self.updateDownloadUrl = function () {
                     if (data && data.assets) {
                         for (var i = 0; i < data.assets.length; ++i) {
                             var asset = data.assets[i];
-                            if (asset.name.indexOf('.zip') > 0) {
+                            if (asset.name.indexOf('.dmg') > 0) {
                                 nativeDownloadOSX = asset.browser_download_url;
                             } else if (asset.name.indexOf('.exe') > 0) {
                                 nativeDownloadWin = asset.browser_download_url;
@@ -9969,4 +9926,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.2749a60f.js.map
+//# sourceMappingURL=static.f105fa59.js.map
