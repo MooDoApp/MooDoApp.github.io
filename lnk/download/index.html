@@ -103,7 +103,7 @@
                             for (var i = 0; i < data.assets.length; ++i)
                             {
                                 var asset = data.assets[i];
-                                if (assetExt && asset.name.indexOf(assetExt) > 0)
+                                if (assetExt && asset.name.endsWith(assetExt))
                                 {
                                     window.location = asset.browser_download_url;
                                     return;

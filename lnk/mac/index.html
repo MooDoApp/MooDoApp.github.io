@@ -22,7 +22,7 @@
                             for (var i = 0; i < data.assets.length; ++i)
                             {
                                 var asset = data.assets[i];
-                                if (asset.name.indexOf('.zip') > 0)
+                                if (asset.name.endsWith('.dmg'))
                                 {
                                     window.location = asset.browser_download_url;
                                     return;

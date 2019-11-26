@@ -865,9 +865,9 @@ self.updateDownloadUrl = function () {
                     if (data && data.assets) {
                         for (var i = 0; i < data.assets.length; ++i) {
                             var asset = data.assets[i];
-                            if (asset.name.indexOf('.dmg') > 0) {
+                            if (asset.name.endsWith('.dmg')) {
                                 nativeDownloadOSX = asset.browser_download_url;
-                            } else if (asset.name.indexOf('.exe') > 0) {
+                            } else if (asset.name.endsWith('.exe')) {
                                 nativeDownloadWin = asset.browser_download_url;
                             }
                         }
@@ -9926,4 +9926,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.f105fa59.js.map
+//# sourceMappingURL=static.6420c444.js.map
