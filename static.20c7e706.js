@@ -1211,10 +1211,6 @@ DemoManager.prototype = {
 
                 if (this.getPageScrollOffset() - startScroll > 500 && !reportedScroll) {
                     reportedScroll = true;
-
-                    new Promise(function(resolve) { resolve(); }).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(65)]; ((function (util) {
-                        util.setSegment(util.Segment.Browsed);
-                    }).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}).catch(__webpack_require__.oe);
                 }
 
                 if (this._onDemoScroll) {
@@ -3991,11 +3987,11 @@ var _Nav = __webpack_require__(2);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
-var _HelpBasics = __webpack_require__(66);
+var _HelpBasics = __webpack_require__(65);
 
 var _HelpBasics2 = _interopRequireDefault(_HelpBasics);
 
-var _HelpEmail = __webpack_require__(67);
+var _HelpEmail = __webpack_require__(66);
 
 var _HelpEmail2 = _interopRequireDefault(_HelpEmail);
 
@@ -6479,7 +6475,7 @@ var _reactStatic = __webpack_require__(4);
 
 var _reactHotLoader = __webpack_require__(3);
 
-var _Post = __webpack_require__(68);
+var _Post = __webpack_require__(67);
 
 var _Post2 = _interopRequireDefault(_Post);
 
@@ -8949,12 +8945,6 @@ exports.default = ReportChunks;
 
 /***/ }),
 /* 65 */
-/***/ (function(module, exports) {
-
-module.exports = require("util");
-
-/***/ }),
-/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9402,7 +9392,7 @@ exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteDat
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9659,7 +9649,7 @@ exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteDat
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9677,7 +9667,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(4);
 
-var _htmr = __webpack_require__(69);
+var _htmr = __webpack_require__(68);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -9918,7 +9908,7 @@ exports.default = (0, _reactStatic.withRouteData)(function (props) {
 });
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports) {
 
 module.exports = require("htmr");
@@ -9926,4 +9916,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.6420c444.js.map
+//# sourceMappingURL=static.20c7e706.js.map
