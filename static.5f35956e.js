@@ -1228,7 +1228,7 @@ DemoManager.prototype = {
     },
     receiveFrameMessage: function receiveFrameMessage(e) {
         switch (e.data) {
-            case 'demoReady':
+            case 'loaded':
                 this.notifyOfLoad(e);
                 this.checkPageScroll();
                 break;
@@ -9916,4 +9916,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.20c7e706.js.map
+//# sourceMappingURL=static.5f35956e.js.map

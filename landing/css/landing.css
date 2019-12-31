@@ -282,12 +282,14 @@ hr {
     transform: rotateZ(360deg);
   }
 }
+.demobg.icon-spinner,
 .demoContainer.icon-spinner,
 #videoFrameWrapper.icon-spinner {
   position: relative;
   text-align: center;
   color: #666;
 }
+.demobg.icon-spinner:before,
 .demoContainer.icon-spinner:before,
 #videoFrameWrapper.icon-spinner:before {
   position: absolute;
@@ -297,11 +299,13 @@ hr {
   margin-top: -18px;
   font-size: 20px;
   font-weight: bold;
+  z-index: 0;
   -webkit-animation: spinnerRotate 500ms infinite linear;
   -moz-animation: spinnerRotate 500ms infinite linear;
   -o-animation: spinnerRotate 500ms infinite linear;
   animation: spinnerRotate 500ms infinite linear;
 }
+.demobg.icon-spinner:after,
 .demoContainer.icon-spinner:after,
 #videoFrameWrapper.icon-spinner:after {
   content: "Loading live demo...";
@@ -311,6 +315,12 @@ hr {
   top: 50%;
   font-family: -apple-system, system-ui, 'Segoe UI', 'Helvetica Neue', 'Cambria', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   margin-top: 18px;
+  z-index: 0;
+}
+.demobg.icon-spinner > *,
+.demoContainer.icon-spinner > *,
+#videoFrameWrapper.icon-spinner > * {
+  z-index: 1;
 }
 .pageContent {
   min-height: calc(100vh - 50px - 40px);
