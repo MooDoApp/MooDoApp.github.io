@@ -84,6 +84,7 @@ h2 {
   opacity: 1;
 }
 .content {
+  position: relative;
   min-height: calc(100vh - 50px);
 }
 .topTitle {
@@ -1574,4 +1575,15 @@ html:not(.Mac) .onlyMac {
 }
 #privacy li {
   margin-top: 16px;
+}
+#demo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#demo iframe {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
 }
