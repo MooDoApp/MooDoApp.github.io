@@ -3734,6 +3734,17 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                 ),
                 _react2.default.createElement(
                     'div',
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        'Custom Hotkeys'
+                    ),
+                    _react2.default.createElement('div', null),
+                    _react2.default.createElement('div', { className: 'icon-check' })
+                ),
+                _react2.default.createElement(
+                    'div',
                     { className: 'header' },
                     _react2.default.createElement(
                         'div',
@@ -10034,4 +10045,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.25e55d7e.js.map
+//# sourceMappingURL=static.04e3badc.js.map

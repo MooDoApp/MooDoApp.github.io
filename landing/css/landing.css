@@ -671,6 +671,7 @@ html.mobile #linkHelp {
 }
 #pricingTable .icon-check {
   font-size: 16px;
+  line-height: 30px;
 }
 #pricingTable .icon-group {
   color: #2a6;
