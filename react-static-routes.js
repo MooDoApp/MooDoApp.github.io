@@ -33,8 +33,9 @@ const t_10 = universal(import('../src/containers/Invoice'), universalOptions)
 const t_11 = universal(import('../src/containers/Beta'), universalOptions)
 const t_12 = universal(import('../src/containers/Demo'), universalOptions)
 const t_13 = universal(import('../src/containers/Template'), universalOptions)
-const t_14 = universal(import('../src/containers/Blog'), universalOptions)
-const t_15 = universal(import('../src/containers/404'), universalOptions)
+const t_14 = universal(import('../src/containers/Old'), universalOptions)
+const t_15 = universal(import('../src/containers/Blog'), universalOptions)
+const t_16 = universal(import('../src/containers/404'), universalOptions)
 
 
 // Template Map
@@ -54,12 +55,13 @@ t_11,
 t_12,
 t_13,
 t_14,
-t_15
+t_15,
+t_16
 ]
 
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
-  '404': 15
+  '404': 16
 }
 
 // Get template for given path
