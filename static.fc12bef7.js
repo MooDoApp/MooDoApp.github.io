@@ -5473,6 +5473,11 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                         'calendar'
                     ),
                     ' scope. Any data that is accessed through these scopes is only sent to devices that you use Moo.do with. Moo.do does not send or store this information anywhere except locally on your devices.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'App\'s use of information received, and App\'s transfer of information to any other app, from Google APIs will adhere to Google\'s Limited Use Requirements.'
                 )
             )
         ),
@@ -10090,4 +10095,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.0af5292c.js.map
+//# sourceMappingURL=static.fc12bef7.js.map
