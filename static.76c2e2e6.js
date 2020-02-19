@@ -5526,7 +5526,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
             _react2.default.createElement(
                 'span',
                 null,
-                'July 23, 2019'
+                'Feb 19, 2020'
             )
         )
     );
@@ -10095,4 +10095,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.fc12bef7.js.map
+//# sourceMappingURL=static.76c2e2e6.js.map
