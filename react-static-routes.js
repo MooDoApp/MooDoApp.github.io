@@ -27,15 +27,16 @@ const t_4 = universal(import('../src/containers/Us'), universalOptions)
 const t_5 = universal(import('../src/containers/Contact'), universalOptions)
 const t_6 = universal(import('../src/containers/Press'), universalOptions)
 const t_7 = universal(import('../src/containers/Privacy'), universalOptions)
-const t_8 = universal(import('../src/containers/Unsubscribe'), universalOptions)
-const t_9 = universal(import('../src/containers/Purchase'), universalOptions)
-const t_10 = universal(import('../src/containers/Invoice'), universalOptions)
-const t_11 = universal(import('../src/containers/Beta'), universalOptions)
-const t_12 = universal(import('../src/containers/Demo'), universalOptions)
-const t_13 = universal(import('../src/containers/Template'), universalOptions)
-const t_14 = universal(import('../src/containers/Old'), universalOptions)
-const t_15 = universal(import('../src/containers/Blog'), universalOptions)
-const t_16 = universal(import('../src/containers/404'), universalOptions)
+const t_8 = universal(import('../src/containers/Terms'), universalOptions)
+const t_9 = universal(import('../src/containers/Unsubscribe'), universalOptions)
+const t_10 = universal(import('../src/containers/Purchase'), universalOptions)
+const t_11 = universal(import('../src/containers/Invoice'), universalOptions)
+const t_12 = universal(import('../src/containers/Beta'), universalOptions)
+const t_13 = universal(import('../src/containers/Demo'), universalOptions)
+const t_14 = universal(import('../src/containers/Template'), universalOptions)
+const t_15 = universal(import('../src/containers/Old'), universalOptions)
+const t_16 = universal(import('../src/containers/Blog'), universalOptions)
+const t_17 = universal(import('../src/containers/404'), universalOptions)
 
 
 // Template Map
@@ -56,12 +57,13 @@ t_12,
 t_13,
 t_14,
 t_15,
-t_16
+t_16,
+t_17
 ]
 
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
-  '404': 16
+  '404': 17
 }
 
 // Get template for given path

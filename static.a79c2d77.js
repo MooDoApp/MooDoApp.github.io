@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 40);
+/******/ 	return __webpack_require__(__webpack_require__.s = 41);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -208,6 +208,7 @@ exports.default = function (props) {
             linkToPage('contact', 'Contact'),
             linkToPage('press', 'Press'),
             linkToPage('privacy', 'Privacy'),
+            linkToPage('terms', 'Terms'),
             _react2.default.createElement(
                 'span',
                 { className: 'socialIcons' },
@@ -220,11 +221,6 @@ exports.default = function (props) {
                     'a',
                     { className: clsLink, target: '_blank', onClick: _util2.default.sendToSocialMedia.bind(_util2.default, 'Twitter', 'bot'), href: 'https://www.twitter.com/MooDoApp' },
                     _react2.default.createElement('i', { className: 'icon-twitter' })
-                ),
-                _react2.default.createElement(
-                    'a',
-                    { className: clsLink, target: '_blank', onClick: _util2.default.sendToSocialMedia.bind(_util2.default, 'Google', 'bot'), href: 'https://www.google.com/+MooDoApp' },
-                    _react2.default.createElement('i', { className: 'icon-google-plus' })
                 ),
                 _react2.default.createElement(
                     'a',
@@ -4015,11 +4011,11 @@ var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
-var _HelpBasics = __webpack_require__(68);
+var _HelpBasics = __webpack_require__(69);
 
 var _HelpBasics2 = _interopRequireDefault(_HelpBasics);
 
-var _HelpEmail = __webpack_require__(69);
+var _HelpEmail = __webpack_require__(70);
 
 var _HelpEmail2 = _interopRequireDefault(_HelpEmail);
 
@@ -5544,6 +5540,191 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactHotLoader = __webpack_require__(2);
+
+var _Nav = __webpack_require__(3);
+
+var _Nav2 = _interopRequireDefault(_Nav);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _reactHotLoader.hot)(module)(function () {
+    return _react2.default.createElement(
+        'div',
+        { id: 'terms' },
+        _react2.default.createElement(_Nav2.default, { top: true, title: 'Terms of Service' }),
+        _react2.default.createElement(
+            'div',
+            { className: 'section section-full' },
+            _react2.default.createElement(
+                'header',
+                null,
+                'Terms of Service'
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'sectionText' },
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'These terms and conditions outline the rules and regulations for the use of Moo.do.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'By accessing this website we assume you accept these terms and conditions in full. Do not continue to use Moo.do if you do not accept all of the terms and conditions stated on this page.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all Agreements: "You" and "Your" refers to you, the person accessing this website/app and accepting the Company\'s terms and conditions. "The Company", "The Service", "Ourselves", "We", "Our" and "Us", refers to our Company.'
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'License'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'While using our Service, you will be creating your own content and sharing your own images ("Your Data"). These terms don\'t give Us any rights to Your Data other than the minimum right necessary to support the Service.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'The Service will need your permission to store Your Data, share it with your collaborators, and back it up (for the security of Your Data). You give Us and any trusted third parties we work with permission to do this.'
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'Content Rights'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Content stored in the Service may be otherwise protected by intellectual property rights. We reserve the right to delete or disabled allegedly infringing content, and to delete the accounts of those infringing on others\' property rights.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'We may or may not review the content stored in the Service for compliance with these terms. We are not responsible for the content shared via the Service.'
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'Encryption Password'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'If you choose to (optionally) enable an encryption password, this protects anyone without the password from reading your data. But it also means that we are unable to restore your data in case you lose it. You take responsibility for keeping your password safe and understand that if you lose the password, your data is lost and we cannot recover it.'
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'Kids under 13'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'The Service is not directed at children under 13 years old. By using the Service, you are representing that you are over 13 years old.'
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'Premium Accounts'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'By paying to access premium features, your account becomes a "Premium Account". You will be billed automatically from the date you signup for Premium according to the chosen schedule (monthly or yearly).'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Your may cancel your Premium Account at any time, but you are not guaranteed a refund. Special dispensation may be given in some cases, but it is not guaranteed.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Your Premium Account will be in effect until you cancel it. If you do not pay for Premium on the due date, we reserve the right to disable your Premium features after a short grace period.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'The price of the Premium Account may change at any time. If this happens, we will either give you advanced notice of the change or existing accounts will keep their original pricing.'
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'Account Termination'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'It is your right to stop using the Service if you choose. We reserve the right to suspend your account at our discretion and without notice if we find that you are not complying with these Terms, are disrupting the Service, or use the Service in a manner that may cause os legal liability.'
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'Changes to Our Terms of Service'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'We reserve the right to change the Privacy Policy and our Terms of Service at any time.  We will notify you of significant changes to our Privacy Policy or Terms of Service by sending a notice to the primary email address specified in your account, or by placing a prominent notice on our site. Significant changes will go into effect 30 days following such notification.  Non-material changes or clarifications will take effect immediately. You should periodically check the Site and this terms of service page for updates.'
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'Removal of links'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'We reserve the right at any time and to request that you remove all links or any particular link to the Service. You agree to immediately remove all links to our Service upon such request.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'If you find any link on our Web site or any linked web site objectionable for any reason, you may contact us about this. We will consider requests to remove links but will have no obligation to do so or to respond directly to you.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Whilst we endeavour to ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we commit to ensuring that the website remains available or that the material on the website is kept up to date.'
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'Content Liability'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'We shall have no responsibility or liability for any content appearing in your account. You agree to indemnify and defend us against all claims arising out of or based upon Your Data. No link(s) may appear in Your Data that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.'
+                )
+            )
+        )
+    );
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(0);
@@ -5633,7 +5814,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(Unsubscribe);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6169,7 +6350,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(Purchase);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6388,7 +6569,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(Invoice);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6490,7 +6671,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6523,7 +6704,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6551,7 +6732,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6576,7 +6757,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6594,7 +6775,7 @@ var _reactStatic = __webpack_require__(4);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _Post = __webpack_require__(70);
+var _Post = __webpack_require__(71);
 
 var _Post2 = _interopRequireDefault(_Post);
 
@@ -6656,7 +6837,7 @@ exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteDat
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6696,7 +6877,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6710,11 +6891,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(41);
+var _reactDom = __webpack_require__(42);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(42);
+var _App = __webpack_require__(43);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -6739,13 +6920,13 @@ if (typeof document !== 'undefined') {
 }
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6767,7 +6948,7 @@ var _reactStatic = __webpack_require__(4);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _reactStaticRoutes = __webpack_require__(43);
+var _reactStaticRoutes = __webpack_require__(44);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
@@ -7064,7 +7245,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(App);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7074,15 +7255,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _path2 = __webpack_require__(44);
+var _path2 = __webpack_require__(45);
 
 var _path3 = _interopRequireDefault(_path2);
 
-var _importCss2 = __webpack_require__(45);
+var _importCss2 = __webpack_require__(46);
 
 var _importCss3 = _interopRequireDefault(_importCss2);
 
-var _universalImport2 = __webpack_require__(46);
+var _universalImport2 = __webpack_require__(47);
 
 var _universalImport3 = _interopRequireDefault(_universalImport2);
 
@@ -7094,9 +7275,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(47);
+var _reactRouterDom = __webpack_require__(48);
 
-var _reactUniversalComponent = __webpack_require__(65);
+var _reactUniversalComponent = __webpack_require__(66);
 
 var _reactUniversalComponent2 = _interopRequireDefault(_reactUniversalComponent);
 
@@ -7287,10 +7468,30 @@ var t_7 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
   }
 }), universalOptions);
 var t_8 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+  id: '../src/containers/Terms',
+  file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
+  load: function load() {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 31)), (0, _importCss3.default)('src/containers/Terms', {
+      disableWarnings: true
+    })]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return _path3.default.join(__dirname, '../src/containers/Terms');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(31);
+  },
+  chunkName: function chunkName() {
+    return 'src/containers/Terms';
+  }
+}), universalOptions);
+var t_9 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Unsubscribe',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 31)), (0, _importCss3.default)('src/containers/Unsubscribe', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 32)), (0, _importCss3.default)('src/containers/Unsubscribe', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7300,17 +7501,17 @@ var t_8 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
     return _path3.default.join(__dirname, '../src/containers/Unsubscribe');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(31);
+    return /*require.resolve*/(32);
   },
   chunkName: function chunkName() {
     return 'src/containers/Unsubscribe';
   }
 }), universalOptions);
-var t_9 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_10 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Purchase',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 32)), (0, _importCss3.default)('src/containers/Purchase', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 33)), (0, _importCss3.default)('src/containers/Purchase', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7320,17 +7521,17 @@ var t_9 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
     return _path3.default.join(__dirname, '../src/containers/Purchase');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(32);
+    return /*require.resolve*/(33);
   },
   chunkName: function chunkName() {
     return 'src/containers/Purchase';
   }
 }), universalOptions);
-var t_10 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_11 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Invoice',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 33)), (0, _importCss3.default)('src/containers/Invoice', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 34)), (0, _importCss3.default)('src/containers/Invoice', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7340,17 +7541,17 @@ var t_10 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
     return _path3.default.join(__dirname, '../src/containers/Invoice');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(33);
+    return /*require.resolve*/(34);
   },
   chunkName: function chunkName() {
     return 'src/containers/Invoice';
   }
 }), universalOptions);
-var t_11 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_12 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Beta',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 34)), (0, _importCss3.default)('src/containers/Beta', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 35)), (0, _importCss3.default)('src/containers/Beta', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7360,17 +7561,17 @@ var t_11 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
     return _path3.default.join(__dirname, '../src/containers/Beta');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(34);
+    return /*require.resolve*/(35);
   },
   chunkName: function chunkName() {
     return 'src/containers/Beta';
   }
 }), universalOptions);
-var t_12 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_13 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Demo',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 35)), (0, _importCss3.default)('src/containers/Demo', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 36)), (0, _importCss3.default)('src/containers/Demo', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7380,17 +7581,17 @@ var t_12 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
     return _path3.default.join(__dirname, '../src/containers/Demo');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(35);
+    return /*require.resolve*/(36);
   },
   chunkName: function chunkName() {
     return 'src/containers/Demo';
   }
 }), universalOptions);
-var t_13 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_14 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Template',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 36)), (0, _importCss3.default)('src/containers/Template', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 37)), (0, _importCss3.default)('src/containers/Template', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7400,17 +7601,17 @@ var t_13 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
     return _path3.default.join(__dirname, '../src/containers/Template');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(36);
+    return /*require.resolve*/(37);
   },
   chunkName: function chunkName() {
     return 'src/containers/Template';
   }
 }), universalOptions);
-var t_14 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_15 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Old',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 37)), (0, _importCss3.default)('src/containers/Old', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 38)), (0, _importCss3.default)('src/containers/Old', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7420,17 +7621,17 @@ var t_14 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
     return _path3.default.join(__dirname, '../src/containers/Old');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(37);
+    return /*require.resolve*/(38);
   },
   chunkName: function chunkName() {
     return 'src/containers/Old';
   }
 }), universalOptions);
-var t_15 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_16 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/Blog',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 38)), (0, _importCss3.default)('src/containers/Blog', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 39)), (0, _importCss3.default)('src/containers/Blog', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7440,17 +7641,17 @@ var t_15 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
     return _path3.default.join(__dirname, '../src/containers/Blog');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(38);
+    return /*require.resolve*/(39);
   },
   chunkName: function chunkName() {
     return 'src/containers/Blog';
   }
 }), universalOptions);
-var t_16 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_17 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
   id: '../src/containers/404',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 39)), (0, _importCss3.default)('src/containers/404', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 40)), (0, _importCss3.default)('src/containers/404', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7460,7 +7661,7 @@ var t_16 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
     return _path3.default.join(__dirname, '../src/containers/404');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(39);
+    return /*require.resolve*/(40);
   },
   chunkName: function chunkName() {
     return 'src/containers/404';
@@ -7468,11 +7669,11 @@ var t_16 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)
 }), universalOptions);
 
 // Template Map
-global.componentsByTemplateID = global.componentsByTemplateID || [t_0, t_1, t_2, t_3, t_4, t_5, t_6, t_7, t_8, t_9, t_10, t_11, t_12, t_13, t_14, t_15, t_16];
+global.componentsByTemplateID = global.componentsByTemplateID || [t_0, t_1, t_2, t_3, t_4, t_5, t_6, t_7, t_8, t_9, t_10, t_11, t_12, t_13, t_14, t_15, t_16, t_17];
 
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
-  '404': 16
+  '404': 17
 
   // Get template for given path
 };var getComponentForPath = function getComponentForPath(path) {
@@ -7547,56 +7748,56 @@ exports.default = Routes;
 /* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = require("path");
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/importCss");
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(49);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(50);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(16);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(51);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(53);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(54);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(56);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(17);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(12);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(58);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(60);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(62);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return __WEBPACK_IMPORTED_MODULE_11__generatePath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(63);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_12__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(64);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
 
 
@@ -7628,7 +7829,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7695,7 +7896,7 @@ BrowserRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrowserRouter);
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7761,18 +7962,18 @@ HashRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (HashRouter);
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(52);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__["a" /* default */]);
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7839,7 +8040,7 @@ MemoryRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7925,18 +8126,18 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (NavLink);
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(55);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__["a" /* default */]);
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8027,18 +8228,18 @@ Prompt.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(57);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8168,18 +8369,18 @@ Redirect.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(59);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__["a" /* default */]);
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8346,18 +8547,18 @@ StaticRouter.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(61);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8449,7 +8650,7 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8460,7 +8661,7 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__["a" /* default */]);
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8471,18 +8672,18 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__["a" /* default */]);
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(65);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__["a" /* default */]);
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8531,7 +8732,7 @@ var withRouter = function withRouter(Component) {
 /* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8546,7 +8747,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _requireUniversalModule = __webpack_require__(66);
+var _requireUniversalModule = __webpack_require__(67);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -8561,7 +8762,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(67);
+var _reportChunks = __webpack_require__(68);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -8878,7 +9079,7 @@ exports.default = universal;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9060,7 +9261,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9123,7 +9324,7 @@ ReportChunks.childContextTypes = {
 exports.default = ReportChunks;
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9571,7 +9772,7 @@ exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteDat
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9828,7 +10029,7 @@ exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteDat
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9846,7 +10047,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(4);
 
-var _htmr = __webpack_require__(71);
+var _htmr = __webpack_require__(72);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -10087,7 +10288,7 @@ exports.default = (0, _reactStatic.withRouteData)(function (props) {
 });
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = require("htmr");
@@ -10095,4 +10296,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.76c2e2e6.js.map
+//# sourceMappingURL=static.a79c2d77.js.map
