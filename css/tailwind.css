@@ -7,10 +7,21 @@
   display: flex
 }
 
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row
+}
+
 .flex-col {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column
+}
+
+.items-center {
+  -webkit-box-align: center;
+          align-items: center
 }
 
 .justify-center {
@@ -18,12 +29,8 @@
           justify-content: center
 }
 
-.mt-4 {
-  margin-top: 1rem
-}
-
-.mb-4 {
-  margin-bottom: 1rem
+.mt-6 {
+  margin-top: 1.5rem
 }
 
 .absolute {
