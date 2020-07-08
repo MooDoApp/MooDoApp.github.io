@@ -1471,6 +1471,7 @@ a {
   color: #09d;
   font-size: 15px;
   font-weight: bold;
+  white-space: pre;
 }
 .Mac .platformName:before {
   content: 'Mac';
