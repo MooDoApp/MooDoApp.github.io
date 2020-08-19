@@ -130,7 +130,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(4);
 
-var _util = __webpack_require__(8);
+var _util = __webpack_require__(9);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -138,7 +138,7 @@ var _DemoManager = __webpack_require__(11);
 
 var _DemoManager2 = _interopRequireDefault(_DemoManager);
 
-var _auth = __webpack_require__(6);
+var _auth = __webpack_require__(7);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -246,6 +246,12 @@ module.exports = require("prop-types");
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("warning");
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -255,7 +261,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _util = __webpack_require__(8);
+var _util = __webpack_require__(9);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -266,7 +272,7 @@ var _DemoManager2 = _interopRequireDefault(_DemoManager);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function auth() {
-    this.clientId = "597847337936.apps.googleusercontent.com";
+    this.clientId = "597847337936-ridipp5ac5bulesmmjici7rtjces027t.apps.googleusercontent.com";
 
     this.scopes = ['https://www.googleapis.com/auth/drive.file', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/drive.install', 'https://www.googleapis.com/auth/drive.appdata'];
 
@@ -480,13 +486,13 @@ auth.prototype = {
 exports.default = new auth();
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
-module.exports = require("warning");
+module.exports = require("invariant");
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -938,12 +944,6 @@ self.removeExistingScript = function (script) {
 };
 
 exports.default = self;
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-module.exports = require("invariant");
 
 /***/ }),
 /* 10 */
@@ -1620,9 +1620,9 @@ exports.default = new DemoManager();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
@@ -1739,7 +1739,7 @@ Router.childContextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -1816,12 +1816,6 @@ var matchPath = function matchPath(pathname) {
 
 /***/ }),
 /* 15 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-autobind");
-
-/***/ }),
-/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1829,7 +1823,7 @@ module.exports = require("react-autobind");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history__);
@@ -1939,24 +1933,24 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(17);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__["a" /* default */]);
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
@@ -2104,17 +2098,17 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("path-to-regexp");
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -2155,13 +2149,13 @@ var generatePath = function generatePath() {
 /* harmony default export */ __webpack_exports__["a"] = (generatePath);
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2278,7 +2272,7 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2298,15 +2292,15 @@ var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
-var _reactAutobind = __webpack_require__(15);
+var _reactAutobind = __webpack_require__(23);
 
 var _reactAutobind2 = _interopRequireDefault(_reactAutobind);
 
-var _util = __webpack_require__(8);
+var _util = __webpack_require__(9);
 
 var _util2 = _interopRequireDefault(_util);
 
-var _auth = __webpack_require__(6);
+var _auth = __webpack_require__(7);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -3166,6 +3160,12 @@ exports.default = (0, _reactHotLoader.hot)(module)(Home);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-autobind");
+
+/***/ }),
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3182,7 +3182,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _auth = __webpack_require__(6);
+var _auth = __webpack_require__(7);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -3258,7 +3258,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                         { className: 'premiumAction' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'button center red noMobile', onClick: _auth2.default.requestAuthorization.bind(_auth2.default, 'premium-top-free', true) },
+                            { className: 'button center red noMobile', onClick: _auth2.default.sendToApp.bind(_auth2.default, undefined, false) },
                             'Get Started Now'
                         )
                     )
@@ -3335,7 +3335,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                         { className: 'premiumAction' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'button center red', onClick: _auth2.default.requestAuthorization.bind(_auth2.default, 'premium-top-year', true) },
+                            { className: 'button center red', onClick: _auth2.default.sendToApp.bind(_auth2.default, undefined, true) },
                             'Start Free Trial'
                         ),
                         _react2.default.createElement(
@@ -3417,7 +3417,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                         { className: 'premiumAction' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'button center red noMobile', onClick: _auth2.default.requestAuthorization.bind(_auth2.default, 'premium-top-month', true) },
+                            { className: 'button center red noMobile', onClick: _auth2.default.sendToApp.bind(_auth2.default, undefined, true) },
                             'Start Free Trial'
                         ),
                         _react2.default.createElement(
@@ -3930,7 +3930,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                             { className: 'premiumButton center' },
                             _react2.default.createElement(
                                 'span',
-                                { className: 'link linkLogin linkButton linkBlue', title: 'Login/Signup', onClick: _auth2.default.requestAuthorization.bind(_auth2.default, 'premium-pricing-free') },
+                                { className: 'link linkLogin linkButton linkBlue', title: 'Login/Signup', onClick: _auth2.default.sendToApp.bind(_auth2.default, undefined, false) },
                                 'Sign up for free'
                             )
                         )
@@ -3943,7 +3943,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                             { className: 'premiumButton center' },
                             _react2.default.createElement(
                                 'span',
-                                { className: 'link linkLogin linkButton linkBlue', title: 'Login/Signup', onClick: _auth2.default.requestAuthorization.bind(_auth2.default, 'premium-pricing-premium', true) },
+                                { className: 'link linkLogin linkButton linkBlue', title: 'Login/Signup', onClick: _auth2.default.sendToApp.bind(_auth2.default, undefined, true) },
                                 'Go premium'
                             )
                         )
@@ -4003,7 +4003,7 @@ var _reactStatic = __webpack_require__(4);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _reactAutobind = __webpack_require__(15);
+var _reactAutobind = __webpack_require__(23);
 
 var _reactAutobind2 = _interopRequireDefault(_reactAutobind);
 
@@ -4302,7 +4302,7 @@ var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
-var _auth = __webpack_require__(6);
+var _auth = __webpack_require__(7);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -4496,7 +4496,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _auth = __webpack_require__(6);
+var _auth = __webpack_require__(7);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -4586,11 +4586,11 @@ var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
-var _auth = __webpack_require__(6);
+var _auth = __webpack_require__(7);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _util = __webpack_require__(8);
+var _util = __webpack_require__(9);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -5735,7 +5735,7 @@ var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
-var _util = __webpack_require__(8);
+var _util = __webpack_require__(9);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -5832,20 +5832,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _reactStatic = __webpack_require__(4);
-
-var _reactAutobind = __webpack_require__(15);
-
-var _reactAutobind2 = _interopRequireDefault(_reactAutobind);
-
-var _util = __webpack_require__(8);
-
-var _util2 = _interopRequireDefault(_util);
-
-var _auth = __webpack_require__(6);
-
-var _auth2 = _interopRequireDefault(_auth);
-
 var _Nav = __webpack_require__(3);
 
 var _Nav2 = _interopRequireDefault(_Nav);
@@ -5858,367 +5844,21 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Pricing = {
-    None: -1,
-    EarlyMonthly: 0,
-    EarlyYearly: 1,
-    RegMonthly: 2,
-    RegYearly: 3
-};
-
-var premiumPlans = ['2m4b', 'gjgm', 'pmjw', '5pm2'];
-
-if (false) {
-    premiumPlans = ['58qg', 'pnr2', '6vr2', 'mt4b'];
-}
-
-var premiumPrices = ['4.95', '49.95', '5', '49'];
-
-var PurchaseError = {
-    None: 0,
-    AlreadyPremium: 1,
-    MissingNonce: 2,
-    ServerConnect: 3,
-    BraintreeConnect: 4,
-    FailedAuth: 5,
-    InvalidCode: 6
-};
-
-var adTrackingID = 976910954;
-var purchaseConversionID = 'ha4uCMXduXUQ6vTp0QM';
-
 var Purchase = function (_React$Component) {
     _inherits(Purchase, _React$Component);
 
-    function Purchase(props) {
+    function Purchase() {
         _classCallCheck(this, Purchase);
 
-        var _this = _possibleConstructorReturn(this, (Purchase.__proto__ || Object.getPrototypeOf(Purchase)).call(this, props));
-
-        (0, _reactAutobind2.default)(_this);
-
-        if (typeof window !== 'undefined') {
-            window.GoogleApiLoaded = _this.onGoogleAPILoaded;
-        }
-
-        _this.isGoogleApiLoaded = false;
-        _this.planID = premiumPlans[Pricing.RegMonthly];
-        _this.submittingPayment = false;
-
-        var id_token = _util2.default.getURLHashParam('id_token'),
-            email = _util2.default.getURLHashParam('email'),
-            gid = _util2.default.getURLHashParam('gid');
-
-        if (id_token && email && gid) {
-            _this._preparePurchase(gid, email, id_token);
-        } else {
-            _this.state = { phase: 'login' };
-        }
-        return _this;
+        return _possibleConstructorReturn(this, (Purchase.__proto__ || Object.getPrototypeOf(Purchase)).apply(this, arguments));
     }
 
     _createClass(Purchase, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {}
-    }, {
-        key: 'onGoogleAPILoaded',
-        value: function onGoogleAPILoaded() {
-            if (!this.isGoogleApiLoaded) {
-                if (!window.gapi || !window.gapi.auth) {
-                    if (numRetries > 0) {
-                        numRetries--;
-                        setTimeout(GoogleApiLoaded, 1000);
-                    }
-                } else {
-                    this.isGoogleApiLoaded = true;
-
-                    _auth2.default.init(function (isLoggedIn) {
-                        _util2.default.setSegment(_util2.default.Segment.ExistingUser);
-                    });
-                }
-            }
-        }
-    }, {
-        key: 'runPurchaseAuthenticate',
-        value: function runPurchaseAuthenticate() {
-            var _this2 = this;
-
-            _auth2.default.authenticate( /*immediate*/false, function (success) {
-                if (success) {
-                    var token = gapi.auth.getToken();
-
-                    var dt = _auth2.default.decodeIDToken(token.id_token);
-
-                    _this2._preparePurchase(dt.sub, dt.email, token.id_token);
-                } else {
-                    _this2.displayPurchaseError(PurchaseError.FailedAuth);
-                }
-            });
-        }
-    }, {
-        key: '_preparePurchase',
-        value: function _preparePurchase(gid, email, id_token) {
-            var _this3 = this;
-
-            this._gid = gid;
-            this._email = email;
-            this._id_token = id_token;
-
-            this.setState({ phase: 'pricing', 'emailDisplay': 'Account: ' + email });
-
-            _util2.default.XHR_PrivateAPI({
-                type: 'POST',
-                path: '/billing/getStatus',
-                data: { email: email, gid: gid },
-                headers: {
-                    id_token: id_token,
-                    gid: gid
-                },
-                cb: function cb(xhr) {
-                    if (xhr.status === 200) {
-                        try {
-                            var statusData = JSON.parse(xhr.response).data;
-
-                            if (statusData) {
-                                if (statusData.premiumStatus !== 4) {
-                                    _this3.getClientToken();
-                                } else {
-                                    _this3.displayPurchaseError(PurchaseError.AlreadyPremium);
-                                }
-                            } else {
-                                _this3.displayPurchaseError(PurchaseError.ServerConnect);
-                            }
-                        } catch (err) {
-                            _this3.displayPurchaseError(PurchaseError.ServerConnect);
-
-                            _util2.default.reportError(err);
-                        }
-                    } else {
-                        _this3.displayPurchaseError(PurchaseError.ServerConnect);
-                    }
-                }
-            });
-        }
-    }, {
-        key: 'getClientToken',
-        value: function getClientToken() {
-            var _this4 = this;
-
-            _util2.default.XHR_PrivateAPI({
-                type: 'POST',
-                path: '/billing/getToken',
-                data: { email: this._email, gid: this._gid },
-                headers: {
-                    id_token: this._id_token,
-                    gid: this._gid
-                },
-                cb: function cb(xhr) {
-                    if (xhr.status === 200) {
-                        try {
-                            var tokenResponse = JSON.parse(xhr.responseText).data;
-
-                            if (tokenResponse && tokenResponse.token) {
-                                var clientToken = tokenResponse.token;
-
-                                if (window.braintree) {
-                                    _this4.setState({ phase: 'purchase' });
-                                    var btClient = new window.braintree.api.Client({ clientToken: clientToken });
-
-                                    window.braintree.setup(clientToken, 'dropin', {
-                                        container: 'braintreeDropin',
-                                        onPaymentMethodReceived: function onPaymentMethodReceived(obj) {
-                                            _this4.handlePaymentMethodUpdate(obj, _this4._email, _this4._gid, _this4._id_token);
-                                        },
-                                        onError: function onError(err) {
-                                            _util2.default.reportError(err);
-
-                                            _this4.displayPurchaseError(PurchaseError.BraintreeConnect);
-                                        },
-                                        onReady: function onReady(bti) {
-                                            document.getElementById('braintreeDropinLoader').classList.add('hidden');
-                                            document.getElementById('braintreeSubmitWrapper').classList.remove('hidden');
-                                        }
-                                    });
-                                } else {
-                                    _this4.displayPurchaseError(PurchaseError.BraintreeConnect);
-                                }
-                            } else {
-                                _this4.displayPurchaseError(PurchaseError.ServerConnect);
-                            }
-                        } catch (err) {
-                            _util2.default.reportError(err);
-
-                            _this4.displayPurchaseError(PurchaseError.ServerConnect);
-                        }
-                    } else {
-                        _this4.displayPurchaseError(PurchaseError.ServerConnect);
-                    }
-                }
-            });
-        }
-    }, {
-        key: 'displayPurchaseSuccess',
-        value: function displayPurchaseSuccess() {
-            this.setState({ phase: 'success' });
-        }
-    }, {
-        key: 'displayPurchaseError',
-        value: function displayPurchaseError(code) {
-            var msg;
-
-            switch (code) {
-                case PurchaseError.None:
-                    msg = '';
-                    break;
-                case PurchaseError.AlreadyPremium:
-                    msg = 'You\'re already a premium user! Please visit the app to manage your account.';
-                    this.setState({ phase: 'login' });
-                    break;
-                case PurchaseError.ServerConnect:
-                    msg = 'Failed to connect to our billing database. Please contact support@moo.do.';
-                    break;
-                case PurchaseError.MissingNonce:
-                case PurchaseError.BraintreeConnect:
-                    msg = 'Failed to connect to our billing provider. Please try again later or contact support@moo.do.';
-                    break;
-                case PurchaseError.FailedAuth:
-                    msg = 'Failed to authorize your account.';
-                    break;
-                case PurchaseError.InvalidCode:
-                    msg = 'You entered an invalid code.';
-                    break;
-                default:
-                    msg = 'There was an error processing your information. Please contact support@moo.do or try again later.';
-                    break;
-            }
-
-            this.setState({ errorMessage: msg });
-        }
-    }, {
-        key: 'runPurchaseSendToApp',
-        value: function runPurchaseSendToApp() {
-            _auth2.default.sendToApp(email, /*goPremium*/false, /*noLogin*/true, /*isPremium*/true);
-        }
-    }, {
-        key: 'selectPlan',
-        value: function selectPlan(planIndex) {
-            this.setState({ selectedPrice: planIndex });
-
-            this.planID = premiumPlans[planIndex];
-        }
-    }, {
-        key: 'enterCode',
-        value: function enterCode() {
-            var _this5 = this;
-
-            this.setState({ phase: 'code', selectedPrice: 'code' });
-
-            requestAnimationFrame(function () {
-                return _this5.refs.enterCode.focus();
-            });
-        }
-    }, {
-        key: 'submitCode',
-        value: function submitCode() {
-            var _this6 = this;
-
-            var codeInput = this.refs.enterCode;
-
-            var code = codeInput.value;
-
-            codeInput.value = '';
-
-            if (code && code.length > 10) {
-                this.displayPurchaseError(PurchaseError.None);
-
-                _util2.default.XHR_PrivateAPI({
-                    type: 'POST',
-                    path: '/billing/useCode',
-                    data: { code: code },
-                    headers: {
-                        id_token: id_token,
-                        gid: gid
-                    },
-                    cb: function cb(xhr) {
-                        if (xhr.status === 200) {
-                            _this6.displayPurchaseSuccess();
-                        } else if (xhr.status === 400) {
-                            _this6.displayPurchaseError(PurchaseError.InvalidCode);
-                        } else {
-                            _this6.displayPurchaseError(PurchaseError.ServerConnect);
-                        }
-                    }
-                });
-            } else {
-                this.displayPurchaseError(PurchaseError.InvalidCode);
-            }
-        }
-    }, {
-        key: 'handlePaymentMethodUpdate',
-        value: function handlePaymentMethodUpdate(obj, email, gid, id_token) {
-            var _this7 = this;
-
-            this.setState({ errorMessage: null });
-
-            if (obj && obj.nonce) {
-                if (!this.submittingPayment) {
-                    this.submittingPayment = true;
-
-                    _util2.default.XHR_PrivateAPI({
-                        type: 'POST',
-                        path: '/billing/signup',
-                        data: { email: email, gid: gid, nonce: obj.nonce, planID: this.planID },
-                        headers: {
-                            id_token: id_token,
-                            gid: gid
-                        },
-                        cb: function cb(xhr) {
-                            _this7.submittingPayment = false;
-
-                            if (xhr.status === 200) {
-                                _this7.displayPurchaseSuccess();
-
-                                _this7.reportAdConversion(purchaseConversionID, parseInt(premiumPrices[premiumPlans.indexOf(_this7.planID)]));
-                            } else {
-                                _this7.displayPurchaseError(PurchaseError.AlreadyPremium);
-                            }
-                        }
-                    });
-                }
-            } else {
-                this.displayPurchaseError(PurchaseError.MissingNonce);
-            }
-        }
-    }, {
-        key: 'reportAdConversion',
-        value: function reportAdConversion(conversionID, value) {
-            var image = new Image(1, 1);
-
-            var href = '//www.googleadservices.com/pagead/conversion/' + adTrackingID + '/?label=' + conversionID + '&guid=ON';
-
-            if (value) {
-                href += '&value=' + value + '&currency_code=USD';
-            }
-
-            image.src = href;
-            document.body.appendChild(image);
-        }
-    }, {
         key: 'render',
         value: function render() {
-            var state = this.state || {},
-                phase = state.phase,
-                selPr = state.selectedPrice;
-
             return _react2.default.createElement(
                 'div',
                 { id: 'purchase' },
-                _react2.default.createElement(
-                    _reactStatic.Head,
-                    null,
-                    _react2.default.createElement('script', { src: 'https://js.braintreegateway.com/v2/braintree.js' }),
-                    _react2.default.createElement('script', { src: 'https://apis.google.com/js/client.js?onload=GoogleApiLoaded', defer: true, async: true })
-                ),
                 _react2.default.createElement(_Nav2.default, { top: true, title: 'Purchase' }),
                 _react2.default.createElement(
                     'div',
@@ -6230,111 +5870,8 @@ var Purchase = function (_React$Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { id: 'tagline', className: 'iSubtitle premiumSubtitle m4' },
-                        'Integrate more of your services together and unlock advanced organization and customization features.'
-                    ),
-                    phase === 'login' && _react2.default.createElement(
-                        'div',
-                        { id: 'loginArea', className: 'm4' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'pricingButton center' },
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'linkButton linkBlue ib', title: 'Login', onClick: this.runPurchaseAuthenticate },
-                                'Select Account'
-                            )
-                        )
-                    ),
-                    (phase === 'pricing' || phase == 'purchase') && _react2.default.createElement(
-                        'div',
-                        { id: 'pricingArea', className: 'm4' },
-                        _react2.default.createElement(
-                            'div',
-                            { id: 'emailDisplay' },
-                            state.emailDisplay
-                        ),
-                        _react2.default.createElement('br', null),
-                        _react2.default.createElement('br', null),
-                        (!selPr || selPr === 2) && _react2.default.createElement(
-                            'div',
-                            { id: 'pricing_2', className: 'pricingButton' + (selPr === 2 ? ' pricingSelected' : ''), onClick: this.selectPlan.bind(this, 2, 3) },
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'linkButton linkBlue ib', title: '$5 / month' },
-                                '$5 / month'
-                            )
-                        ),
-                        (!selPr || selPr === 3) && _react2.default.createElement(
-                            'div',
-                            { id: 'pricing_3', className: 'pricingButton' + (selPr === 3 ? ' pricingSelected' : ''), onClick: this.selectPlan.bind(this, 3, 2) },
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'linkButton linkBlue ib', title: '$49 / year' },
-                                '$49 / year'
-                            )
-                        ),
-                        (!selPr || selPr === 'code') && _react2.default.createElement(
-                            'div',
-                            { id: 'enterCodeButton', className: 'pricingButton' + (selPr === 'code' ? ' pricingSelected' : ''), onClick: this.enterCode },
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'linkButton linkBlue ib', title: 'Enter Code' },
-                                'Enter Code'
-                            )
-                        )
-                    ),
-                    phase === 'code' && _react2.default.createElement(
-                        'div',
-                        { id: 'codeArea', className: 'm4' },
-                        _react2.default.createElement(
-                            'form',
-                            { id: 'billingForm', className: 'center', method: 'post', action: 'javascript:void(0);' },
-                            _react2.default.createElement('input', { id: 'codeValue', style: { width: 250 }, type: 'text', className: '', placeholder: 'code', ref: 'enterCode' }),
-                            _react2.default.createElement('input', { id: 'codeSubmit', type: 'submit', className: 'linkButton linkBlue ib', onclick: this.submitCode, value: 'SUBMIT' })
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { id: 'purchaseArea', className: 'm4' + (phase !== 'purchase' ? ' hidden' : '') },
-                        _react2.default.createElement(
-                            'form',
-                            { id: 'billingForm', className: 'center', method: 'post', action: 'javascript:void(0);' },
-                            _react2.default.createElement('div', { id: 'braintreeDropin' }),
-                            _react2.default.createElement(
-                                'div',
-                                { id: 'braintreeDropinLoader' },
-                                'Loading...'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { id: 'braintreeSubmitWrapper', className: 'pricingButton center m2 hidden' },
-                                _react2.default.createElement('input', { id: 'braintreeSubmit', type: 'submit', className: 'linkButton linkBlue ib', value: 'SUBMIT' })
-                            )
-                        )
-                    ),
-                    phase === 'success' && _react2.default.createElement(
-                        'div',
-                        { id: 'successArea', className: 'm4' },
-                        'Thanks for signing up for Moo.do!',
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'pricingButton center m4' },
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'linkButton linkBlue ib', title: 'Login', onclick: 'runPurchaseSendToApp()' },
-                                'Back to the app!'
-                            )
-                        )
-                    ),
-                    state.errorMessage && _react2.default.createElement(
-                        'div',
-                        { id: 'errorArea', className: 'm4' },
-                        _react2.default.createElement(
-                            'div',
-                            { id: 'errorMessage' },
-                            state.errorMessage
-                        )
+                        null,
+                        'Please sign up for Premium in the "Moo.do Account" section of the settings in the app.'
                     )
                 )
             );
@@ -6370,7 +5907,7 @@ var _reactHotLoader = __webpack_require__(2);
 
 var _reactStatic = __webpack_require__(4);
 
-var _util = __webpack_require__(8);
+var _util = __webpack_require__(9);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -7311,7 +6848,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
   id: '../src/containers/Home',
   file: '/Users/jay/Documents/code/basketcaseExperiments/Duchess/static/dist/react-static-routes.js',
   load: function load() {
-    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 23)), (0, _importCss3.default)('src/containers/Home', {
+    return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 22)), (0, _importCss3.default)('src/containers/Home', {
       disableWarnings: true
     })]).then(function (proms) {
       return proms[0];
@@ -7321,7 +6858,7 @@ var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
     return _path3.default.join(__dirname, '../src/containers/Home');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(23);
+    return /*require.resolve*/(22);
   },
   chunkName: function chunkName() {
     return 'src/containers/Home';
@@ -7775,7 +7312,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(50);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(51);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
@@ -7785,7 +7322,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(56);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(16);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(12);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
@@ -7833,7 +7370,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -7900,7 +7437,7 @@ BrowserRouter.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -7977,7 +7514,7 @@ HashRouter.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -8048,8 +7585,8 @@ MemoryRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(15);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -8145,7 +7682,7 @@ NavLink.defaultProps = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -8247,13 +7784,13 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_history__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generatePath__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generatePath__ = __webpack_require__(19);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8384,9 +7921,9 @@ Redirect.contextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
@@ -8566,9 +8103,9 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(14);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8654,7 +8191,7 @@ Switch.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_generatePath__ = __webpack_require__(19);
 // Written in this round about way for babel-transform-imports
 
 
@@ -8691,9 +8228,9 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(17);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -8779,13 +8316,13 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(21);
+var _hoistNonReactStatics = __webpack_require__(20);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _utils = __webpack_require__(22);
+var _utils = __webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9091,7 +8628,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.clearChunks = exports.flushModuleIds = exports.flushChunkNames = exports.MODULE_IDS = exports.CHUNK_NAMES = undefined;
 exports.default = requireUniversalModule;
 
-var _utils = __webpack_require__(22);
+var _utils = __webpack_require__(21);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -9342,7 +8879,7 @@ var _reactStatic = __webpack_require__(4);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _auth = __webpack_require__(6);
+var _auth = __webpack_require__(7);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -9790,7 +9327,7 @@ var _reactStatic = __webpack_require__(4);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _auth = __webpack_require__(6);
+var _auth = __webpack_require__(7);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -10051,7 +9588,7 @@ var _htmr = __webpack_require__(72);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
-var _util = __webpack_require__(8);
+var _util = __webpack_require__(9);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -10296,4 +9833,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.a79c2d77.js.map
+//# sourceMappingURL=static.c4415015.js.map
