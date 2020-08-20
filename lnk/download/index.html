@@ -59,7 +59,7 @@
                 el = document.getElementById.bind(document);
 
             var extensions = {
-                    'dmg': 'downloadOSX',
+                    'zip': 'downloadOSX',
                     'exe': 'downloadWindows',
                     'AppImage': 'downloadLinuxAppImage',
                     'deb': 'downloadLinuxDeb',
@@ -69,7 +69,7 @@
 
             if (userAgent.indexOf('Mac') !== -1)
             {
-                assetExt = '.dmg';
+                assetExt = '.zip';
             }
             else if (userAgent.indexOf('Windows') !== -1)
             {
