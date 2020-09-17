@@ -2517,7 +2517,7 @@ var Home = function (_React$Component) {
                     _react2.default.createElement(
                         'div',
                         { className: 'sectionSubtitle sectionSubtitleWide' },
-                        'Moo.do is a powerful task manager, outliner, email client, and calendar, all in one. Each piece is designed to work beautifully together and it\'s integrated with the other services and apps you need.'
+                        'Moo.do is a powerful task manager, outliner, email manager, and calendar, all in one. Each piece is designed to work beautifully together and it\'s integrated with the other services and apps you need.'
                     ),
                     _react2.default.createElement(
                         'div',
@@ -2714,21 +2714,11 @@ var Home = function (_React$Component) {
                             _react2.default.createElement(
                                 'div',
                                 { className: 'sectionSubtitle' },
-                                'Emails and tasks are the same thing in your brain, so they work seamlessly together with Moo.do\'s built-in email client.'
+                                'Emails and tasks are the same thing in your brain, so they work seamlessly together with Moo.do\'s email integrations.'
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { className: 'featureGrid small' },
-                                _react2.default.createElement(
-                                    'div',
-                                    null,
-                                    _react2.default.createElement('i', { className: 'icon-snooze' }),
-                                    _react2.default.createElement(
-                                        'div',
-                                        null,
-                                        'Snooze'
-                                    )
-                                ),
                                 _react2.default.createElement(
                                     'div',
                                     null,
@@ -3529,48 +3519,6 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
         ),
         _react2.default.createElement(
             'div',
-            { className: 'section-full' },
-            _react2.default.createElement(
-                'h1',
-                null,
-                'Gmail Sync Time'
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'iSubtitle' },
-                'Cache emails for up to 120 days for access while offline and quicker load time.'
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'timeBar timeBarFree' },
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    'Free'
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    '2 days'
-                )
-            ),
-            _react2.default.createElement(
-                'div',
-                { className: 'timeBar timeBarPremium' },
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    'Premium'
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    '30 days'
-                )
-            )
-        ),
-        _react2.default.createElement(
-            'div',
             { className: 'section section-full section-first' },
             _react2.default.createElement(
                 'h1',
@@ -3785,48 +3733,6 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                     ),
                     _react2.default.createElement('div', null),
                     _react2.default.createElement('div', { className: 'icon-check' })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'header' },
-                    _react2.default.createElement(
-                        'div',
-                        null,
-                        _react2.default.createElement('img', { src: '/img/plugin-gmail.png' }),
-                        'Gmail'
-                    ),
-                    _react2.default.createElement('div', null),
-                    _react2.default.createElement('div', null)
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'div',
-                        null,
-                        'Standard email features'
-                    ),
-                    _react2.default.createElement('div', { className: 'icon-check' }),
-                    _react2.default.createElement('div', { className: 'icon-check' })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'div',
-                        null,
-                        'Offline sync'
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        null,
-                        '5 days'
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        null,
-                        '120 days'
-                    )
                 ),
                 _react2.default.createElement(
                     'div',
@@ -9833,4 +9739,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.c4415015.js.map
+//# sourceMappingURL=static.a648ddca.js.map
