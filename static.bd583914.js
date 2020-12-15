@@ -5333,7 +5333,17 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                 _react2.default.createElement(
                     'p',
                     null,
-                    'Moo.do syncs with these services fully client-side so that none of the data is ever sent to any other servers. When you add an email or file into your document, it stores only the ID of the email and the accountID it came from, so that no personal data is stored in your documents. Each Moo.do client then syncs with Google to get the full information for those IDs.'
+                    'Moo.do syncs with these services fully client-side so that none of the data is ever sent to any other servers. The contents of emails or files is never saved anywhere.'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'When you add an email to a document, it saves only the account it\'s on, the subject (for display purposes), and the thread ID (to open it in Gmail).'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'When you add a Drive file or Calendar event to your documents, it stores only its unique ID and the account it\'s on. Each Moo.do client then syncs with Google to get the full information for those unique IDs.'
                 ),
                 _react2.default.createElement(
                     'p',
@@ -5350,23 +5360,11 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                         null,
                         'userinfo.profile'
                     ),
-                    ' OAuth scopes. These allow Moo.do to know your name and email address. Over the course of using Moo.do you may want to grant additional authorization scopes to enable additional features. The Gmail plugin needs the ',
+                    ' OAuth scopes. These allow Moo.do to know your name and email address. Over the course of using Moo.do you may want to grant additional authorization scopes to enable additional features. The Drive plugin needs the ',
                     _react2.default.createElement(
                         'b',
                         null,
-                        'gmail.modify'
-                    ),
-                    ' and ',
-                    _react2.default.createElement(
-                        'b',
-                        null,
-                        'gmail.compose'
-                    ),
-                    ' scopes, the Drive plugin needs the ',
-                    _react2.default.createElement(
-                        'b',
-                        null,
-                        'drive'
+                        'drive.file'
                     ),
                     ' scope, and the Calendar plugin needs the ',
                     _react2.default.createElement(
@@ -9739,4 +9737,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.a648ddca.js.map
+//# sourceMappingURL=static.bd583914.js.map
