@@ -3704,7 +3704,19 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                     _react2.default.createElement(
                         'div',
                         null,
-                        _react2.default.createElement('i', { className: 'icon-group' }),
+                        _react2.default.createElement('img', { src: '/img/plugin-gmail.png' }),
+                        'Gmail'
+                    ),
+                    _react2.default.createElement('div', { className: 'icon-check' }),
+                    _react2.default.createElement('div', { className: 'icon-check' })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement('img', { src: '/img/plugin-gcontacts.png' }),
                         'Google Contacts'
                     ),
                     _react2.default.createElement('div', { className: 'icon-check' }),
@@ -9737,4 +9749,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.bd583914.js.map
+//# sourceMappingURL=static.4cf7f160.js.map
