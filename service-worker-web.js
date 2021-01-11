@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1608790443772',
+var CacheName = 'moodo-cache-1610343036174',
     CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient(text)
@@ -22,20 +22,20 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/web/',
-                '/web/index-1608790443772.html',
-                '/web/js/vendor-1608790443772.js',
-                '/web/js/delayedUI-1608790443772.js',
-                '/web/js/codeBlock-1608790443772.js',
-                '/web/js/dimport-1608790443772.js',
-                '/web/js/textEncoding-1608790443772.js',
-                '/web/js/braintree-1608790443772.js',
-                '/web/js/app-1608790443772.js',
-                '/web/js/preload-1608790443772.js',
-                '/web/js/preload.worker-1608790443772.js',
-                '/web/css/app-min-1608790443772.css',
-                '/web/css/fonticons-1608790443772.css',
-                '/web/css/fonts/fonticons-1608790443772.woff',
-                '/web/css/fonts/fonticons-1608790443772.ttf'
+                '/web/index-1610343036174.html',
+                '/web/js/vendor-1610343036174.js',
+                '/web/js/delayedUI-1610343036174.js',
+                '/web/js/codeBlock-1610343036174.js',
+                '/web/js/dimport-1610343036174.js',
+                '/web/js/textEncoding-1610343036174.js',
+                '/web/js/braintree-1610343036174.js',
+                '/web/js/app-1610343036174.js',
+                '/web/js/preload-1610343036174.js',
+                '/web/js/preload.worker-1610343036174.js',
+                '/web/css/app-min-1610343036174.css',
+                '/web/css/fonticons-1610343036174.css',
+                '/web/css/fonts/fonticons-1610343036174.woff',
+                '/web/css/fonts/fonticons-1610343036174.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -54,7 +54,8 @@ self.addEventListener('install', function (e)
                 '/img/plugin-mailbird.png',
                 '/img/plugin-gdrive.png',
                 '/img/plugin-gmail.png',
-                '/img/plugin-bear.png'
+                '/img/plugin-bear.png',
+                '/img/plugin-outlook.svg'
             ]);
         })).then(function ()
         {
@@ -76,7 +77,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1608790443772.html');
+            url = url.replace(pathname, pathname + 'index-1610343036174.html');
         }
 
         event.respondWith(

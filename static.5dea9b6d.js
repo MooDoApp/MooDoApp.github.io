@@ -3704,6 +3704,18 @@ exports.default = (0, _reactHotLoader.hot)(module)(function () {
                     _react2.default.createElement(
                         'div',
                         null,
+                        _react2.default.createElement('img', { src: '/img/plugin-outlook.svg' }),
+                        'Outlook Email'
+                    ),
+                    _react2.default.createElement('div', { className: 'icon-check' }),
+                    _react2.default.createElement('div', { className: 'icon-check' })
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        null,
                         _react2.default.createElement('img', { src: '/img/plugin-gmail.png' }),
                         'Gmail'
                     ),
@@ -9749,4 +9761,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.4cf7f160.js.map
+//# sourceMappingURL=static.5dea9b6d.js.map
