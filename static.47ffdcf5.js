@@ -128,9 +128,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
-var _util = __webpack_require__(9);
+var _util = __webpack_require__(8);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -138,7 +138,7 @@ var _DemoManager = __webpack_require__(11);
 
 var _DemoManager2 = _interopRequireDefault(_DemoManager);
 
-var _auth = __webpack_require__(7);
+var _auth = __webpack_require__(10);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -236,13 +236,13 @@ exports.default = function (props) {
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-static");
+module.exports = require("prop-types");
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = require("prop-types");
+module.exports = require("react-static");
 
 /***/ }),
 /* 6 */
@@ -252,247 +252,12 @@ module.exports = require("warning");
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _util = __webpack_require__(9);
-
-var _util2 = _interopRequireDefault(_util);
-
-var _DemoManager = __webpack_require__(11);
-
-var _DemoManager2 = _interopRequireDefault(_DemoManager);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function auth() {
-    this.clientId = "597847337936-ridipp5ac5bulesmmjici7rtjces027t.apps.googleusercontent.com";
-
-    this.scopes = ['https://www.googleapis.com/auth/drive.file', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/drive.install', 'https://www.googleapis.com/auth/drive.appdata'];
-
-    this.isLoggedIn = false;
-}
-
-auth.prototype = {
-    init: function init(cb) {
-        gapi.auth.init(); // Always call init on load so popup doesn't get blocked later
-
-        this.authenticate( /*immediate*/true, cb);
-    },
-    getCurrentAppUser: function getCurrentAppUser() {
-        try {
-            var localSettings = window.localStorage.getItem('localSettings');
-
-            var localSettingsObj = JSON.parse(localSettings);
-
-            if (localSettingsObj) {
-                var currentUser = localSettingsObj.values.Default.activeUser;
-
-                return currentUser;
-            }
-        } catch (err) {
-            log('Error getting app user: ', err);
-        }
-
-        return undefined;
-    },
-    requestAuthorization: function requestAuthorization(goPremium) {
-        var ua = navigator.userAgent;
-
-        if (!window.gapi || !window.gapi.auth) {
-            this.sendToApp(false, goPremium);
-        } else if (ua.indexOf('MSIE') !== -1 || ua.indexOf('Trident') !== -1) {
-            // Send directly to app for login for IE as immediate login does not currently work
-            this.sendToApp(false, goPremium);
-        } else {
-            this.authenticate(false, function (isAuthorized) {
-                if (isAuthorized) {
-                    this.getEmailAddr(function (userInfo) {
-                        var currentUser = this.getCurrentAppUser();
-
-                        if (currentUser === userInfo.email) {
-                            this.sendToApp(false, goPremium);
-                        } else {
-                            this.sendToApp(userInfo.email, goPremium);
-                        }
-                    }.bind(this));
-                } else {
-                    this.sendToApp();
-                }
-            }.bind(this));
-        }
-    },
-    sendToApp: function sendToApp(forceUser, goPremium, noLogin, isPremium) {
-        var host = window.location.host;
-
-        // if (host === 'beta.moo.do')
-        // {
-        //     host = 'www.moo.do';
-        // }
-
-        var inviteParam = _util2.default.getURLHashParam('invite');
-
-        // if (window.location.search.indexOf('ref=producthunt') > 0)
-        // {
-        //     inviteParam = 'producthunt';
-        // }
-
-        var newAddr;
-        var hash = '';
-
-        if (forceUser) {
-            hash = 'user=' + encodeURIComponent(forceUser);
-            newAddr = 'https://' + host + '/web/';
-        } else {
-            if (!noLogin) hash += 'login=true';
-
-            newAddr = 'https://' + host + '/web/';
-        }
-
-        if (inviteParam) {
-            hash += (hash ? '&' : '') + 'invite=' + inviteParam;
-        }
-
-        if (goPremium) {
-            hash += (hash ? '&' : '') + 'premium=true';
-        }
-
-        if (isPremium) {
-            hash += (hash ? '&' : '') + 'ispremium=true';
-        }
-
-        window.location.href = newAddr + (hash ? '#' + hash : '');
-    },
-    authenticate: function authenticate(immediate, callback) {
-        var config = {
-            'client_id': this.clientId,
-            'scope': this.scopes,
-            'immediate': immediate,
-            'response_type': 'token id_token',
-            'authuser': -1
-        };
-
-        var standalone = !!window.navigator.standalone || window.navigator.userAgent.indexOf('FluidApp') >= 0;
-
-        var requireCustomRedirect = standalone || this.isMobro();
-
-        if (requireCustomRedirect && !immediate) {
-            config['redirect_uri'] = 'https://' + window.location.host + '/web/';
-        }
-
-        gapi.auth.authorize(config, function (token) {
-            //console.log('Landing Page Auth Token: ', token);
-
-            if (token && !token.error) {
-                this.isLoggedIn = true;
-
-                console.log('Landing Page Auth Logged In');
-            } else {
-                console.log('Landing Page Auth Logged Out');
-            }
-
-            if (callback) {
-                callback(this.isLoggedIn);
-            }
-        }.bind(this));
-    },
-    decodeIDToken: function decodeIDToken(jwt) {
-        var decoded;
-
-        if (jwt) {
-            var parts = jwt.split('.');
-
-            try {
-                decoded = JSON.parse(_util2.default.b64_to_utf8(parts[1]));
-            } catch (err) {
-                log('Decode Error: ', err);
-            }
-        }
-
-        return decoded;
-    },
-    getEmailAddr: function getEmailAddr(_cb) {
-        var token = gapi.auth.getToken();
-
-        if (token) {
-            var url = 'https://www.googleapis.com/oauth2/v2/userinfo?alt=json&access_token=' + token.access_token;
-
-            _util2.default.XHR({
-                type: 'GET',
-                url: url,
-                autoRetry: true,
-                cb: function cb(xhr) {
-                    if (xhr.status === 200) {
-                        var userInfoParsed = {};
-
-                        try {
-                            userInfoParsed = JSON.parse(xhr.responseText);
-                        } catch (err) {
-                            log('Error: ', err);
-                        }
-
-                        _cb(userInfoParsed);
-                    } else {
-                        _cb();
-                    }
-                }
-            });
-        }
-    },
-    isMobro: function isMobro() {
-        var supported = null,
-            errorName;
-
-        try {
-            new ActiveXObject("");
-        } catch (e) {
-            // FF has ReferenceError here
-            errorName = e.name;
-        }
-
-        try {
-            supported = !!new ActiveXObject("htmlfile");
-        } catch (e) {
-            supported = false;
-        }
-
-        if (errorName != 'ReferenceError' && supported == false) {
-            supported = false;
-        } else {
-            supported = true;
-        }
-
-        return !supported;
-    },
-    openApp: function openApp() {
-        _util2.default.sendEvent(_util2.default.PageEvents.GetStartedClicked, location);
-
-        _util2.default.setSegment(_util2.default.Segment.SignedUp);
-
-        if (_DemoManager2.default.isMobile()) {
-            _util2.default.sendToAppStore(_DemoManager2.default.OS);
-        } else {
-            this.sendToApp(false, false, /*noLogin*/true);
-        }
-    }
-};
-
-exports.default = new auth();
-
-/***/ }),
-/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = require("invariant");
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -946,10 +711,245 @@ self.removeExistingScript = function (script) {
 exports.default = self;
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = require("history");
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _util = __webpack_require__(8);
+
+var _util2 = _interopRequireDefault(_util);
+
+var _DemoManager = __webpack_require__(11);
+
+var _DemoManager2 = _interopRequireDefault(_DemoManager);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function auth() {
+    this.clientId = "597847337936-ridipp5ac5bulesmmjici7rtjces027t.apps.googleusercontent.com";
+
+    this.scopes = ['https://www.googleapis.com/auth/drive.file', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/drive.install', 'https://www.googleapis.com/auth/drive.appdata'];
+
+    this.isLoggedIn = false;
+}
+
+auth.prototype = {
+    init: function init(cb) {
+        gapi.auth.init(); // Always call init on load so popup doesn't get blocked later
+
+        this.authenticate( /*immediate*/true, cb);
+    },
+    getCurrentAppUser: function getCurrentAppUser() {
+        try {
+            var localSettings = window.localStorage.getItem('localSettings');
+
+            var localSettingsObj = JSON.parse(localSettings);
+
+            if (localSettingsObj) {
+                var currentUser = localSettingsObj.values.Default.activeUser;
+
+                return currentUser;
+            }
+        } catch (err) {
+            log('Error getting app user: ', err);
+        }
+
+        return undefined;
+    },
+    requestAuthorization: function requestAuthorization(goPremium) {
+        var ua = navigator.userAgent;
+
+        if (!window.gapi || !window.gapi.auth) {
+            this.sendToApp(false, goPremium);
+        } else if (ua.indexOf('MSIE') !== -1 || ua.indexOf('Trident') !== -1) {
+            // Send directly to app for login for IE as immediate login does not currently work
+            this.sendToApp(false, goPremium);
+        } else {
+            this.authenticate(false, function (isAuthorized) {
+                if (isAuthorized) {
+                    this.getEmailAddr(function (userInfo) {
+                        var currentUser = this.getCurrentAppUser();
+
+                        if (currentUser === userInfo.email) {
+                            this.sendToApp(false, goPremium);
+                        } else {
+                            this.sendToApp(userInfo.email, goPremium);
+                        }
+                    }.bind(this));
+                } else {
+                    this.sendToApp();
+                }
+            }.bind(this));
+        }
+    },
+    sendToApp: function sendToApp(forceUser, goPremium, noLogin, isPremium) {
+        var host = window.location.host;
+
+        // if (host === 'beta.moo.do')
+        // {
+        //     host = 'www.moo.do';
+        // }
+
+        var inviteParam = _util2.default.getURLHashParam('invite');
+
+        // if (window.location.search.indexOf('ref=producthunt') > 0)
+        // {
+        //     inviteParam = 'producthunt';
+        // }
+
+        var newAddr;
+        var hash = '';
+
+        if (forceUser) {
+            hash = 'user=' + encodeURIComponent(forceUser);
+            newAddr = 'https://' + host + '/web/';
+        } else {
+            if (!noLogin) hash += 'login=true';
+
+            newAddr = 'https://' + host + '/web/';
+        }
+
+        if (inviteParam) {
+            hash += (hash ? '&' : '') + 'invite=' + inviteParam;
+        }
+
+        if (goPremium) {
+            hash += (hash ? '&' : '') + 'premium=true';
+        }
+
+        if (isPremium) {
+            hash += (hash ? '&' : '') + 'ispremium=true';
+        }
+
+        window.location.href = newAddr + (hash ? '#' + hash : '');
+    },
+    authenticate: function authenticate(immediate, callback) {
+        var config = {
+            'client_id': this.clientId,
+            'scope': this.scopes,
+            'immediate': immediate,
+            'response_type': 'token id_token',
+            'authuser': -1
+        };
+
+        var standalone = !!window.navigator.standalone || window.navigator.userAgent.indexOf('FluidApp') >= 0;
+
+        var requireCustomRedirect = standalone || this.isMobro();
+
+        if (requireCustomRedirect && !immediate) {
+            config['redirect_uri'] = 'https://' + window.location.host + '/web/';
+        }
+
+        gapi.auth.authorize(config, function (token) {
+            //console.log('Landing Page Auth Token: ', token);
+
+            if (token && !token.error) {
+                this.isLoggedIn = true;
+
+                console.log('Landing Page Auth Logged In');
+            } else {
+                console.log('Landing Page Auth Logged Out');
+            }
+
+            if (callback) {
+                callback(this.isLoggedIn);
+            }
+        }.bind(this));
+    },
+    decodeIDToken: function decodeIDToken(jwt) {
+        var decoded;
+
+        if (jwt) {
+            var parts = jwt.split('.');
+
+            try {
+                decoded = JSON.parse(_util2.default.b64_to_utf8(parts[1]));
+            } catch (err) {
+                log('Decode Error: ', err);
+            }
+        }
+
+        return decoded;
+    },
+    getEmailAddr: function getEmailAddr(_cb) {
+        var token = gapi.auth.getToken();
+
+        if (token) {
+            var url = 'https://www.googleapis.com/oauth2/v2/userinfo?alt=json&access_token=' + token.access_token;
+
+            _util2.default.XHR({
+                type: 'GET',
+                url: url,
+                autoRetry: true,
+                cb: function cb(xhr) {
+                    if (xhr.status === 200) {
+                        var userInfoParsed = {};
+
+                        try {
+                            userInfoParsed = JSON.parse(xhr.responseText);
+                        } catch (err) {
+                            log('Error: ', err);
+                        }
+
+                        _cb(userInfoParsed);
+                    } else {
+                        _cb();
+                    }
+                }
+            });
+        }
+    },
+    isMobro: function isMobro() {
+        var supported = null,
+            errorName;
+
+        try {
+            new ActiveXObject("");
+        } catch (e) {
+            // FF has ReferenceError here
+            errorName = e.name;
+        }
+
+        try {
+            supported = !!new ActiveXObject("htmlfile");
+        } catch (e) {
+            supported = false;
+        }
+
+        if (errorName != 'ReferenceError' && supported == false) {
+            supported = false;
+        } else {
+            supported = true;
+        }
+
+        return !supported;
+    },
+    openApp: function openApp() {
+        _util2.default.sendEvent(_util2.default.PageEvents.GetStartedClicked, location);
+
+        _util2.default.setSegment(_util2.default.Segment.SignedUp);
+
+        if (_DemoManager2.default.isMobile()) {
+            _util2.default.sendToAppStore(_DemoManager2.default.OS);
+        } else {
+            this.sendToApp(false, false, /*noLogin*/true);
+        }
+    }
+};
+
+exports.default = new auth();
 
 /***/ }),
 /* 11 */
@@ -1622,11 +1622,11 @@ exports.default = new DemoManager();
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -1821,11 +1821,11 @@ var matchPath = function matchPath(pathname) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -1950,11 +1950,11 @@ Link.contextTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(14);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -2290,17 +2290,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
 var _reactAutobind = __webpack_require__(23);
 
 var _reactAutobind2 = _interopRequireDefault(_reactAutobind);
 
-var _util = __webpack_require__(9);
+var _util = __webpack_require__(8);
 
 var _util2 = _interopRequireDefault(_util);
 
-var _auth = __webpack_require__(7);
+var _auth = __webpack_require__(10);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -3172,7 +3172,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _auth = __webpack_require__(7);
+var _auth = __webpack_require__(10);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -3929,13 +3929,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(4);
-
-var _reactHotLoader = __webpack_require__(2);
-
 var _reactAutobind = __webpack_require__(23);
 
 var _reactAutobind2 = _interopRequireDefault(_reactAutobind);
+
+var _reactHotLoader = __webpack_require__(2);
+
+var _reactStatic = __webpack_require__(5);
 
 var _Nav = __webpack_require__(3);
 
@@ -3944,10 +3944,6 @@ var _Nav2 = _interopRequireDefault(_Nav);
 var _HelpBasics = __webpack_require__(69);
 
 var _HelpBasics2 = _interopRequireDefault(_HelpBasics);
-
-var _HelpEmail = __webpack_require__(70);
-
-var _HelpEmail2 = _interopRequireDefault(_HelpEmail);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4108,24 +4104,6 @@ var Help = function (_React$Component) {
                 _react2.default.createElement(_Nav2.default, { top: true, title: 'Help' }),
                 _react2.default.createElement(
                     'div',
-                    { id: 'topBarHelp' },
-                    _react2.default.createElement(
-                        'div',
-                        null,
-                        _react2.default.createElement(
-                            _reactStatic.Link,
-                            { to: '/help', exact: true, activeClassName: 'selected' },
-                            'Get Started'
-                        ),
-                        _react2.default.createElement(
-                            _reactStatic.Link,
-                            { to: '/help/email', activeClassName: 'selected' },
-                            'GTD Your Email'
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
                     { id: 'sectionHelpContent', className: 'section section-first section-full sectionHelp flexbox' },
                     _react2.default.createElement(
                         'div',
@@ -4143,8 +4121,7 @@ var Help = function (_React$Component) {
                     _react2.default.createElement(
                         'div',
                         { id: 'helpPageText', ref: 'content' },
-                        (page === '' || page === 'basics') && _react2.default.createElement(_HelpBasics2.default, null),
-                        page === 'email' && _react2.default.createElement(_HelpEmail2.default, null)
+                        _react2.default.createElement(_HelpBasics2.default, null)
                     )
                 )
             );
@@ -4176,7 +4153,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
 var _reactHotLoader = __webpack_require__(2);
 
@@ -4230,9 +4207,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
-var _auth = __webpack_require__(7);
+var _auth = __webpack_require__(10);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -4426,7 +4403,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _auth = __webpack_require__(7);
+var _auth = __webpack_require__(10);
 
 var _auth2 = _interopRequireDefault(_auth);
 
@@ -4514,13 +4491,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
-var _auth = __webpack_require__(7);
+var _auth = __webpack_require__(10);
 
 var _auth2 = _interopRequireDefault(_auth);
 
-var _util = __webpack_require__(9);
+var _util = __webpack_require__(8);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -5661,9 +5638,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
-var _util = __webpack_require__(9);
+var _util = __webpack_require__(8);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -5833,9 +5810,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
-var _util = __webpack_require__(9);
+var _util = __webpack_require__(8);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -6236,11 +6213,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
 var _reactHotLoader = __webpack_require__(2);
 
-var _Post = __webpack_require__(71);
+var _Post = __webpack_require__(70);
 
 var _Post2 = _interopRequireDefault(_Post);
 
@@ -6409,7 +6386,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
 var _reactHotLoader = __webpack_require__(2);
 
@@ -6746,7 +6723,7 @@ var _reactUniversalComponent = __webpack_require__(66);
 
 var _reactUniversalComponent2 = _interopRequireDefault(_reactUniversalComponent);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -7302,9 +7279,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(12);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -7369,9 +7346,9 @@ BrowserRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(12);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -7446,9 +7423,9 @@ HashRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(13);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -7511,7 +7488,7 @@ MemoryRouter.propTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(15);
@@ -7608,9 +7585,9 @@ NavLink.defaultProps = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -7710,13 +7687,13 @@ Prompt.contextTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_history__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generatePath__ = __webpack_require__(19);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -7851,13 +7828,13 @@ Redirect.contextTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_history__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(13);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -8029,11 +8006,11 @@ StaticRouter.childContextTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(14);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8154,7 +8131,7 @@ Switch.propTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
@@ -8240,7 +8217,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(5);
+var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -8742,7 +8719,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(5);
+var _propTypes = __webpack_require__(4);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -8803,17 +8780,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(4);
-
 var _reactHotLoader = __webpack_require__(2);
 
-var _auth = __webpack_require__(7);
-
-var _auth2 = _interopRequireDefault(_auth);
-
-var _Nav = __webpack_require__(3);
-
-var _Nav2 = _interopRequireDefault(_Nav);
+var _reactStatic = __webpack_require__(5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9241,263 +9210,6 @@ exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteDat
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactStatic = __webpack_require__(4);
-
-var _reactHotLoader = __webpack_require__(2);
-
-var _auth = __webpack_require__(7);
-
-var _auth2 = _interopRequireDefault(_auth);
-
-var _Nav = __webpack_require__(3);
-
-var _Nav2 = _interopRequireDefault(_Nav);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = (0, _reactHotLoader.hot)(module)((0, _reactStatic.withRouteData)(function (_ref) {
-    var page = _ref.page;
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            'header',
-            null,
-            'How to GTD your email'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'The main thing that makes email so stressful is that emails are \u201Copen loops\u201D in your brain. You already have a prioritized todo list and calendar, but emails exist outside of that system. Unlike other apps, with Moo.do you can prioritize and organize emails together with your other tasks and calendar.'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'This article describes how to get your inbox under control in Moo.do with ',
-            _react2.default.createElement(
-                'a',
-                { href: 'https://lifehacker.com/productivity-101-a-primer-to-the-getting-things-done-1551880955' },
-                'GTD (Getting Things Done)'
-            ),
-            ', but these concepts can apply to any organization system.'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'Moo.do offers three ways to process emails: prioritize directly in the Inbox, move emails onto a todo list, and manage multiple labels on a Kanban board.'
-        ),
-        _react2.default.createElement(
-            'h1',
-            null,
-            '1. Prioritize emails in the Inbox'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'This method is used for quickly triaging emails without taking the time to add additional context. We recommend this for tasks which you plan to do right away, while longer-term tasks should be moved to your outline or calendar as described down below.'
-        ),
-        _react2.default.createElement(
-            'ol',
-            null,
-            _react2.default.createElement(
-                'li',
-                null,
-                'As is typical with GTD, for each email that requires no action, archive or delete it.'
-            ),
-            _react2.default.createElement(
-                'li',
-                null,
-                'If it is easy to handle or respond to quickly, do it now.'
-            ),
-            _react2.default.createElement(
-                'li',
-                null,
-                'If it needs further action set a priority (1-3) and move on.'
-            ),
-            _react2.default.createElement(
-                'li',
-                null,
-                'When you reach the end of the inbox, sort by priority and start with the most important emails.'
-            )
-        ),
-        _react2.default.createElement(
-            'div',
-            { className: 'videoWrapper showPlayButton imgOnePane' },
-            _react2.default.createElement(
-                'video',
-                { loop: true, muted: true, playsInline: true, poster: '/img/help/email/priority.png' },
-                _react2.default.createElement('source', { src: '/img/help/email/priority.mp4', type: 'video/mp4' })
-            )
-        ),
-        _react2.default.createElement(
-            'h1',
-            null,
-            '2. Organize emails where they belong'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'Emails that can\u2019t be handled quickly should be moved out of the inbox and alongside other tasks so that you can deal with them later. An email might represent a task in its own right, be a reference for an existing task, or just be something to save for later. Moo.do offers multiple ways to organize these emails:'
-        ),
-        _react2.default.createElement(
-            'h2',
-            null,
-            'With other tasks on the Outline'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'For emails that belong on a todo list, add it to your Outline. Once an email is in the Outline, add sub-items, notes, or tags to add extra information like any other item or task.'
-        ),
-        _react2.default.createElement(
-            'ol',
-            null,
-            _react2.default.createElement(
-                'li',
-                null,
-                'Drag the email to the Outline. This can either be a task on it\u2019s own, or a child of an existing task.',
-                _react2.default.createElement(
-                    'div',
-                    { className: 'videoWrapper showPlayButton imgTwoPane' },
-                    _react2.default.createElement(
-                        'video',
-                        { loop: true, muted: true, playsInline: true, poster: '/img/help/email/dragOutline.png' },
-                        _react2.default.createElement('source', { src: '/img/help/email/dragOutline.mp4', type: 'video/mp4' })
-                    )
-                )
-            ),
-            _react2.default.createElement(
-                'li',
-                null,
-                'Use the Create Task menu by right clicking the email or using the T hotkey. This creates a new task with the email as a child, and you can optionally add it to an existing task or project or add some notes.',
-                _react2.default.createElement('img', { className: 'helpImg imgOnePane', src: '/img/help/email/createTask.png' })
-            ),
-            _react2.default.createElement(
-                'li',
-                null,
-                'Move to Outline by right clicking the email or using the M hotkey. Start typing the name of the item to add it to, and choose it from the autocomplete list.',
-                _react2.default.createElement('img', { className: 'helpImg imgOnePane', src: '/img/help/email/moveOutline.png' })
-            )
-        ),
-        _react2.default.createElement(
-            'h2',
-            null,
-            'On the Calendar'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'If an email needs to be handled at a specific time, add it to your calendar.'
-        ),
-        _react2.default.createElement(
-            'ol',
-            null,
-            _react2.default.createElement(
-                'li',
-                null,
-                'Drag and drop the email to the Calendar.',
-                _react2.default.createElement(
-                    'div',
-                    { className: 'videoWrapper showPlayButton imgTwoPane' },
-                    _react2.default.createElement(
-                        'video',
-                        { loop: true, muted: true, playsInline: true, poster: '/img/help/email/dragCalendar.png' },
-                        _react2.default.createElement('source', { src: '/img/help/email/dragCalendar.mp4', type: 'video/mp4' })
-                    )
-                )
-            ),
-            _react2.default.createElement(
-                'li',
-                null,
-                'Use the Create Task menu described in #2 above and type a ',
-                _react2.default.createElement(
-                    'span',
-                    { 'class': 'hotkey' },
-                    '!date'
-                ),
-                ' after the task name.',
-                _react2.default.createElement('img', { className: 'helpImg imgOnePane', src: '/img/help/email/createTaskCalendar.png' })
-            ),
-            _react2.default.createElement(
-                'li',
-                null,
-                'Add to Calendar by right clicking the email or pressing C. Type a date to add it to your calendar.'
-            )
-        ),
-        _react2.default.createElement(
-            'h2',
-            null,
-            'Review priorities of emails and tasks together'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'Once your email is out of your inbox, you have powerful management tools to see a complete picture of what you have to do next.'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'If you like to prioritize by time, the Agenda shows all of your tasks and emails together, in priority order.'
-        ),
-        _react2.default.createElement('img', { className: 'helpImg imgOnePane', src: '/img/help/email/agenda.png' }),
-        _react2.default.createElement(
-            'p',
-            null,
-            'Searching an Outline pane for related items may be best if you prefer to organize by project or context.'
-        ),
-        _react2.default.createElement('img', { className: 'helpImg imgOnePane', src: '/img/help/email/outlineContext.png' }),
-        _react2.default.createElement(
-            'p',
-            null,
-            'If you prefer a flat task view without all the hierarchy, use the \u201COnly matching items\u201D filter in the search bar.'
-        ),
-        _react2.default.createElement(
-            'div',
-            { className: 'videoWrapper showPlayButton imgOnePane' },
-            _react2.default.createElement(
-                'video',
-                { loop: true, muted: true, playsInline: true, poster: '/img/help/email/flatSearch.png' },
-                _react2.default.createElement('source', { src: '/img/help/email/flatSearch.mp4', type: 'video/mp4' })
-            )
-        ),
-        _react2.default.createElement(
-            'h1',
-            null,
-            '3. Multiple labels side by side'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'If you already have a system for organizing emails with labels, Moo.do makes it easy to work with multiple labels side by side. Add additional Gmail panes and set each one to a different label by clicking the hamburger icon at the top left of the pane and selecting a label from the list. Then you can drag and drop emails between the labels.'
-        ),
-        _react2.default.createElement(
-            'div',
-            { className: 'videoWrapper showPlayButton imgThreePane' },
-            _react2.default.createElement(
-                'video',
-                { loop: true, muted: true, playsInline: true, poster: '/img/help/email/labels.png' },
-                _react2.default.createElement('source', { src: '/img/help/email/labels.mp4', type: 'video/mp4' })
-            )
-        )
-    );
-}));
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -9510,13 +9222,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactStatic = __webpack_require__(4);
+var _reactStatic = __webpack_require__(5);
 
-var _htmr = __webpack_require__(72);
+var _htmr = __webpack_require__(71);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
-var _util = __webpack_require__(9);
+var _util = __webpack_require__(8);
 
 var _util2 = _interopRequireDefault(_util);
 
@@ -9753,7 +9465,7 @@ exports.default = (0, _reactStatic.withRouteData)(function (props) {
 });
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports) {
 
 module.exports = require("htmr");
@@ -9761,4 +9473,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.5dea9b6d.js.map
+//# sourceMappingURL=static.47ffdcf5.js.map
