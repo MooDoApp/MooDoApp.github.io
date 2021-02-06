@@ -1,38 +1,37 @@
-var CacheName = 'moodo-cache-1611757255991',
-    CacheNameCommon = 'moodo-cache-data';
+var CacheName = 'moodo-cache-1612581762685';
+var CacheNameCommon = 'moodo-cache-data';
 
-function notifyClient(text)
+function notifyClient (text)
 {
-    self.clients.matchAll({ includeUncontrolled: true }).then(function (all)
+    return self.clients.matchAll({ includeUncontrolled: true }).then(function (all)
     {
-        all.map(function (client)
+        return Promise.all(all.map(function (client)
         {
-            client.postMessage('ServiceWorker_' + text);
-        });
+            return client.postMessage('ServiceWorker_' + text);
+        }));
     });
 }
 
 self.addEventListener('install', function (e)
 {
-    console.log('Installing new Service Worker');
+    console.log('Service Worker: Installing');
 
-    self.skipWaiting();
     e.waitUntil(
         caches.open(CacheName).then(function (cache)
         {
             return cache.addAll([
                 '/mobile/',
-                '/mobile/index-1611757255991.html',
-                '/mobile/js/vendor-1611757255991.js',
-                '/mobile/js/codeBlock-1611757255991.js',
-                '/mobile/js/textEncoding-1611757255991.js',
-                '/mobile/js/app-1611757255991.js',
-                '/mobile/js/preload-1611757255991.js',
-                '/mobile/js/preload.worker-1611757255991.js',
-                '/mobile/css/app-min-1611757255991.css',
-                '/mobile/css/fonticons-1611757255991.css',
-                '/mobile/css/fonts/fonticons-1611757255991.woff',
-                '/mobile/css/fonts/fonticons-1611757255991.ttf'
+                '/mobile/index-1612581762685.html',
+                '/mobile/js/vendor-1612581762685.js',
+                '/mobile/js/codeBlock-1612581762685.js',
+                '/mobile/js/textEncoding-1612581762685.js',
+                '/mobile/js/app-1612581762685.js',
+                '/mobile/js/preload-1612581762685.js',
+                '/mobile/js/preload.worker-1612581762685.js',
+                '/mobile/css/app-min-1612581762685.css',
+                '/mobile/css/fonticons-1612581762685.css',
+                '/mobile/css/fonts/fonticons-1612581762685.woff',
+                '/mobile/css/fonts/fonticons-1612581762685.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -53,12 +52,33 @@ self.addEventListener('install', function (e)
                 '/img/plugin-gmail.png',
                 '/img/plugin-bear.png'
             ]);
-        })).then(function ()
+        })).then(caches.keys().then(function (cacheNames)
         {
+            // TODO: This is to support old versions of the code that didn't support not skipping waiting.
+            // Can remove this when migrating to Legend.
+            var supportsWaiting = true;
+            for (var i = 0; supportsWaiting && i < cacheNames.length; i++)
+            {
+                var c = cacheNames[i];
+                if (c.indexOf('data') < 0)
+                {
+                    var ver = c.replace('moodo-cache-', '');
+                    console.log('ver', ver);
+                    if (ver && +ver < 1612170007615)
+                    {
+                        console.log('Service Worker: Skipping Waiting');
+                        supportsWaiting = false;
+                    }
+                }
+            }
+
             notifyClient('Installed');
 
-            return self.skipWaiting();
-        })
+            if (!supportsWaiting)
+            {
+                return self.skipWaiting();
+            }
+        }))
     );
 });
 
@@ -66,14 +86,14 @@ var pathname = '/mobile/';
 
 self.addEventListener('fetch', function (event)
 {
-    const urlObj = new URL(event.request.url);
+    var urlObj = new URL(event.request.url);
     var url = event.request.url;
 
     if (urlObj.origin === location.origin && urlObj.href.indexOf(urlObj.origin + pathname) === 0)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1611757255991.html');
+            url = url.replace(pathname, pathname + 'index-1612581762685.html');
         }
 
         event.respondWith(
@@ -87,7 +107,7 @@ self.addEventListener('fetch', function (event)
 
 self.addEventListener('activate', function (event)
 {
-    console.log('Activating new Service Worker');
+    console.log('Service Worker: Activating');
 
     event.waitUntil(
         caches.keys().then(function (cacheNames)
@@ -105,4 +125,13 @@ self.addEventListener('activate', function (event)
     );
 
     notifyClient('Activated');
+});
+
+self.addEventListener('message', function (event)
+{
+    if (event.data === 'skipWaiting')
+    {
+        console.log('ServiceWorker: Skipping waiting');
+        return self.skipWaiting();
+    }
 });
