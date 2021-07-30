@@ -2330,6 +2330,10 @@ var Home = function (_React$Component) {
         _this.numWorkflows = 5;
         _this.selectedWorkflow = 0;
 
+        if (!location.search.includes('redir')) {
+            location.href = 'https://legendapp.com';
+        }
+
         _util2.default.updateDownloadUrl();
         return _this;
     }
@@ -6670,6 +6674,49 @@ var App = function (_React$Component) {
                     _react2.default.createElement(
                         'div',
                         { className: 'content' },
+                        _react2.default.createElement(
+                            'a',
+                            { href: 'https://legendapp.com' },
+                            _react2.default.createElement(
+                                'div',
+                                {
+                                    style: {
+                                        backgroundColor: '#464E57',
+                                        color: 'white',
+                                        paddingTop: 16,
+                                        paddingBottom: 16,
+                                        fontWeight: 'medium',
+                                        textAlign: 'center'
+                                    }
+                                },
+                                _react2.default.createElement(
+                                    'div',
+                                    {
+                                        className: 'flex items-center max-w-3xl mx-auto lg:px-8 sm:px-4',
+                                        style: {
+                                            maxWidth: 768,
+                                            margin: '0 auto',
+                                            padding: '0 32px'
+                                        }
+                                    },
+                                    _react2.default.createElement(
+                                        'span',
+                                        { style: { paddingRight: 16, fontSize: 24 } },
+                                        '\uD83E\uDD73'
+                                    ),
+                                    _react2.default.createElement(
+                                        'span',
+                                        null,
+                                        'Moo.do has become Legend! Check out the new app at ',
+                                        _react2.default.createElement(
+                                            'span',
+                                            { style: { color: '#09D', fontWeight: 'bold' } },
+                                            'legendapp.com'
+                                        )
+                                    )
+                                )
+                            )
+                        ),
                         _react2.default.createElement(_reactStaticRoutes2.default, null)
                     ),
                     _react2.default.createElement(_Nav2.default, { bottom: true })
@@ -9473,4 +9520,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.47ffdcf5.js.map
+//# sourceMappingURL=static.9a64ed70.js.map
