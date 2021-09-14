@@ -1,4 +1,4 @@
-var CacheName = 'moodo-cache-1630909296040';
+var CacheName = 'moodo-cache-1631594778609';
 var CacheNameCommon = 'moodo-cache-data';
 
 function notifyClient (text)
@@ -21,17 +21,17 @@ self.addEventListener('install', function (e)
         {
             return cache.addAll([
                 '/mobile/',
-                '/mobile/index-1630909296040.html',
-                '/mobile/js/vendor-1630909296040.js',
-                '/mobile/js/codeBlock-1630909296040.js',
-                '/mobile/js/textEncoding-1630909296040.js',
-                '/mobile/js/app-1630909296040.js',
-                '/mobile/js/preload-1630909296040.js',
-                '/mobile/js/preload.worker-1630909296040.js',
-                '/mobile/css/app-min-1630909296040.css',
-                '/mobile/css/fonticons-1630909296040.css',
-                '/mobile/css/fonts/fonticons-1630909296040.woff',
-                '/mobile/css/fonts/fonticons-1630909296040.ttf'
+                '/mobile/index-1631594778609.html',
+                '/mobile/js/vendor-1631594778609.js',
+                '/mobile/js/codeBlock-1631594778609.js',
+                '/mobile/js/textEncoding-1631594778609.js',
+                '/mobile/js/app-1631594778609.js',
+                '/mobile/js/preload-1631594778609.js',
+                '/mobile/js/preload.worker-1631594778609.js',
+                '/mobile/css/app-min-1631594778609.css',
+                '/mobile/css/fonticons-1631594778609.css',
+                '/mobile/css/fonts/fonticons-1631594778609.woff',
+                '/mobile/css/fonts/fonticons-1631594778609.ttf'
             ]);
         }).then(caches.open(CacheNameCommon).then(function (cacheCommon)
         {
@@ -63,7 +63,6 @@ self.addEventListener('install', function (e)
                 if (c.indexOf('data') < 0)
                 {
                     var ver = c.replace('moodo-cache-', '');
-                    console.log('ver', ver);
                     if (ver && +ver < 1612170007615)
                     {
                         console.log('Service Worker: Skipping Waiting');
@@ -93,7 +92,7 @@ self.addEventListener('fetch', function (event)
     {
         if (urlObj.pathname === pathname)
         {
-            url = url.replace(pathname, pathname + 'index-1630909296040.html');
+            url = url.replace(pathname, pathname + 'index-1631594778609.html');
         }
 
         event.respondWith(
