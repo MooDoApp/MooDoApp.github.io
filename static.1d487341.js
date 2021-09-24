@@ -5868,7 +5868,12 @@ var Invoice = function (_React$Component) {
                     null,
                     _react2.default.createElement('link', { rel: 'stylesheet', media: 'screen', href: '/landing/css/invoice_screen.css' }),
                     _react2.default.createElement('link', { rel: 'stylesheet', media: 'all', href: '/landing/css/invoice_all.css' }),
-                    _react2.default.createElement('link', { rel: 'stylesheet', media: 'print', href: '/landing/css/invoice_print.css' })
+                    _react2.default.createElement('link', { rel: 'stylesheet', media: 'print', href: '/landing/css/invoice_print.css' }),
+                    _react2.default.createElement(
+                        'style',
+                        null,
+                        '\n                        #legendMessage {\n                            display: none;\n                        }\n                    '
+                    )
                 ),
                 _react2.default.createElement(
                     'div',
@@ -5886,7 +5891,7 @@ var Invoice = function (_React$Component) {
                         _react2.default.createElement('br', null),
                         _react2.default.createElement(
                             'a',
-                            { className: 'btn btn_primary', href: 'javascript:window.print();', style: { marginBottom: 48 } },
+                            { className: 'btn btn_primary', href: 'javascript:window.print();', style: { marginBottom: 48, color: 'white', fontWeight: 'bold' } },
                             'Print'
                         ),
                         _react2.default.createElement(
@@ -6676,7 +6681,7 @@ var App = function (_React$Component) {
                         { className: 'content' },
                         _react2.default.createElement(
                             'a',
-                            { href: 'https://legendapp.com' },
+                            { href: 'https://legendapp.com', id: 'legendMessage' },
                             _react2.default.createElement(
                                 'div',
                                 {
@@ -9520,4 +9525,4 @@ module.exports = require("htmr");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.9a64ed70.js.map
+//# sourceMappingURL=static.1d487341.js.map
